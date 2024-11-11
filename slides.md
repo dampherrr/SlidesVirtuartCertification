@@ -6,46 +6,52 @@ fonts:
   serif: Montserrat Regular
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: https://cover.sli.dev
+# background: https://cover.sli.dev
 # some information about your slides (markdown enabled)
-title: Projet Virtuart 
-info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
+title: Projet Virtuart
+# info: |
+#   ## Slidev Starter Template
+#   Presentation slides for developers.
 
-  Learn more at [Sli.dev](https://sli.dev)
+#   Learn more at [Sli.dev](https://sli.dev)
 # apply unocss classes to the current slide
-class: text-center
+# class: text-center
 # https://sli.dev/features/drawing
 drawings:
   persist: false
 # slide transition: https://sli.dev/guide/animations.html#slide-transitions
-transition: slide-left
+transition: fade-out
 # enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
 # take snapshot for each slide in the overview
 overviewSnapshots: true
 
-layout: dynamic-image 
+layout: dynamic-image
 image: "./media/Pictures/Eclosion.png"
 upperImage: "./media/Pictures/Eclosion.png"
 equal: true
 left: false
 ---
 
-![Virtuart](./media/Pictures/VirtuArtLogo2.png)
-
+<div>
+<img src="./media/Pictures/VirtuArtLogo2.png"/>
 <p style="color:#D8B192;">L'art pour tous!</p>
+</div>
 
-<div class="pt-12">
+<div>
+<p style="font-size: 10px;">Présenté par <strong>GOGUET Damien</strong>, <br/> de la promo 2024 à la <strong>Wild Code School</strong>.</p>
+<p style="font-size: 10px;">Pour le titre professionnel <strong>développeur web full stack.</strong></p>
+</div>
+
+<!-- <div>
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-black bg-opacity-10">
     Commencer la présentation <carbon:arrow-right class="inline"/>
   </span>
-</div>
+</div> -->
 
-<div class="abs-br m-8 flex gap-2">
+<div class="absolute left-40% m--12 flex gap-2">
   <a href="https://github.com/dampherrr/P3-VirtuArt" target="_blank" alt="GitHub" title="GitHub: P3-VirtuArt"
-    class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
+    class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-black">
     <carbon-logo-github />
   </a>
 </div>
@@ -58,88 +64,264 @@ The last comment block of each slide will be treated as slide notes. It will be 
 transition: fade-out
 ---
 
-# What is Slidev?
+# Membre de l'équipe sur le projet:
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
+<div class="team-members">
+  <a href="https://github.com/BaptisteFredj" target="_blank">
+    Baptiste <br>
+    <img src="https://avatars.githubusercontent.com/BaptisteFredj" target="_blank" alt="BaptisteFredj" width="100" height="100">
+  </a>
+  <a href="https://github.com/Agraheris" target="_blank">
+    Clément <br>
+    <img src="https://avatars.githubusercontent.com/Agraheris" target="_blank" alt="Agraheris" width="100" height="100">
+  </a>
+  <a href="https://github.com/dampherrr" target="_blank">
+    Damien <br>
+    <img src="https://avatars.githubusercontent.com/dampherrr" target="_blank" alt="Dampherrr" width="100" height="100">
+  </a>
+  <a href="https://github.com/Ryokoh-974" target="_blank">
+    Daniel <br>
+    <img src="https://avatars.githubusercontent.com/Ryokoh-974" target="_blank" alt="Ryokoh-974" width="100" height="100">
+  </a>
+  <a href="https://github.com/monica-tech75" target="_blank">
+    Monica <br>
+    <img src="https://avatars.githubusercontent.com/monica-tech75" target="_blank" alt="monica-tech75" width="100" height="100">
+  </a>
+</div>
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - themes can be shared and re-used as npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embed Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
-<br>
-<br>
-
-Read more about [Why Slidev?](https://sli.dev/guide/why)
-
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/features/slide-scope-style
--->
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
 
 <style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  h1 {
+    color: #D8B192;
+  margin-bottom: 5rem;
+}
+
+.team-members {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-members a {
+  text-align: center;
+  margin: 10px;
 }
 </style>
-
-<!--
-Here is another comment.
--->
 
 ---
 transition: slide-up
 level: 2
 ---
 
-# Navigation
+# Demande du client:
 
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/ui#navigation-bar)
+<div class="client">
+<a v-click>
+<p>- Gallerie d'art</p>
+<img src="./media/Icones/Gallery.jpg" width="100" height="100">
+</a>
+<a v-click>
+<p>- Interactif</p>
+<img src="./media/Icones/Interactive.png" width="100" height="100">
+</a>
+<a v-click>
+<p>- Différents profils utilisateurs</p>
+<img src="./media/Icones/Users.png" width="100" height="100">
+</a>
+<a v-click>
+<p>- Ajout des favoris</p>
+<img src="./media/Icones/Favorite.png" width="100" height="100">
+</a>
+<a v-click>
+<p>- Responsive</p>
+<img src="./media/Icones/Responsive.jpg" width="100" height="100">
+</a>
+</div>
 
-## Keyboard Shortcuts
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
 
-|     |     |
-| --- | --- |
-| <kbd>right</kbd> / <kbd>space</kbd>| next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
+<style>
+  h1 {
+    color: #D8B192;
+}
 
-<!-- https://sli.dev/guide/animations.html#click-animation -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-  alt=""
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
+.client {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center; 
+}
+
+.client a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  height: 100%; 
+}
+</style>
+
+---
+layout: dynamic-image 
+image: './media/Pictures/Vie_Urbaine.webp'
+equal: true
+left: true
+transition: slide-left
+---
+
+# Introduction
+
+<div class="client">
+<a v-click>
+<p>- Organisation du projet</p>
+</a>
+<a v-click>
+<p>- Design</p>
+</a>
+<a v-click>
+<p>- Modelisation de la base de donnée</p>
+</a>
+<a v-click>
+<p>-Backend </p>
+</a>
+<a v-click>
+<p>- Frontend</p>
+</a>
+<a v-click>
+<p>- Sécurité</p>
+</a>
+<a v-click>
+<p>- Récap et conclusion</p>
+</a>
+</div>
+
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+
+---
+transition: slide-up
+layout: dynamic-image 
+image: './media/Pictures/Odyssée.webp'
+left: false
+---
+
+# Organisation du projet
+
+## Méthodologie
+
+<div v-click class="method">
+<a>
+<p>- Scrum</p>
+<img src="./media/Icones/Scrum.webp" width="100" height="100">
+</a>
+</div>
+
+## Outils
+
+<div v-click class="orga">
+<a>
+<p>- Discord</p>
+<img src="./media/Icones/discord.svg" width="100" height="100">
+</a>
+<a>
+<p>- FigJam</p>
+<img src="./media/Icones/figma.png" width="100" height="100">
+</a>
+<a>
+<p>- Google Sheet</p>
+<img src="./media/Icones/GoogleSheets.png" width="70" height="70">
+</a>
+</div>
+
+<div class="absolute left-60% m-4 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+
+<style>
+  h1 {
+    color: #D8B192;
+}
+
+.orga, .method {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center; 
+}
+
+.orga a ,.method a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* padding: 10px; */
+  /* height: 100%;  */
+}
+</style>
 
 ---
 layout: two-cols
 layoutClass: gap-16
+transition: slide-up
 ---
 
-# Table of contents
+# Design
 
-You can use the `Toc` component to generate a table of contents for your slides:
+## Recherche et inspiration
 
-```html
-<Toc minDepth="1" maxDepth="1"></Toc>
-```
-
-The title will be inferred from your slide content, or you can override it with `title` and `level` in your frontmatter.
+  <a href="https://www.carredartistes.com/fr-fr/" target="_blank">
+    Carré d'artistes<br>
+    <img src="./media/Pictures/Carredartistes.png" alt="Carré d'artistes" width="1000" height="100">
+  </a>
 
 ::right::
 
-<Toc v-click minDepth="1" maxDepth="2"></Toc>
+## Charte graphique
+
+<img src="./media/Pictures/palette.png" alt="Carré d'artistes" width="1000" height="100">
+<br>
+
+## Typography
+
+<p>Monserrat</p>
+
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+
+---
+layout: center-image 
+image: './media/Pictures/Figma.png'
+transition: slide-up
+---
+
+# Design
+
+## Maquettage
+
+<a>
+<p>- Figma</p>
+<img src="./media/Icones/figma.png" width="100" height="100">
+</a>
+
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
 
 ---
 layout: image-right
@@ -155,17 +337,18 @@ Use code snippets and get the highlighting directly, and even types hover!
 // and errors in markdown code blocks
 // More at https://shiki.style/packages/twoslash
 
-import { computed, ref } from 'vue'
+import { computed, ref } from "vue";
 
-const count = ref(0)
-const doubled = computed(() => count.value * 2)
+const count = ref(0);
+const doubled = computed(() => count.value * 2);
 
-doubled.value = 2
+doubled.value = 2;
 ```
 
 <arrow v-click="[4, 5]" x1="350" y1="310" x2="195" y2="334" color="#953" width="2" arrowSize="1" />
 
 <!-- This allow you to embed external code blocks -->
+
 <<< @/snippets/external.ts#snippet
 
 <!-- Footer -->
@@ -196,8 +379,8 @@ Notes can also sync with clicks
 -->
 
 ---
-level: 2
----
+
+## level: 2
 
 # Shiki Magic Move
 
@@ -209,13 +392,13 @@ Add multiple code blocks and wrap them with <code>````md magic-move</code> (four
 ```ts {*|2|*}
 // step 1
 const author = reactive({
-  name: 'John Doe',
+  name: "John Doe",
   books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-})
+    "Vue 2 - Advanced Guide",
+    "Vue 3 - Basic Guide",
+    "Vue 4 - The Mystery",
+  ],
+});
 ```
 
 ```ts {*|1-2|3-4|3-4,8}
@@ -224,16 +407,16 @@ export default {
   data() {
     return {
       author: {
-        name: 'John Doe',
+        name: "John Doe",
         books: [
-          'Vue 2 - Advanced Guide',
-          'Vue 3 - Basic Guide',
-          'Vue 4 - The Mystery'
-        ]
-      }
-    }
-  }
-}
+          "Vue 2 - Advanced Guide",
+          "Vue 3 - Basic Guide",
+          "Vue 4 - The Mystery",
+        ],
+      },
+    };
+  },
+};
 ```
 
 ```ts
@@ -241,15 +424,15 @@ export default {
 export default {
   data: () => ({
     author: {
-      name: 'John Doe',
+      name: "John Doe",
       books: [
-        'Vue 2 - Advanced Guide',
-        'Vue 3 - Basic Guide',
-        'Vue 4 - The Mystery'
-      ]
-    }
-  })
-}
+        "Vue 2 - Advanced Guide",
+        "Vue 3 - Basic Guide",
+        "Vue 4 - The Mystery",
+      ],
+    },
+  }),
+};
 ```
 
 Non-code blocks are ignored.
@@ -258,13 +441,13 @@ Non-code blocks are ignored.
 <!-- step 4 -->
 <script setup>
 const author = {
-  name: 'John Doe',
+  name: "John Doe",
   books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-}
+    "Vue 2 - Advanced Guide",
+    "Vue 3 - Basic Guide",
+    "Vue 4 - The Mystery",
+  ],
+};
 </script>
 ```
 ````
@@ -312,8 +495,8 @@ Also, HTML elements are valid:
 -->
 
 ---
-class: px-20
----
+
+## class: px-20
 
 # Themes
 
@@ -470,7 +653,9 @@ LaTeX is supported out-of-box. Powered by [KaTeX](https://katex.org/).
 Inline $\sqrt{3x-1}+(1+x)^2$
 
 Block
-$$ {1|3|all}
+
+$$
+{1|3|all}
 \begin{aligned}
 \nabla \cdot \vec{E} &= \frac{\rho}{\varepsilon_0} \\
 \nabla \cdot \vec{B} &= 0 \\
@@ -560,9 +745,44 @@ database "MySql" {
 Learn more: [Mermaid Diagrams](https://sli.dev/features/mermaid) and [PlantUML Diagrams](https://sli.dev/features/plantuml)
 
 ---
+
 foo: bar
 dragPos:
-  square: 691,32,167,_,-16
+square: 691,32,167,\_,-16
+
+---
+
+dragPos:
+square: 0,-95,0,0
+
+---
+
+dragPos:
+square: 0,-95,0,0
+
+---
+
+dragPos:
+square: 0,-95,0,0
+
+---
+
+dragPos:
+square: 0,-95,0,0
+
+---
+
+dragPos:
+square: 0,-95,0,0
+
+---
+
+dragPos:
+square: 0,-95,0,0
+
+---
+dragPos:
+  square: 0,-88,0,0
 ---
 
 # Draggable Elements
@@ -588,7 +808,7 @@ Double-click on the draggable elements to edit their positions.
 </v-drag>
 ```
 
-<v-drag pos="663,206,261,_,-15">
+<v-drag pos="663,206,261,_,-15"undefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefined>
   <div text-center text-3xl border border-main rounded>
     Double-click me!
   </div>
@@ -605,9 +825,12 @@ Double-click on the draggable elements to edit their positions.
 <v-drag-arrow pos="67,452,253,46" two-way op70 />
 
 ---
+
 src: ./pages/imported-slides.md
 hide: false
+
 ---
+
 
 ---
 
@@ -618,26 +841,33 @@ Slidev provides built-in Monaco Editor support.
 Add `{monaco}` to the code block to turn it into an editor:
 
 ```ts {monaco}
-import { ref } from 'vue'
-import { emptyArray } from './external'
+import { ref } from "vue";
+import { emptyArray } from "./external";
 
-const arr = ref(emptyArray(10))
+const arr = ref(emptyArray(10));
 ```
 
 Use `{monaco-run}` to create an editor that can execute the code directly in the slide:
 
 ```ts {monaco-run}
-import { version } from 'vue'
-import { emptyArray, sayHello } from './external'
+import { version } from "vue";
+import { emptyArray, sayHello } from "./external";
 
-sayHello()
-console.log(`vue ${version}`)
-console.log(emptyArray<number>(10).reduce(fib => [...fib, fib.at(-1)! + fib.at(-2)!], [1, 1]))
+sayHello();
+console.log(`vue ${version}`);
+console.log(
+  emptyArray<number>(10).reduce(
+    (fib) => [...fib, fib.at(-1)! + fib.at(-2)!],
+    [1, 1]
+  )
+);
 ```
 
 ---
+
 layout: center
 class: text-center
+
 ---
 
 # Learn More
