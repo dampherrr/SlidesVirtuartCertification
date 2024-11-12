@@ -211,7 +211,13 @@ transition: slide-left
 <div class="abs-br m-8 flex gap-2">
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
+---
+---
 
+## level: 2
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
 ---
 transition: slide-up
 layout: dynamic-image 
@@ -324,61 +330,487 @@ transition: slide-up
 </div>
 
 ---
-layout: image-right
-image: https://cover.sli.dev
+layout: two-cols
+layoutClass: gap-16
+transition: slide-left
 ---
 
-# Code
+# Modélisation de la base de donnée
 
-Use code snippets and get the highlighting directly, and even types hover!
+## Outil
 
-```ts {all|5|7|7-8|10|all} twoslash
-// TwoSlash enables TypeScript hover information
-// and errors in markdown code blocks
-// More at https://shiki.style/packages/twoslash
+<a>
+<p>- Draw.io</p>
+<img src="./media/Icones/drawio.png" width="100" height="100">
+</a>
+::right::
 
-import { computed, ref } from "vue";
+## Méthodologie
 
-const count = ref(0);
-const doubled = computed(() => count.value * 2);
+<a>
+<p>- Méthode Merise</p>
+<img src="./media/Icones/merise.png" width="100" height="100">
+</a>
 
-doubled.value = 2;
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+
+---
+layout: image-right
+image: './media/Pictures/MCD.drawio.png'
+equal: true
+left: false
+transition: slide-left
+---
+
+## MCD
+
+<a>
+<p>- <strong>M</strong>odèle <strong>C</strong>onceptuelle de <strong>D</strong>onnée</p>
+</a>
+
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+---
+layout: image-left
+image: './media/Pictures/MLD.drawio.png'
+equal: true
+left: false
+transition: slide-left
+---
+
+## MLD
+
+<a>
+<p>- <strong>M</strong>odèle <strong>L</strong>ogique de <strong>D</strong>onnée</p>
+</a>
+
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+---
+layout: image-right
+image: './media/Pictures/MPD.drawio.png'
+equal: true
+left: false
+transition: slide-left
+---
+
+## MPD
+
+<a>
+<p>- <strong>M</strong>odèle <strong>P</strong>hysique de <strong>D</strong>onnée</p>
+</a>
+
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+
+
+
+---
+layout: image-right
+image: './media/Icones/mysql.png'
+# equal: true
+left: false
+transition: slide-left
+level: 3
+---
+
+# SQL
+
+Exemple de la table 'artwork':
+
+````md magic-move {lines: true}
+```sql {*|2,10|3|5|*}
+// Étape 1
+create table artwork (
+    id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    title VARCHAR(100) NOT NULL,
+    image_url VARCHAR(255) DEFAULT "/assets/avatar_user/default.png",
+    description TEXT,
+    user_id INT unsigned,
+    collection_id INT unsigned,
+    FOREIGN KEY (user_id) REFERENCES user (id) ON DELETE CASCADE
+);
 ```
+```sql {*|2-3,9|4-8|10,18|11-17|*}
+// Étape 2
+INSERT INTO
+    artwork (
+        title,
+        image_url,
+        description,
+        user_id
+        collection_id
+    )
+VALUES (
+        'Éclosion',
+        '/assets/images/PicturesTest/Eclosion.webp',
+        'Une peinture abstraite représentant une explosion de couleurs vives.',
+        'Peinture à l\'huile',
+        '2023-02-15',
+        3,
+        1
+    );
+```
+````
 
-<arrow v-click="[4, 5]" x1="350" y1="310" x2="195" y2="334" color="#953" width="2" arrowSize="1" />
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
 
-<!-- This allow you to embed external code blocks -->
+---
+layout: image-left
+image: './media/Pictures/MVC.png'
+equal: true
+left: false
+transition: slide-left
+---
 
-<<< @/snippets/external.ts#snippet
+## Architecture
 
-<!-- Footer -->
+<!-- <div>
+  <v-after> MVC </v-after>
+  <v-click> Modèle View Controller </v-click>
+</div> -->
 
-[Learn more](https://sli.dev/features/line-highlighting)
+<div class="animation-container">
+  <div>MVC</div> 
+  <div><span>Modèle View Controller</span></div>
+</div>
 
-<!-- Inline style -->
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+
 <style>
-.footnotes-sep {
-  @apply mt-5 opacity-10;
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+.animation-container {
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0, 0, 0);
 }
-.footnotes {
-  @apply text-sm opacity-75;
+
+.animation-container div:first-of-type {
+  animation: showup 7s infinite;
 }
-.footnote-backref {
-  display: none;
+
+.animation-container div:last-of-type {
+  width: 0px;
+  animation: reveal 7s infinite;
 }
+
+.animation-container div:last-of-type span {
+  margin-left: -355px;
+  animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+  0% {opacity: 0;}
+  20% {opacity: 1;}
+  80% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@keyframes slidein {
+  0% { margin-left: -800px; }
+  20% { margin-left: -800px; }
+  35% { margin-left: 0px; }
+  100% { margin-left: 0px; }
+}
+
+@keyframes reveal {
+  0% {opacity: 0; width: 0px;}
+  20% {opacity: 1; width: 0px;}
+  30% {width: 355px;}
+  80% {opacity: 1;}
+  100% {opacity: 0; width: 355px;}
+}
+
+
 </style>
 
-<!--
-Notes can also sync with clicks
-
-[click] This will be highlighted after the first click
-
-[click] Highlighted with `count = ref(0)`
-
-[click:3] Last click (skip two clicks)
--->
-
 ---
+layout: two-cols
+# layoutClass: gap-16
+transition: slide-left
+level: 3
+equal: true
+left: false
+---
+
+# Exemple de **modèle**
+
+<div class="imgExpress">
+<img v-click.hide src="./media/Icones/express.png" width="100" height="100"/>
+</div>
+
+````md magic-move {lines: true}
+```js {*|6-14} 
+class ArtworkRepository extends AbstractRepository {
+  constructor() {
+    super({ table: "artwork" });
+  }
+
+  async readAll() {
+    const [rows] = await this.database.query(
+      `select artwork.*,
+      DATE_FORMAT(date, '%d/%m/%Y') AS formatedDate, 
+      user.pseudo user_name FROM ${this.table} 
+      INNER JOIN user on artwork.user_id = user.id`
+    );
+    return rows;
+  }
+} 
+
+module.exports = ArtworkRepository;
+```
+```js {6-16} 
+class ArtworkRepository extends AbstractRepository {
+  constructor() {
+    super({ table: "artwork" });
+  }
+
+  async read(id) {
+    const [rows] = await this.database.query(
+      `select artwork.*,
+      DATE_FORMAT(date, '%d/%m/%Y') AS formatedDate, 
+      user.pseudo user_name from ${this.table}  
+      INNER JOIN user ON artwork.user_id = user.id 
+      WHERE artwork.id = ? `,
+      [id]
+    );
+    return rows[0];
+  }
+} 
+
+module.exports = ArtworkRepository;
+```
+```js {6-21} 
+class ArtworkRepository extends AbstractRepository {
+  constructor() {
+    super({ table: "artwork" });
+  }
+
+  async create(artwork) {
+    const [result] = await this.database.query(
+      `INSERT INTO artwork (title, image_url, description, 
+      technique, date, user_id) 
+      VALUES(?, ?, ?, ?, CURDATE(), ?)`,
+      [
+        artwork.title,
+        artwork.image_url,
+        artwork.description,
+        artwork.technique,
+        artwork.user_id,
+      ]
+    );
+
+    return result;
+  }
+} 
+
+module.exports = ArtworkRepository;
+```
+```js {6-24} 
+class ArtworkRepository extends AbstractRepository {
+  constructor() {
+    super({ table: "artwork" });
+  }
+
+  async update(artwork) {
+    const [result] = await this.database.query(
+      `UPDATE ${this.table} SET title = ?, 
+      image_url = ?, 
+      description = ?, 
+      technique = ?, 
+      date = ? 
+      WHERE id = ?`,
+      [
+        artwork.title,
+        artwork.image_url,
+        artwork.description,
+        artwork.technique,
+        artwork.date,
+        artwork.id,
+      ]
+    );
+    return result.affectedRows;
+  }
+
+module.exports = ArtworkRepository;
+```
+```js {6-12} 
+class ArtworkRepository extends AbstractRepository {
+  constructor() {
+    super({ table: "artwork" });
+  }
+
+  async delete(id) {
+    const [result] = await this.database.query(
+      `DELETE FROM ${this.table} WHERE id = ?`,
+      [id]
+    );
+    return result.affectedRows;
+  }
+
+module.exports = ArtworkRepository;
+```
+````
+::right::
+# Exemple de **Vue**
+
+<div v-click class="abs-tr m-38 flex gap-2">
+<img src="./media/Pictures/Artwork.png" width="200" height="100"/>
+</div>
+
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+
+<style>
+
+.imgExpress{display:flex;justify-content:center;align-items:center;}
+
+</style>
+---
+# layout: two-cols
+# layoutClass: gap-16
+transition: slide-left
+level: 3
+---
+
+# Exemple de **Controller**
+
+````md magic-move {lines: true}
+```js {*} 
+const tables = require("../../database/tables");
+
+const browse = async (req, res, next) => {
+  try {
+    const artworks = await tables.artwork.readAll();
+    res.json(artworks);
+  } catch (error) {
+    next(error);
+  }
+};
+module.exports = { browse, read, add, edit, destroy};
+```
+```js {*} 
+const tables = require("../../database/tables");
+
+const read = async (req, res, next) => {
+  try {
+    const artwork = await tables.artwork.read(req.params.id);
+    if (artwork == null) {
+      res.sendStatus(404);
+    } else {
+      res.json(artwork);
+    }
+  } catch (error) {
+    next(error);
+  }
+};
+module.exports = { browse, read, add, edit, destroy};
+```
+```js {*} 
+const tables = require("../../database/tables");
+
+const add = async (req, res, next) => {
+  try {
+    await tables.artwork.create(req.body);
+    res.status(201).send(`Oeuvre ajoutée avec succès.`);
+  } catch (error) {
+    next(error);
+  }
+};
+module.exports = { browse, read, add, edit, destroy};
+```
+```js {*} 
+const tables = require("../../database/tables");
+
+const edit = async (req, res, next) => {
+  const artwork = { ...req.body, id: req.params.id };
+  try {
+    await tables.artwork.update(artwork);
+    res.sendStatus(204);
+  } catch (error) {
+    next(error);
+  }
+};
+module.exports = { browse, read, add, edit, destroy};
+```
+```js {*} 
+const tables = require("../../database/tables");
+
+const destroy = async (req, res, next) => {
+  try {
+    const artwork = await tables.artwork.read(req.params.id);
+    if (artwork) {
+      const imagePath = path.join(
+        __dirname,
+        "..",
+        "..",
+        "public",
+        "assets",
+        "images",
+        "uploads",
+        path.basename(artwork.image_url)
+      );
+module.exports = { browse, read, add, edit, destroy};
+```
+````
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+---
+---
+
+# Routes de l’application
+
+````md magic-move {lines: true}
+```js {*|1-2|4|6-11|*} 
+const express = require("express");
+const router = express.Router();
+
+const artworks = require("./controllers/artworkActions");
+
+// ARTWORK
+router.get("/artworks", artworks.browse);
+router.get("/artworks/:id", artworks.read);
+router.post("/artworks", middleware.uploadImg, verifyToken, artworks.add);
+router.delete("/artworks/:id", artworks.destroy);
+router.put("/artworks/:id", artworks.edit);
+```
+````
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+---
+---
+
+## level: 2
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+---
+---
+
+## level: 2
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+---
+
 
 ## level: 2
 
@@ -782,7 +1214,7 @@ square: 0,-95,0,0
 
 ---
 dragPos:
-  square: 0,-88,0,0
+  square: NaN,NaN,NaN,NaN
 ---
 
 # Draggable Elements
@@ -808,7 +1240,7 @@ Double-click on the draggable elements to edit their positions.
 </v-drag>
 ```
 
-<v-drag pos="663,206,261,_,-15"undefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefined>
+<v-drag pos="663,206,261,_,-15"undefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefined>
   <div text-center text-3xl border border-main rounded>
     Double-click me!
   </div>
