@@ -85,7 +85,13 @@ transition: slide-up
   border-bottom: 4px solid #E0C1A8;
   border-radius: 8px;
   text-align: center;
-  margin: 10px;
+  margin: 10px;  
+  height: 10rem;
+  width: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .member:hover { 
   background-color: #E0C1A8;
@@ -169,6 +175,7 @@ level: 2
   text-align: center;
   padding: 10px;
   height: 100%; 
+  width: 15rem;
 }
 .rules:hover { 
   background-color: #E0C1A8;
@@ -180,8 +187,8 @@ level: 2
 layout: dynamic-image 
 image: './media/Pictures/Vie_Urbaine.webp'
 equal: true
-left: true
-transition: slide-left
+left: false
+transition: slide-up
 ---
 
 # Introduction
@@ -196,6 +203,11 @@ transition: slide-left
   :initial="{ x: -80 }"
   :enter="{ x: 0 }">
 <p>- Design</p>
+</div>
+<div v-click v-motion
+  :initial="{ x: -80 }"
+  :enter="{ x: 0 }">
+<p>- Architecture </p>
 </div>
 <div v-click v-motion
   :initial="{ x: -80 }"
@@ -216,6 +228,11 @@ transition: slide-left
   :initial="{ x: -80 }"
   :enter="{ x: 0 }">
 <p>- Frontend</p>
+</div>
+<div v-click v-motion
+  :initial="{ x: -80 }"
+  :enter="{ x: 0 }">
+<p>- Démonstration</p>
 </div>
 <div v-click v-motion
   :initial="{ x: -80 }"
@@ -257,47 +274,16 @@ border-radius: 8px;
 }
 </style>
 ---
-transition: slide-up
-layout: image-right
-image: './media/Pictures/Backlog.png'
-equal: true
+layout: dynamic-image 
+image: "./media/Pictures/Chaos_Organisé.webp"
+equal: false
 left: false
+transition: slide-left
 ---
 
 # Organisation du projet
 
-## Méthodologie
-
-<div v-click class="method" v-motion
-  :initial="{ y: 80 }"
-  :enter="{ x: 0, y: 0 }">
-<div class="element">
-<p>- Agile (Scrum)</p>
-<img src="./media/Icones/Scrum.webp" width="60" height="60">
-</div>
-</div>
-<br>
-
-## Organisation et communication
-
-<div v-click class="orga" v-motion
-  :initial="{ y: 80 }"
-  :enter="{ x: 0, y: 0 }">
-<div class="element">
-<p>- Discord</p>
-<img src="./media/Icones/discord.svg" width="60" height="60">
-</div>
-<div class="element">
-<p>- FigJam</p>
-<img src="./media/Icones/figma.png" width="60" height="60">
-</div>
-<div class="element">
-<p>- Google Sheet</p>
-<img src="./media/Icones/GoogleSheets.png" width="40" height="40">
-</div>
-</div>
-
-<div class="absolute left-60% m-4 flex gap-2">
+<div class="abs-br m-8 flex gap-2">
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 
@@ -305,12 +291,186 @@ left: false
   h1 {
     color: #D8B192;
 }
+</style>
+---
+transition: slide-up
+layout: two-cols
+---
 
+<div class="block" v-motion
+  :initial="{ y: 80 }"
+  :enter="{ x: 0, y: 0 }">
+<h2>Méthodologie</h2>
+<div class="method" v-click="1" v-motion
+  :initial="{ y: 80 }"
+  :enter="{ x: 0, y: 0 }">
+<div class="element">
+<p>- Agile (Scrum)</p>
+<img src="./media/Icones/Scrum.webp" width="60" height="60">
+</div>
+</div>
+</div>
+
+<br>
+
+<div v-click="2" class="block" v-motion
+  :initial="{ y: 80 }"
+  :enter="{ x: 0, y: 0 }">
+<h2>Organisation et communication</h2>
+<div class="orga" v-click="3" v-motion
+  :initial="{ y: 80 }"
+  :enter="{ x: 0, y: 0 }">
+<div class="element">
+<p>- Discord</p>
+<img src="./media/Icones/discord.svg" width="60" height="60">
+</div>
+<div class="element">
+<p>- Google Sheet</p>
+<img src="./media/Icones/GoogleSheets.png" width="40" height="40">
+</div>
+<div class="element">
+<p>- FigJam</p>
+<img src="./media/Icones/figma.png" width="60" height="60">
+</div>
+</div>
+</div>
+
+::right::
+<div>
+<img v-click="[4,5]" v-motion
+  :initial="{ x: 80 }"
+  :enter="{ x: 0, y: 0 }" src='./media/Pictures/Discord.png' style="position: absolute; width: 40rem; right: 10px"/>
+<img v-click="[5,6]" v-motion
+  :initial="{ x: 80 }"
+  :enter="{ x: 0, y: 0 }" src='./media/Pictures/Backlog.png' style="position: absolute; width: 40rem; right: 10px"/>
+<img v-click="6" v-motion
+  :initial="{ x: 80 }"
+  :enter="{ x: 0, y: 0 }" src='./media/Pictures/todolist.png' style="position: absolute; width: 20rem; right: 50px"/>
+</div>
+<div class="abs-br m-4 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+
+<style>
+  h1 {
+    color: #D8B192;
+}
+.block {
+  display: flex;
+  flex-direction: column;
+  }
 .orga, .method {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-items: center; 
+}
+.element{
+  margin: 1rem;
+  border-bottom: 4px solid #E0C1A8;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 10rem;
+    height: 10rem;
+
+}
+  .element:hover { 
+    background-color: #E0C1A8;
+    color: #090A09;
+  }
+</style>
+---
+layout: two-cols
+transition: slide-left
+---
+
+<div class="block" v-motion
+  :initial="{ y: 80 }"
+  :enter="{ x: 0, y: 0 }">
+<h2>Template</h2>
+<div class="method" v-click="1" v-motion
+  :initial="{ y: 80 }"
+  :enter="{ x: 0, y: 0 }">
+<div class="element">
+<p>- Harmonia</p>
+<img src="./media/Icones/WCS.jpg" width="60" height="60">
+</div>
+</div>
+</div>
+
+<br>
+
+<div class="block" v-click="2" v-motion
+  :initial="{ y: 80 }"
+  :enter="{ x: 0, y: 0 }">
+<h2>Génération des données</h2>
+<div class="method" v-click="3" v-motion
+  :initial="{ y: 80 }"
+  :enter="{ x: 0, y: 0 }">
+<div class="element">
+<p>- ChatGPT</p>
+<img src="./media/Icones/chatgpt.png" width="60" height="60">
+</div>
+</div>
+</div>
+
+::right::
+<div v-click="4" class="block" v-motion
+  :initial="{ y: 80 }"
+  :enter="{ x: 0, y: 0 }">
+<h2>Outils de développement</h2>
+<div class="orga" v-click="5" v-motion
+  :initial="{ y: 80 }"
+  :enter="{ x: 0, y: 0 }">
+<div class="element">
+<p>- VS Code</p>
+<img src="./media/Icones/Visual_Studio_Code_1.35_icon.svg.png" width="60" height="60">
+</div>
+<div class="element">
+<p>- Node.js</p>
+<img src="./media/Icones/node.png" width="60" height="60">
+</div>
+<div class="element">
+<p>- Git</p>
+<img src="./media/Icones/git.png" width="60" height="60">
+</div>
+<div class="element">
+<p>- Github</p>
+<img src="./media/Icones/github.png" width="60" height="60">
+</div>
+<div class="element">
+<p>- Jest</p>
+<img src="./media/Icones/jest.png" width="60" height="60">
+</div>
+<div class="element">
+<p>- Postman</p>
+<img src="./media/Icones/postman.png" width="60" height="60">
+</div>
+</div>
+</div>
+
+<div class="abs-br m-4 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+
+<style>
+  h1 {
+    color: #D8B192;
+}
+.block {
+  display: flex;
+  flex-direction: column;
+  }
+.orga, .method {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center; 
+  
 }
 .element{
   border-bottom: 4px solid #E0C1A8;
@@ -321,6 +481,78 @@ left: false
   align-items: center;
   text-align: center;
   width: 10rem;
+    height: 8rem;
+
+}
+  .element:hover { 
+    background-color: #E0C1A8;
+    color: #090A09;
+  }
+</style>
+---
+transition: slide-left
+---
+
+<div class="block" v-motion
+  :initial="{ y: 80 }"
+  :enter="{ x: 0, y: 0 }">
+<h2>Qualité du code</h2>
+<div class="orga" v-click="1" v-motion
+  :initial="{ y: 80 }"
+  :enter="{ x: 0, y: 0 }">
+<div class="element">
+<p>- EsLint</p>
+<img src="./media/Icones/ESLint_logo.svg.png" width="60" height="60">
+</div>
+<div class="element">
+<p>- Prettier</p>
+<img src="./media/Icones/pretiier.png" width="60" height="60">
+</div>
+<div class="element">
+<p>- Husky</p>
+<img src="./media/Icones/husky.png" width="60" height="60">
+</div>
+<div class="element">
+<p>- Lint-Staged</p>
+<img src="./media/Icones/int.png" width="60" height="60">
+</div>
+<div class="element">
+<p>- Vite</p>
+<img src="./media/Icones/vite.png" width="60" height="60">
+</div>
+</div>
+</div>
+
+<div class="abs-br m-4 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+
+<style>
+  h1 {
+    color: #D8B192;
+}
+.block {
+  display: flex;
+  flex-direction: column;
+  }
+.orga, .method {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center; 
+  
+}
+.element{
+  border-bottom: 4px solid #E0C1A8;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 10rem;
+    height: 10rem;
+
 }
   .element:hover { 
     background-color: #E0C1A8;
@@ -329,30 +561,53 @@ left: false
 </style>
 
 ---
-layout: two-cols
-layoutClass: gap-16
-transition: slide-up
+layout: dynamic-image 
+image: "./media/Pictures/Connexion.webp"
+equal: false
+left: false
+transition: slide-left
 ---
 
 # Design
 
-## Recherche et inspiration
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+
+<style>
+  h1 {
+    color: #D8B192;
+}
+</style>
+---
+layout: two-cols
+transition: slide-left
+---
+
+<div v-motion
+  :initial="{ x: -80 }"
+  :enter="{ x: 0, y: 0 }">
+<h2>Recherche et inspiration</h2>
 
   <a href="https://www.carredartistes.com/fr-fr/" target="_blank">
     Carré d'artistes<br>
     <img src="./media/Pictures/Carredartistes.png" alt="Carré d'artistes" width="1000" height="100">
   </a>
-
+</div>
 ::right::
-
-## Charte graphique
-
+<div v-click v-motion
+  :initial="{ y: -80 }"
+  :enter="{ x: 0, y: 0 }">
+<h2>Charte graphique</h2>
 <img src="./media/Pictures/palette.png" alt="Carré d'artistes" width="1000" height="100">
 <br>
-
-## Typography
-
+</div>
+<div v-click v-motion
+  :initial="{ y: 80 }"
+  :enter="{ x: 0, y: 0 }">
+<h2>Typography</h2>
 <p>Monserrat</p>
+</div>
 
 <div class="abs-br m-8 flex gap-2">
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
@@ -369,24 +624,28 @@ layout: two-cols
 transition: slide-up
 ---
 
-# Design
 
-<br>
+<div class="method">
+<h2>Maquettage</h2>
 
-## Maquettage
-<a>
+<div class="element">
 <p>- Figma</p>
-<img src="./media/Icones/figma.png" width="100" height="100">
-</a>
+<img src="./media/Icones/figma.png" width="60" height="100">
+</div>
+</div>
+
 ::right::
+
 <br>
 <br>
 <br>
-<a>
+<div v-click v-motion
+  :initial="{ x: 80 }"
+  :enter="{ x: 0, y: 0 }">
 <img src="./media/Pictures/Figma.png" width="1500" height="1000">
-</a>
+</div>
 
-<div class="abs-br m-8 flex gap-2">
+<div class="abs-br m-4 flex gap-2">
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 
@@ -394,288 +653,75 @@ transition: slide-up
   h1 {
     color: #D8B192;
 }
-</style>
----
-transition: slide-left
----
 
-# Modélisation de la base de donnée
-<br>
+.method {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 
-<div class="client">
-<a style="background-color: #E0C1A8; border-radius: 8px; border: none;">
-<h3>Prototypage</h3>
-<p>- Draw.io</p>
-<img src="./media/Icones/drawio.png" width="70" height="70" >
-</a>
-<a style="background-color: #F0F0F0; border-radius: 8px; border: none;">
-<h3>Méthodologie</h3>
-<p>- Méthode Merise</p>
-<img src="./media/Icones/merise.png" width="100" height="100">
-</a>
-</div>
-
-<div class="abs-br m-8 flex gap-2">
-<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
-</div>
-
-<style>
-  h1 {
-    color: #D8B192;
 }
-.client {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
-  align-items: center; 
-}
-
-.client a {
-  text-decoration: none;
+.element{
+  border-bottom: 4px solid #E0C1A8;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 10px;
-  height: 100%; 
-}
-</style>
-
----
-layout: image-right
-image: './media/Pictures/MCD.drawio.png'
-equal: true
-left: false
-transition: slide-left
----
-
-<div class="text">
-  <h2 v-click.hide="1">
-    <strong>M C D</strong>
-  </h2>
-
-  <h2 v-click="1" v-motion
-      :initial="{ x: -80 }"
-      :enter="{ x: 0 }">
-    <strong>M</strong><span>odèle</span>
-    <strong> C</strong><span>onceptuelle de </span>
-    <strong> D</strong><span>onnée</span>
-  </h2>
-</div>
-
-<div class="abs-br m-8 flex gap-2">
-<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
-</div>
-
-<style>
-.text {
-  position: relative;
-  width: 100%;
-  max-width: 1000px;
-}
-
-.text h2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-}
-</style>
----
-layout: image-left
-image: './media/Pictures/MLD.drawio.png'
-equal: true
-left: false
-transition: slide-left
----
-
-<div class="text">
-  <h2 v-click.hide="1">
-    <strong>M L D</strong>
-  </h2>
-
-  <h2 v-click="1" v-motion
-      :initial="{ x: -80 }"
-      :enter="{ x: 0 }">
-    <strong>M</strong><span>odèle</span>
-    <strong> L</strong><span>ogique de </span>
-    <strong> D</strong><span>onnée</span>
-  </h2>
-</div>
-
-<div class="abs-br m-8 flex gap-2">
-<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
-</div>
-
-<style>
-.text {
-  position: relative;
-  width: 100%;
-  max-width: 1000px;
-}
-
-.text h2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-}
-</style>
----
-layout: image-right
-image: './media/Pictures/MPD.drawio.png'
-equal: true
-left: false
-transition: slide-left
----
-
-<div class="text">
-  <h2 v-click.hide="1">
-    <strong>M P D</strong>
-  </h2>
-
-  <h2 v-click="1" v-motion
-      :initial="{ x: -80 }"
-      :enter="{ x: 0 }">
-    <strong>M</strong><span>odèle</span>
-    <strong> P</strong><span>hysique de </span>
-    <strong> D</strong><span>onnée</span>
-  </h2>
-</div>
-
-<div class="abs-br m-8 flex gap-2">
-<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
-</div>
-
-<style>
-.text {
-  position: relative;
-  width: 100%;
-  max-width: 1000px;
-}
-
-.text h2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-}
-</style>
----
-transition: slide-left
-
----
-
-# Backend
-<br>
-
-## Les technos utilisées
-<br>
-
-<div v-click class="client">
-<a style="background-color: #E0C1A8; border-radius: 8px; border: none;">
-<p>- MySQL</p>
-<img src="./media/Icones/mysql.png" width="50" height="50" >
-</a>
-<a style="background-color: #F0F0F0; border-radius: 8px; border: none;">
-<p>- Express</p>
-<img src="./media/Icones/express.png" width="50" height="50">
-</a>
-</div>
-
-<div class="abs-br m-8 flex gap-2">
-<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
-</div>
-
-<style>
-  h1 {
-    color: #D8B192;
-}
-.client {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  justify-items: center;
-  align-items: center;   
-}
-
-.client a {
   width: 10rem;
-  min-height: 10rem;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding-bottom: 10px;
-  margin-bottom:10px;
-  height: 100%; 
+    height: 10rem;
+
 }
-
+  .element:hover { 
+    background-color: #E0C1A8;
+    color: #090A09;
+  }
 </style>
-
 ---
-transition: slide-left
-level: 3
----
-
-
-## Base de donnée
-
-Exemple de la table 'artwork':
-
-````md magic-move {lines: true}
-```sql {*|2,10|3|5|*}
-// Étape 1
-create table artwork (
-    id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
-    title VARCHAR(100) NOT NULL,
-    image_url VARCHAR(255) DEFAULT "/assets/avatar_user/default.png",
-    description TEXT,
-    user_id INT unsigned,
-    collection_id INT unsigned,
-    FOREIGN KEY (user_id) REFERENCES user (id) ON DELETE CASCADE
-);
-```
-```sql {*|2-3,9|4-8|10,18|11-17|*}
-// Étape 2
-INSERT INTO
-    artwork (
-        title,
-        image_url,
-        description,
-        user_id
-        collection_id
-    )
-VALUES (
-        'Éclosion',
-        '/assets/images/PicturesTest/Eclosion.webp',
-        'Une peinture abstraite représentant une explosion de couleurs vives.',
-        'Peinture à l\'huile',
-        '2023-02-15',
-        3,
-        1
-    );
-```
-````
-
-<div class="abs-br m-8 flex gap-2">
-<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
-</div>
-
----
-layout: image-left
-image: './media/Pictures/MVC.png'
-equal: true
+layout: dynamic-image 
+image: "./media/Pictures/Douce_Mélancolie.webp"
+equal: false
 left: false
 transition: slide-left
 ---
 
 # Architecture
+
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+
+<style>
+  h1 {
+    color: #D8B192;
+}
+</style>
+---
+layout: two-cols
+transition: slide-left
+---
+<br>
+<br>
+<br>
+<br>
+<br>
+<div v-click v-motion
+  :initial="{ x: -80 }"
+  :enter="{ x: 0, y: 0 }">
+<img src="./media/Pictures/MVC.png" width="1500" height="1000">
+</div>
+
+::right::
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 <div class="text">
   <h2 v-click.hide="1">
@@ -683,7 +729,7 @@ transition: slide-left
   </h2>
 
   <h2 v-click="1" v-motion
-      :initial="{ x: -80 }"
+      :initial="{ x: 80 }"
       :enter="{ x: 0 }">
     <strong> M</strong><span>odel</span>
     <strong> V</strong><span>iew</span>
@@ -691,12 +737,14 @@ transition: slide-left
   </h2>
 </div>
 
-
 <div class="abs-br m-8 flex gap-2">
   <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 
 <style>
+    h1 {
+    color: #D8B192;
+}
 .text {
   position: relative;
   width: 100%;
@@ -719,7 +767,7 @@ equal: true
 left: false
 ---
 
-## Exemple de **modèle**
+## Exemple de **"Model"**
 ### ArtworkRepository.js
 
 ````md magic-move {lines: true}
@@ -765,31 +813,26 @@ module.exports = ArtworkRepository;
 ```
 ````
 ::right::
-# Exemple de **Vue**
+<div class="element" v-click v-motion
+  :initial="{ x: 80 }"
+  :enter="{ x: 0, y: 0 }">
+  
+## Exemple de **"View"**
 
-<div v-click class="abs-tr m-38 flex gap-2">
-<img src="./media/Pictures/Artwork.png" width="200" height="100"/>
+<div v-click>
+<img src="./media/Pictures/Artwork.png" width="200" height="200"/>
+</div>
 </div>
 
 <div class="abs-br m-8 flex gap-2">
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
-
-<div class="abs-br m-8 flex gap-2">
-<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
-</div>
-
-<style>
-
-.imgExpress{display:flex;justify-content:center;align-items:center;}
-
-</style>
 ---
-transition: slide-left
+transition: slide-up
 level: 3
 ---
 
-## Exemple de **Controller**
+## Exemple de **"Controller"**
 ### artworkActions.js
 ````md magic-move {lines: true}
 ```js {*} 
@@ -827,6 +870,554 @@ module.exports = { browse, read, add, edit, destroy};
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 ---
+layout: dynamic-image 
+image: "./media/Pictures/Joie_Ephémère.webp"
+equal: false
+left: false
+transition: slide-left
+---
+
+# Modélisation de la base de donnée
+
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+
+<style>
+  h1 {
+    color: #D8B192;
+}
+</style>
+
+---
+transition: slide-left
+---
+
+## Outil et méthode
+
+<div class="client">
+<div class="element" v-click v-motion
+  :initial="{ y: 80 }"
+  :enter="{ x: 0, y: 0 }">
+<h3>Prototypage</h3>
+<p>- Draw.io</p>
+<img src="./media/Icones/drawio.png" width="70" height="70" >
+</div>
+<div class="element" v-click v-motion
+  :initial="{ y: 80 }"
+  :enter="{ x: 0, y: 0 }">
+<h3>Méthodologie</h3>
+<p>- Méthode Merise</p>
+<img src="./media/Icones/merise.png" width="100" height="100">
+</div>
+</div>
+
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+
+<style>
+  h1 {
+    color: #D8B192;
+}
+.element{
+  border-bottom: 4px solid #E0C1A8;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 10rem;
+    height: 10rem;
+
+}
+  .element:hover { 
+    background-color: #E0C1A8;
+    color: #090A09;
+  }
+.client {
+  padding-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center; 
+}
+
+.client a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  height: 100%; 
+}
+</style>
+
+---
+layout: two-cols
+transition: slide-left
+---
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="text">
+  <h2 v-click.hide="1">
+    <strong>M C D</strong>
+  </h2>
+
+  <h2 v-click="1" v-motion
+      :initial="{ x: -80 }"
+      :enter="{ x: 0 }">
+    <strong>M</strong><span>odèle</span>
+    <br>
+    <strong> C</strong><span>onceptuelle de </span>
+    <br>
+    <strong> D</strong><span>onnée</span>
+  </h2>
+</div>
+
+::right::
+
+<br>
+<div v-click v-motion
+  :initial="{ x: 80 }"
+  :enter="{ x: 0, y: 0 }">
+<img src="./media/Pictures/MCD.drawio.png" width="1500" height="1000">
+</div>
+
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+
+<style>
+.text {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.text h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+</style>
+---
+layout: two-cols
+transition: slide-left
+---
+<br>
+<div v-click v-motion
+  :initial="{ x: -80 }"
+  :enter="{ x: 0, y: 0 }">
+<img src="./media/Pictures/MLD.drawio.png" width="1500" height="1000">
+</div>
+
+::right::
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="text">
+  <h2 v-click.hide="1">
+    <strong>M L D</strong>
+  </h2>
+
+  <h2 v-click="1" v-motion
+      :initial="{ x: 80 }"
+      :enter="{ x: 0 }">
+    <strong>M</strong><span>odèle</span>
+    <br>
+    <strong> L</strong><span>ogique de </span>
+    <br>
+    <strong> D</strong><span>onnée</span>
+  </h2>
+</div>
+
+
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+
+<style>
+.text {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.text h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding-left:2rem;
+}
+</style>
+---
+layout: two-cols
+transition: slide-up
+---
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="text">
+  <h2 v-click.hide="1">
+    <strong>M P D</strong>
+  </h2>
+
+  <h2 v-click="1" v-motion
+      :initial="{ x: -80 }"
+      :enter="{ x: 0 }">
+    <strong>M</strong><span>odèle</span>
+    <br>
+    <strong> P</strong><span>hysique de </span>
+    <br>
+    <strong> D</strong><span>onnée</span>
+  </h2>
+</div>
+
+::right::
+
+<div class="img" v-click v-motion
+  :initial="{ x: 80 }"
+  :enter="{ x: 0, y: 0 }">
+<img src="./media/Pictures/MPD.drawio.png" width="1000" >
+</div>
+
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+
+<style>
+.text {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.text h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+.img{
+ position: absolute;
+ left: 17rem;
+ height: 100%;
+ width: 100%;
+}
+.img img{
+ height: 70%;
+ width: 70%;
+}
+</style>
+---
+layout: dynamic-image 
+image: "./media/Pictures/Lumière_dans_Obscurité.webp"
+equal: false
+left: false
+transition: slide-left
+---
+
+# Backend
+
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+
+<style>
+  h1 {
+    color: #D8B192;
+}
+</style>
+
+---
+transition: slide-left
+---
+
+## Les technos utilisées
+
+<br>
+
+<div class="client">
+
+<div class="element" v-click v-motion
+  :initial="{ y: 80 }"
+  :enter="{ x: 0, y: 0 }">
+  <p>- MySQL</p>
+<img src="./media/Icones/mysql.png" width="50" height="50" >
+</div>
+
+<div class="element" v-click v-motion
+  :initial="{ y: 80 }"
+  :enter="{ x: 0, y: 0 }">
+  <p>- Express</p>
+<img src="./media/Icones/express.png" width="50" height="50">
+</div>
+
+</div>
+
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+
+<style>
+  h1 {
+    color: #D8B192;
+}
+.element{
+  border-bottom: 4px solid #E0C1A8;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 10rem;
+    height: 10rem;
+
+}
+.element:hover { 
+  background-color: #E0C1A8;
+  color: #090A09;
+}
+
+.client {
+  padding-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center; 
+}
+
+.client a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  height: 100%; 
+}
+</style>
+---
+transition: slide-left
+level: 3
+---
+
+## Base de donnée
+### Exemple de la table 'artwork':
+
+````md magic-move {lines: true}
+```sql {*|2,10|3|5|*}
+// Étape 1
+create table artwork (
+    id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    title VARCHAR(100) NOT NULL,
+    image_url VARCHAR(255) DEFAULT "/assets/avatar_user/default.png",
+    description TEXT,
+    user_id INT unsigned,
+    collection_id INT unsigned,
+    FOREIGN KEY (user_id) REFERENCES user (id) ON DELETE CASCADE
+);
+```
+```sql {*|2-3,9|4-8|10,18|11-17|*}
+// Étape 2
+INSERT INTO
+    artwork (
+        title,
+        image_url,
+        description,
+        user_id
+        collection_id
+    )
+VALUES (
+        'Éclosion',
+        '/assets/images/PicturesTest/Eclosion.webp',
+        'Une peinture abstraite représentant une explosion de couleurs vives.',
+        'Peinture à l\'huile',
+        '2023-02-15',
+        3,
+        1
+    );
+```
+````
+
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+
+---
+transition: slide-left
+level: 3
+---
+
+<div class="text">
+  <h2 v-click.hide="1">
+    <strong>C R U D</strong>
+  </h2>
+
+  <h2 v-click="1" v-motion
+      :initial="{ x: -80 }"
+      :enter="{ x: 0 }">
+    <strong> C</strong><span>reate</span>
+    <strong> R</strong><span>ead</span>
+    <strong> U</strong><span>pdate</span>
+    <strong> D</strong><span>elete</span>
+  </h2>
+</div>
+
+<br>
+<br>
+
+<div class="content" v-click="[2, 3]" v-motion
+      :initial="{ x: -80 }"
+      :enter="{ x: 0 }"
+      :leave="{ x: -80 }">
+      
+<h3>Exemple <strong>Create</strong> de la table 'artwork': </h3>
+
+````md magic-move {lines: true}
+```js {*}
+  async create(artwork) {
+    const [result] = await this.database.query(
+      `INSERT INTO artwork (title,image_url, description, technique, date, user_id) VALUES(?, ?, ?, ?, CURDATE(), ?)`,
+      [
+        artwork.title,
+        artwork.image_url,
+        artwork.description,
+        artwork.technique,
+        artwork.user_id,
+      ]
+    );
+    return result;
+  }
+```
+````
+</div>
+
+<div class="content" v-click="[3, 5]" v-motion
+      :initial="{ x: -80 }"
+      :enter="{ x: 0 }"
+      :leave="{ x: -80 }">
+<h3>Exemple <strong>Read</strong> de la table 'artwork': </h3>
+
+````md magic-move {lines: true}
+```js {*|*|*|*}
+  async readAll() {
+    const [rows] = await this.database.query(
+      `select artwork.*,DATE_FORMAT(date, '%d/%m/%Y') as formatedDate, 
+      user.pseudo user_name from ${this.table} 
+      INNER JOIN user on artwork.user_id = user.id`
+    );
+    return rows;
+  }
+```
+```js {*}
+  async read(id) {
+    const [rows] = await this.database.query(
+      `select artwork.*,DATE_FORMAT(date, '%d/%m/%Y') as formatedDate, 
+      user.pseudo user_name from ${this.table}  
+      INNER JOIN user on artwork.user_id = user.id WHERE artwork.id = ? `,
+      [id]
+    );
+    return rows[0];
+  }
+```
+````
+</div>
+
+<div class="content" v-click="[5, 6]" v-motion
+      :initial="{ x: -80 }"
+      :enter="{ x: 0 }"
+      :leave="{ x: -80 }">
+<h3>Exemple <strong>Update</strong> de la table 'artwork': </h3>
+
+````md magic-move {lines: true}
+```js {*}
+  async update(artwork) {
+    const [result] = await this.database.query(
+      `UPDATE ${this.table} SET title = ?, image_url = ?, description = ?, technique = ?, date = ? WHERE id = ?`,
+      [
+        artwork.title,
+        artwork.image_url,
+        artwork.description,
+        artwork.technique,
+        artwork.date,
+        artwork.id,
+      ]
+    );
+    return result.affectedRows;
+  }
+```
+````
+</div>
+
+<div class="content" v-click="6" v-motion
+      :initial="{ x: -80 }"
+      :enter="{ x: 0 }"
+      :leave="{ x: -80 }">
+<h3>Exemple <strong>Delete</strong> de la table 'artwork': </h3>
+
+````md magic-move {lines: true}
+```js {*}
+  async delete(id) {
+    const [result] = await this.database.query(
+      `DELETE FROM ${this.table} WHERE id = ?`,
+      [id]
+    );
+    return result.affectedRows;
+  }
+```
+````
+</div>
+
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+
+<style>
+.text {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.text h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.content{
+    position: absolute;
+
+}
+</style>
+---
 layout: two-cols
 equals: false
 transition: slide-up
@@ -853,14 +1444,26 @@ router.put("/artworks/:id", artworks.edit);
 ````
 ::right::
 
-<div v-click="3" v-click.hide="5" style="display: flex; align-items: center;">
-  <img v-click="3" v-click.hide="5" src="./media/Icones/postman.png" width="50"/>
+<div v-click="[3, 5]" v-motion
+  :initial="{ y: -80 }"
+  :enter="{ x: 0 , y: 0}" 
+  :leave="{ y: -80 }"
+style="display: flex; align-items: center;">
+  <img src="./media/Icones/postman.png" width="50"/>
   Test des routes sur Postman
 </div>
 
-<div class="image">
-  <img v-click="3" v-click.hide="4" src="./media/Pictures/postmanreadall.png" width="600"/>
-  <img v-click="4" v-click.hide="5" src="./media/Pictures/postmanreadid.png" width="600"/>
+<div class="image" >
+  <img v-click="[3, 4]" v-motion
+  :initial="{ y: 80 }"
+  :enter="{ x: 0 , y: 0}" 
+  :leave="{ y: 80 }"
+src="./media/Pictures/postmanreadall.png" width="600"/>
+  <img v-click="[4, 5]" v-motion
+  :initial="{ y: 80 }"
+  :enter="{ x: 0 , y: 0}" 
+  :leave="{ y: 80 }"
+ src="./media/Pictures/postmanreadid.png" width="600"/>
 </div>
 
 <div class="abs-br m-8 flex gap-2">
@@ -883,26 +1486,49 @@ router.put("/artworks/:id", artworks.edit);
 }
 </style>
 ---
-layout: two-cols
+layout: dynamic-image 
+image: "./media/Pictures/Harmonie.webp"
+equal: false
+left: false
 transition: slide-left
 ---
 
 # Sécurité de l'application
 
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+
+<style>
+  h1 {
+    color: #D8B192;
+}
+</style>
+---
+layout: two-cols
+transition: slide-left
+---
+
 ## Hashage de mot de passe
 <br>
 <div class="client">
-<a style="background-color: #E0C1A8; border-radius: 8px; border: none;">
-<p>- Argon2</p>
+<div class="element" v-click v-motion
+  :initial="{ y: 80 }"
+  :enter="{ x: 0, y: 0 }">
+  <p>- Argon2</p>
 <img src="./media/Icones/argon2.png" width="50" height="50">
-</a>
+</div>
 </div>
 
 ::right::
+<div v-click="2" v-motion
+  :initial="{ x: 80 }"
+  :enter="{ x: 0, y: 0 }">
+
 ### Middleware: auth.js
 
 ````md magic-move {lines: true}
-```js {*|1,23|2-7|8-22} 
+```js {*|*|1,23|2-7|8-22} 
 const argon2 = require("argon2");
 const hashingOptions = {
   type: argon2.argon2id,
@@ -928,6 +1554,8 @@ const hashPassword = async (req, res, next) => {
 module.exports = {hashPassword};
 ```
 ````
+</div>
+
 <div class="abs-br m-8 flex gap-2">
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
@@ -956,30 +1584,48 @@ module.exports = {hashPassword};
   margin-bottom:10px;
   height: 100%; 
 }
+.element{
+  border-bottom: 4px solid #E0C1A8;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 10rem;
+    height: 10rem;
+
+}
+  .element:hover { 
+    background-color: #E0C1A8;
+    color: #090A09;
+  }
 </style>
 ---
 layout: two-cols
 transition: fade
 ---
 
-# Sécurité de l'application
-
-
 ## Authentification
 <br>
 <div class="client">
-<a style="background-color: #F0F0F0; border-radius: 8px; border: none;">
+<div class="element" v-click="1" v-motion
+  :initial="{ y: 80 }"
+  :enter="{ x: 0, y: 0 }">
 <p>- JWT (JSON Web Token)</p>
 <img src="./media/Icones/JWT.png" width="50" height="50" >
-</a>
+</div>
 </div>
 
 ::right::
+<div v-click="1" v-motion
+  :initial="{ x: 80 }"
+  :enter="{ x: 0, y: 0 }">
 
 ### Controller: authActions.js
 
 ````md magic-move {lines: true}
-```js
+```js{*|*}
 const argon2 = require("argon2");
 const jwt = require("jsonwebtoken");
 const tables = require("../../database/tables");
@@ -1031,6 +1677,8 @@ const login = async (req, res, next) => {
 module.exports = {login, admin,};
 ```
 ````
+</div>
+
 <div class="abs-br m-8 flex gap-2">
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
@@ -1059,25 +1707,41 @@ module.exports = {login, admin,};
   margin-bottom:10px;
   height: 100%; 
 }
+.element{
+  border-bottom: 4px solid #E0C1A8;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 10rem;
+    height: 10rem;
+
+}
+  .element:hover { 
+    background-color: #E0C1A8;
+    color: #090A09;
+  }
 </style>
 ---
 layout: two-cols
 transition: slide-left
 ---
 
-# Sécurité de l'application
-
-
 ## Vérification des Tokens
 <br>
 <div class="client">
-<a style="background-color: #E0C1A8; border-radius: 8px; border: none;">
+<div class="element">
 <p>- JWT (JSON Web Token)</p>
 <img src="./media/Icones/JWT.png" width="50" height="50" >
-</a>
+</div>
 </div>
 
 ::right::
+<div v-motion
+  :initial="{ x: 80 }"
+  :enter="{ x: 0, y: 0 }">
 
 ### Middleware: auth.js
 
@@ -1101,6 +1765,8 @@ const verifyToken = (req, res, next) => {
 module.exports = {verifyToken,};
 ```
 ````
+</div>
+
 <div class="abs-br m-8 flex gap-2">
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
@@ -1129,6 +1795,22 @@ module.exports = {verifyToken,};
   margin-bottom:10px;
   height: 100%; 
 }
+.element{
+  border-bottom: 4px solid #E0C1A8;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 10rem;
+    height: 10rem;
+
+}
+  .element:hover { 
+    background-color: #E0C1A8;
+    color: #090A09;
+  }
 </style>
 ---
 layout: two-cols
@@ -1136,26 +1818,39 @@ equal: true
 transition: slide-left
 ---
 
-# Sécurité de l'application
-
 ## Protection des API
 <br>
 <div class="client">
-<a style="background-color: #F0F0F0; border-radius: 8px; border: none;">
+<div class="element" v-click="1" v-motion
+  :initial="{ y: 80 }"
+  :enter="{ x: 0, y: 0 }">
 <p>- Cors</p>
 <img src="./media/Icones/cors.jpg" width="50" height="50">
-</a>
-<a style="background-color: #E0C1A8; border-radius: 8px; border: none;">
-<p>- Cookie-Parser</p>
+</div>
+<div class="element" v-click="2" v-motion
+  :initial="{ y: 80 }"
+  :enter="{ x: 0, y: 0 }">
+  <p>- Cookie-Parser</p>
 <img src="./media/Icones/cookie.png" width="50" height="50" >
-</a>
-<a style="background-color: #F0F0F0; border-radius: 8px; border: none;">
-<p>- DotEnv</p>
+</div>
+<div class="element" v-click="3" v-motion
+  :initial="{ y: 80 }"
+  :enter="{ x: 0, y: 0 }">
+  <p>- DotEnv</p>
 <img src="./media/Icones/dotenv.png" width="50" height="50">
-</a>
+</div>
+<div class="element" v-click="4" v-motion
+  :initial="{ y: 80 }"
+  :enter="{ x: 0, y: 0 }">
+  <p>- .gitignore</p>
+<img src="./media/Icones/git.png" width="50" height="50">
+</div>
 </div>
 
 ::right::
+<div v-click="1" v-motion
+  :initial="{ x: 80 }"
+  :enter="{ x: 0, y: 0 }">
 
 ### Cors: config.js
 
@@ -1169,6 +1864,12 @@ credentials: true,
 );
 ```
 ````
+</div>
+
+<div v-click="2" v-motion
+  :initial="{ x: 80 }"
+  :enter="{ x: 0, y: 0 }">
+
 ### cookieParser: config.js
 ````md magic-move {lines: true}
 ```js
@@ -1176,6 +1877,12 @@ const cookieParser = require("cookie-parser");
 app.use(cookieParser());
 ```
 ````
+</div>
+
+<div v-click="3" v-motion
+  :initial="{ x: 80 }"
+  :enter="{ x: 0, y: 0 }">
+
 ### Dotenv: .env (back)
 ````md magic-move {lines: true}
 ```js
@@ -1186,13 +1893,15 @@ APP_SECRET=YOUR_APP_SECRET_KEY
 # Database Configuration
 DB_HOST=localhost
 DB_PORT=3306
-DB_USER=********
-DB_PASSWORD=************
+DB_USER=ItsASecret
+DB_PASSWORD=ItsASecret
 DB_NAME=virtuart
 # Client URL (for CORS configuration)
 CLIENT_URL=http://localhost:3000
 ```
 ````
+</div>
+
 <div class="abs-br m-8 flex gap-2">
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
@@ -1221,7 +1930,22 @@ CLIENT_URL=http://localhost:3000
   margin-bottom:10px;
   height: 100%; 
 }
+.element{
+  border-bottom: 4px solid #E0C1A8;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 10rem;
+    height: 10rem;
 
+}
+  .element:hover { 
+    background-color: #E0C1A8;
+    color: #090A09;
+  }
 </style>
 ---
 layout: two-cols
@@ -1233,14 +1957,12 @@ transition: slide-left
 <br>
 
 <div class="client">
-<a style="background-color: #F0F0F0; border-radius: 8px; border: none;">
+<div class="element" v-click="1" v-motion
+  :initial="{ y: 80 }"
+  :enter="{ x: 0, y: 0 }">
 <p>- Joi</p>
 <img src="./media/Icones/images.png" width="80" height="80" >
-</a>
-<!-- <a style="background-color: #E0C1A8; border-radius: 8px; border: none;">
-<p>- Multer</p>
-<img src="./media/Icones/multer.png" width="80" height="80">
-</a> -->
+</div>
 </div>
 
 <div class="abs-br m-8 flex gap-2">
@@ -1248,6 +1970,9 @@ transition: slide-left
 </div>
 
 ::right::
+<div v-click="1" v-motion
+  :initial="{ x: 80 }"
+  :enter="{ x: 0, y: 0 }">
 
 ### auth.js
 ````md magic-move {lines: true}
@@ -1270,6 +1995,7 @@ const verifyUserField = (req, res, next) => {
 module.exports = {verifyUserField,};
 ```
 ````
+</div>
 
 <style>
   h1 {
@@ -1277,7 +2003,7 @@ module.exports = {verifyUserField,};
 }
 .client {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   justify-items: center;
   align-items: center;   
 }
@@ -1295,7 +2021,22 @@ module.exports = {verifyUserField,};
   margin-bottom:10px;
   height: 100%; 
 }
+.element{
+  border-bottom: 4px solid #E0C1A8;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 10rem;
+    height: 10rem;
 
+}
+  .element:hover { 
+    background-color: #E0C1A8;
+    color: #090A09;
+  }
 </style>
 ---
 layout: two-cols
@@ -1306,19 +2047,29 @@ transition: slide-left
 ## Validation et Téléchargement de Données
 
 <div class="client">
-<a style="background-color: #E0C1A8; border-radius: 8px; border: none;">
+<div class="element" v-click="1" v-motion
+  :initial="{ y: 80 }"
+  :enter="{ x: 0, y: 0 }">
 <p>- Multer</p>
 <img src="./media/Icones/multer.png" width="80" height="80">
-</a>
+</div>
 </div>
 
-## Génération et Sécurisation des Identifiants Uniques
+<br>
+
+<div v-click="2" v-motion
+  :initial="{ y: 80 }"
+  :enter="{ x: 0, y: 0 }">
+<h2>Génération et Sécurisation des Identifiants Uniques</h2>
+</div>
 
 <div class="client">
-<a style="background-color: #F0F0F0; border-radius: 8px; border: none;">
+<div class="element" v-click="2" v-motion
+  :initial="{ y: 80 }"
+  :enter="{ x: 0, y: 0 }">
 <p>- UUID</p>
 <img src="./media/Icones/uuid.png" width="50" height="50" >
-</a>
+</div>
 </div>
 
 <div class="abs-br m-8 flex gap-2">
@@ -1326,10 +2077,13 @@ transition: slide-left
 </div>
 
 ::right::
+<div v-click="3" v-motion
+  :initial="{ x: 80 }"
+  :enter="{ x: 0, y: 0 }">
 
 ### middleware.js
 ````md magic-move {lines: true}
-```js {*|1,17|2-5,12|6-11|13-16|*}
+```js {*|*|*|*|1,17|2-5,12|6-11|13-16|*}
 const multer = require("multer");
 const storage = multer.diskStorage({
   destination(req, file, cb) {
@@ -1349,6 +2103,7 @@ const uploadImg = (req, res, next) => {
 module.exports = {uploadImg};
 ```
 ````
+</div>
 
 <style>
   h1 {
@@ -1356,7 +2111,7 @@ module.exports = {uploadImg};
 }
 .client {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   justify-items: center;
   align-items: center;   
 }
@@ -1370,9 +2125,26 @@ module.exports = {uploadImg};
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-bottom: 10px;
+  margin-bottom:10px;
   height: 100%; 
 }
+.element{
+  border-bottom: 4px solid #E0C1A8;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 10rem;
+    height: 10rem;
 
+}
+  .element:hover { 
+    background-color: #E0C1A8;
+    color: #090A09;
+  }
 </style>
 ---
 layout: two-cols
@@ -1380,11 +2152,12 @@ equal: true
 transition: slide-left
 ---
 
+<div>
+
 ## Contrôle d'Accès et Gestion des Rôles
 <br>
-
 ````md magic-move {lines: true}
-```sql {*}
+```sql
 CREATE TABLE user (
 [...]
     is_admin BOOLEAN DEFAULT FALSE
@@ -1400,12 +2173,16 @@ VALUES (
     )
 ```
 ````
+</div>
 
 ::right::
 
+<div v-click="1" v-motion
+  :initial="{ x: 80 }"
+  :enter="{ x: 0, y: 0 }">
+
 ## Sécurisation de la Base de Données
 <br>
-
 ````md magic-move {lines: true}
 ```sql {*|2|3-5|6-10|*}
   async create(artwork) {
@@ -1423,8 +2200,7 @@ VALUES (
   }
 ```
 ````
-## Sécurisation des Dépendances
-<br>
+</div>
 
 <div class="abs-br m-8 flex gap-2">
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
@@ -1454,15 +2230,371 @@ VALUES (
   margin-bottom:10px;
   height: 100%; 
 }
+.element{
+  border-bottom: 4px solid #E0C1A8;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 10rem;
+    height: 10rem;
 
+}
+  .element:hover { 
+    background-color: #E0C1A8;
+    color: #090A09;
+  }
 </style>
-
-
 ---
+transition: slide-up
 ---
 
-## level: 2
+<div>
+
+## Sécurisation des Dépendances
+<br>
+</div>
+
+<div v-motion
+  :initial="{ x: 80 }"
+  :enter="{ x: 0, y: 0 }">
+
+````md magic-move {lines: true}
+```bash{*}
+$ npm audit
+```
+```bash{*|6|16}
+$ npm audit
+[...]
+body-parser  <1.20.3
+Severity: high
+body-parser vulnerable to denial of service when url encoding is enabled - https://github.com/advisories/GHSA-qwcr-r2fm-qrc7
+fix available via `npm audit fix`
+node_modules/body-parser
+  express  <=4.21.0 || 5.0.0-alpha.1 - 5.0.0
+  Depends on vulnerable versions of body-parser
+  Depends on vulnerable versions of cookie
+  Depends on vulnerable versions of path-to-regexp
+  Depends on vulnerable versions of send
+  Depends on vulnerable versions of serve-static
+  node_modules/express
+[...]
+12 vulnerabilities (1 low, 5 moderate, 6 high)
+
+To address all issues, run:
+  npm audit fix
+```
+
+```bash{*}
+$ npm audit fix
+```
+
+```bash{*}
+$ npm audit fix
+
+[...]
+
+added 7 packages, removed 3 packages, changed 38 packages, and audited 936 packages in 27s
+
+185 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+```
+````
+</div>
+
 <div class="abs-br m-8 flex gap-2">
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
+
+<style>
+  h1 {
+    color: #D8B192;
+}
+.client {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;   
+}
+
+.client a {
+  width: 10rem;
+  min-height: 10rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom:10px;
+  height: 100%; 
+}
+.element{
+  border-bottom: 4px solid #E0C1A8;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 10rem;
+    height: 10rem;
+
+}
+  .element:hover { 
+    background-color: #E0C1A8;
+    color: #090A09;
+  }
+</style>
 ---
+layout: dynamic-image 
+image: "./media/Pictures/Lumières_Réactives.webp"
+equal: false
+left: false
+---
+
+# Frontend
+
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+
+<style>
+  h1 {
+    color: #D8B192;
+}
+</style>
+---
+transition: slide-up
+---
+
+<div class="block" v-motion
+  :initial="{ y: 80 }"
+  :enter="{ x: 0, y: 0 }">
+<h2>Technos</h2>
+<div class="method" v-click="1" v-motion
+  :initial="{ y: 80 }"
+  :enter="{ x: 0, y: 0 }">
+
+<div class="element">
+<p>- ReactJS</p>
+<img src="./media/Icones/react.png" width="60" height="60">
+</div>
+<div class="element">
+<p>- React Router Dom</p>
+<img src="./media/Icones/reactrooterdom.png" width="60" height="60">
+</div>
+<div class="element">
+<p>- HTML</p>
+<img src="./media/Icones/html.png" width="60" height="60">
+</div>
+<div class="element">
+<p>- CSS</p>
+<img src="./media/Icones/css.png" width="60" height="60">
+</div>
+<div class="element">
+<p>- JavaScript</p>
+<img src="./media/Icones/js.png" width="60" height="60">
+</div>
+<div class="element">
+<p>- Axios</p>
+<img src="./media/Icones/axios.png" width="80" height="80">
+</div>
+<div class="element">
+<p>- React Masonry CSS</p>
+<img src="./media/Icones/massonry.png" width="60" height="60">
+</div>
+<div class="element">
+<p>- Prop-Types</p>
+</div>
+<div class="element">
+<p>- Phaser</p>
+<img src="./media/Icones/phaser.png" width="60" height="60">
+</div>
+</div>
+</div>
+
+<br>
+
+<style>
+  h1 {
+    color: #D8B192;
+}
+.block {
+  display: flex;
+  flex-direction: column;
+  }
+.orga, .method {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center; 
+  
+}
+.element{
+  border-bottom: 4px solid #E0C1A8;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 10rem;
+  height: 10rem;
+}
+  .element:hover { 
+    background-color: #E0C1A8;
+    color: #090A09;
+  }
+</style>
+---
+layout: two-cols
+equal: true
+transition: slide-up
+---
+
+<div>
+
+## Sécurisation des Dépendances
+<br>
+</div>
+
+<div v-motion
+  :initial="{ x: 80 }"
+  :enter="{ x: 0, y: 0 }">
+
+````md magic-move {lines: true}
+```bash{*}
+$ npm audit
+found 0 vulnerabilities
+```
+````
+
+</div>
+
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+
+<style>
+  h1 {
+    color: #D8B192;
+}
+.client {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;   
+}
+
+.client a {
+  width: 10rem;
+  min-height: 10rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom:10px;
+  height: 100%; 
+}
+.element{
+  border-bottom: 4px solid #E0C1A8;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 10rem;
+    height: 10rem;
+
+}
+  .element:hover { 
+    background-color: #E0C1A8;
+    color: #090A09;
+  }
+</style>
+---
+layout: dynamic-image 
+image: "./media/Pictures/Chaos_Organisé.webp"
+equal: false
+left: false
+---
+
+# Démonstration
+
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+
+<style>
+  h1 {
+    color: #D8B192;
+}
+</style>
+---
+layout: dynamic-image 
+image: 'https://avatars.githubusercontent.com/dampherrr'
+upperImage: 'https://avatars.githubusercontent.com/dampherrr'
+equal: true
+left: false
+---
+    <!-- <img src="https://avatars.githubusercontent.com/dampherrr" target="_blank" alt="Dampherrr" width="100" height="100"> -->
+
+# Merci pour votre attention ! 🙌
+
+<br>
+
+<h2> Damien Goguet</h2>
+
+<br>
+
+<div class="link">
+<img src="./media/Pictures/QRLinkedInDG.png" width="200"/>
+</div>
+<div class="links">
+  <a href="https://www.linkedin.com/in/damien-goguet-63a749180/" target="_blank" alt="LinkedIn" title="LinkedIn: Damien GOGUET"
+    class="text-xl slidev-icon-btn !border-none !hover:text-black">
+    <carbon-logo-linkedin />
+  </a>
+<div class="link">
+  <a href="https://github.com/dampherrr" target="_blank" alt="GitHub" title="GitHub: Dampherrr"
+    class="text-xl slidev-icon-btn !border-none !hover:text-black">
+    <carbon-logo-github />
+  </a>
+</div>
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+</div>
+<br>
+<br>
+
+### Outil de Présentation : **Slidev**
+
+<style>
+  h1 {
+    color: #D8B192;
+}
+
+.links {
+display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center; 
+}
+
+.link {
+display: flex; 
+align-items: center;
+flex-direction: column;
+}
+</style>
