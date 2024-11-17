@@ -10,7 +10,6 @@ transition: slide-up
 mdc: true
 overviewSnapshots: true
 
-
 layout: dynamic-image
 image: "./media/Pictures/Eclosion.png"
 upperImage: "./media/Pictures/Eclosion.png"
@@ -34,6 +33,12 @@ left: false
     <carbon-logo-github />
   </a>
 </div>
+
+<!-- Présentation:Nom ; 
+Projet professionnel: TSSR -> Développeur Web FS 
+Présentation du projet: contexte (Projet 3 fil rouge FullStack)
+-->
+
 ---
 transition: slide-up
 ---
@@ -113,7 +118,7 @@ level: 2
 <div v-click class="rules" v-motion
   :initial="{ y: 80 }"
   :enter="{ x: 0, y: 0 }">
-<p>- Gallerie d'art</p>
+<p>- Galerie d'art</p>
 <img src="./media/Icones/Gallery.jpg" width="100" height="100">
 </div>
 <div v-click class="rules"   v-motion
@@ -605,7 +610,7 @@ transition: slide-left
 <div v-click v-motion
   :initial="{ y: 80 }"
   :enter="{ x: 0, y: 0 }">
-<h2>Typography</h2>
+<h2>Typographie</h2>
 <p>Monserrat</p>
 </div>
 
@@ -877,7 +882,7 @@ left: false
 transition: slide-left
 ---
 
-# Modélisation de la base de donnée
+# La modélisation de la base de données
 
 <div class="abs-br m-8 flex gap-2">
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
@@ -899,7 +904,7 @@ transition: slide-left
 <div class="element" v-click v-motion
   :initial="{ y: 80 }"
   :enter="{ x: 0, y: 0 }">
-<h3>Prototypage</h3>
+<h3>Modélisation</h3>
 <p>- Draw.io</p>
 <img src="./media/Icones/drawio.png" width="70" height="70" >
 </div>
@@ -1226,7 +1231,7 @@ transition: slide-left
 level: 3
 ---
 
-## Base de donnée
+## Base de données
 ### Exemple de la table 'artwork':
 
 ````md magic-move {lines: true}
@@ -1953,7 +1958,7 @@ equal: true
 transition: slide-left
 ---
 
-## Validation et Téléchargement de Données
+## Validation des Données
 <br>
 
 <div class="client">
@@ -2038,114 +2043,7 @@ module.exports = {verifyUserField,};
     color: #090A09;
   }
 </style>
----
-layout: two-cols
-equal: true
-transition: slide-left
----
 
-## Validation et Téléchargement de Données
-
-<div class="client">
-<div class="element" v-click="1" v-motion
-  :initial="{ y: 80 }"
-  :enter="{ x: 0, y: 0 }">
-<p>- Multer</p>
-<img src="./media/Icones/multer.png" width="80" height="80">
-</div>
-</div>
-
-<br>
-
-<div v-click="2" v-motion
-  :initial="{ y: 80 }"
-  :enter="{ x: 0, y: 0 }">
-<h2>Génération et Sécurisation des Identifiants Uniques</h2>
-</div>
-
-<div class="client">
-<div class="element" v-click="2" v-motion
-  :initial="{ y: 80 }"
-  :enter="{ x: 0, y: 0 }">
-<p>- UUID</p>
-<img src="./media/Icones/uuid.png" width="50" height="50" >
-</div>
-</div>
-
-<div class="abs-br m-8 flex gap-2">
-<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
-</div>
-
-::right::
-<div v-click="3" v-motion
-  :initial="{ x: 80 }"
-  :enter="{ x: 0, y: 0 }">
-
-### middleware.js
-````md magic-move {lines: true}
-```js {*|*|*|*|1,17|2-5,12|6-11|13-16|*}
-const multer = require("multer");
-const storage = multer.diskStorage({
-  destination(req, file, cb) {
-    cb(null, "./public/assets/images/uploads");
-  },
-  filename(req, file, cb) {
-    const id = uuidv4();
-    const pictureName = `${id}${path.extname(file.originalname)}`;
-    req.body.image_url = `/assets/images/uploads/${pictureName}`;
-    cb(null, pictureName);
-  },
-});
-const uploadImg = (req, res, next) => {
-  const upload = multer({ storage });
-  return upload.single("image")(req, res, next);
-};
-module.exports = {uploadImg};
-```
-````
-</div>
-
-<style>
-  h1 {
-    color: #D8B192;
-}
-.client {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  justify-items: center;
-  align-items: center;   
-}
-
-.client a {
-  width: 10rem;
-  min-height: 10rem;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding-bottom: 10px;
-  margin-bottom:10px;
-  height: 100%; 
-}
-.element{
-  border-bottom: 4px solid #E0C1A8;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 10rem;
-    height: 10rem;
-
-}
-  .element:hover { 
-    background-color: #E0C1A8;
-    color: #090A09;
-  }
-</style>
 ---
 layout: two-cols
 equal: true
@@ -2248,12 +2146,120 @@ VALUES (
   }
 </style>
 ---
+layout: two-cols
+equal: true
+transition: slide-left
+---
+
+## Validation et Téléchargement de Données
+
+<div class="client">
+<div class="element" v-click="1" v-motion
+  :initial="{ y: 80 }"
+  :enter="{ x: 0, y: 0 }">
+<p>- Multer</p>
+<img src="./media/Icones/multer.png" width="80" height="80">
+</div>
+</div>
+
+<br>
+
+<div v-click="2" v-motion
+  :initial="{ y: 80 }"
+  :enter="{ x: 0, y: 0 }">
+<h2>Gestion des Identifiants Uniques</h2>
+</div>
+
+<div class="client">
+<div class="element" v-click="2" v-motion
+  :initial="{ y: 80 }"
+  :enter="{ x: 0, y: 0 }">
+<p>- UUID</p>
+<img src="./media/Icones/uuid.png" width="50" height="50" >
+</div>
+</div>
+
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+
+::right::
+<div v-click="3" v-motion
+  :initial="{ x: 80 }"
+  :enter="{ x: 0, y: 0 }">
+
+### middleware.js
+````md magic-move {lines: true}
+```js {*|*|*|*|1,17|2-5,12|6-11|13-16|*}
+const multer = require("multer");
+const storage = multer.diskStorage({
+  destination(req, file, cb) {
+    cb(null, "./public/assets/images/uploads");
+  },
+  filename(req, file, cb) {
+    const id = uuidv4();
+    const pictureName = `${id}${path.extname(file.originalname)}`;
+    req.body.image_url = `/assets/images/uploads/${pictureName}`;
+    cb(null, pictureName);
+  },
+});
+const uploadImg = (req, res, next) => {
+  const upload = multer({ storage });
+  return upload.single("image")(req, res, next);
+};
+module.exports = {uploadImg};
+```
+````
+</div>
+
+<style>
+  h1 {
+    color: #D8B192;
+}
+.client {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;   
+}
+
+.client a {
+  width: 10rem;
+  min-height: 10rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom:10px;
+  height: 100%; 
+}
+.element{
+  border-bottom: 4px solid #E0C1A8;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 10rem;
+    height: 10rem;
+
+}
+  .element:hover { 
+    background-color: #E0C1A8;
+    color: #090A09;
+  }
+</style>
+---
 transition: slide-up
 ---
 
 <div>
 
-## Sécurisation des Dépendances
+## Audit et Sécurisation des Dépendances
 <br>
 </div>
 
