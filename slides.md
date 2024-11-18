@@ -10,6 +10,103 @@ transition: slide-up
 mdc: true
 overviewSnapshots: true
 
+layout: dynamic-image 
+image: 'https://avatars.githubusercontent.com/dampherrr'
+upperImage: 'https://avatars.githubusercontent.com/dampherrr'
+equal: true
+left: true
+---
+
+# Présentation au titre de **Développeur Web Full Stack** 
+
+<h2 style="margin-top: 2rem;"> Damien Goguet </h2>
+
+<h3 style="font-size: 14px; display: inline-flex; align-items: center; gap: 0.5rem;">
+  Promo 2024 - 
+  <img src="./media/Icones/WCS.jpg" style="width: 2rem; vertical-align: middle;"/> 
+  Wild Code School
+</h3>
+
+<div class="links" style="margin-top: 2rem;">
+  <div class="link">
+    <a href="https://github.com/dampherrr" target="_blank" alt="GitHub" title="GitHub: Dampherrr" 
+      class="text-xl slidev-icon-btn !border-none !hover:text-black">
+      <carbon-logo-github />
+    </a>
+    <p style="font-size: 12px;">GitHub</p>
+  </div>
+
+  <div class="link">
+    <a href="https://www.linkedin.com/in/damien-goguet-63a749180/" target="_blank" alt="LinkedIn" title="LinkedIn: Damien GOGUET" 
+      class="text-xl slidev-icon-btn !border-none !hover:text-black">
+      <carbon-logo-linkedin />
+    </a>
+    <p style="font-size: 12px;">LinkedIn</p>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+
+
+#### Présentation réalisée avec : **Slidev**
+
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
+<style>
+
+.page {
+  color: #F5F5F5;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+
+  * {text-align: end;}
+  h1 {
+    color: #D8B192;
+}
+  h2, h3, h4 {
+    color: #090A09;
+}
+
+.links {
+display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center; 
+}
+
+.link {
+display: flex; 
+align-items: center;
+flex-direction: column;
+}
+</style>
+---
 layout: dynamic-image
 image: "./media/Pictures/Eclosion.png"
 upperImage: "./media/Pictures/Eclosion.png"
@@ -22,23 +119,49 @@ left: false
 <p style="color:#D8B192;">L'art pour tous!</p>
 </div>
 
-<div>
-<p style="font-size: 10px;">Présenté par <strong>GOGUET Damien</strong>, <br/> de la promo 2024 à la <strong>Wild Code School</strong>.</p>
-<p style="font-size: 10px;">Pour le titre professionnel <strong>développeur web full stack.</strong></p>
-</div>
-
 <div class="absolute left-40% m--12 flex gap-2">
   <a href="https://github.com/dampherrr/P3-VirtuArt" target="_blank" alt="GitHub" title="GitHub: P3-VirtuArt"
-    class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-black">
+    class="text-xl slidev-icon-btn !border-none !hover:text-black">
     <carbon-logo-github />
   </a>
 </div>
 
-<!-- Présentation:Nom ; 
+<!-- Présentation:Nom ; <br>
 Projet professionnel: TSSR -> Développeur Web FS 
 Présentation du projet: contexte (Projet 3 fil rouge FullStack)
 -->
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
 
+<style>
+  .page {
+    color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+</style>
 ---
 transition: slide-up
 ---
@@ -72,10 +195,37 @@ transition: slide-up
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
 <style>
-  h1 {
-    color: #D8B192;
-  margin-bottom: 5rem;
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
 }
 
 .team-members {
@@ -157,8 +307,40 @@ level: 2
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
 <style>
-  h1 {
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
     color: #D8B192;
 }
 
@@ -250,8 +432,40 @@ transition: slide-up
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
 <style>
-  h1 {
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
     color: #D8B192;
   margin-bottom: 5rem;
 }
@@ -292,8 +506,40 @@ transition: slide-left
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
 <style>
-  h1 {
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
     color: #D8B192;
 }
 </style>
@@ -356,8 +602,40 @@ layout: two-cols
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
 <style>
-  h1 {
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
     color: #D8B192;
 }
 .block {
@@ -462,8 +740,40 @@ transition: slide-left
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
 <style>
-  h1 {
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
     color: #D8B192;
 }
 .block {
@@ -532,8 +842,40 @@ transition: slide-left
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
 <style>
-  h1 {
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
     color: #D8B192;
 }
 .block {
@@ -579,8 +921,40 @@ transition: slide-left
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
 <style>
-  h1 {
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
     color: #D8B192;
 }
 </style>
@@ -618,8 +992,40 @@ transition: slide-left
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
 <style>
-  h1 {
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
     color: #D8B192;
 }
 </style>
@@ -654,8 +1060,40 @@ transition: slide-up
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
 <style>
-  h1 {
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
     color: #D8B192;
 }
 
@@ -698,8 +1136,40 @@ transition: slide-left
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
 <style>
-  h1 {
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
     color: #D8B192;
 }
 </style>
@@ -746,8 +1216,40 @@ transition: slide-left
   <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
 <style>
-    h1 {
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
     color: #D8B192;
 }
 .text {
@@ -832,6 +1334,39 @@ module.exports = ArtworkRepository;
 <div class="abs-br m-8 flex gap-2">
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
+<style>
+  
+  .page {
+    color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+</style>
 ---
 transition: slide-up
 level: 3
@@ -874,6 +1409,40 @@ module.exports = { browse, read, add, edit, destroy};
 <div class="abs-br m-8 flex gap-2">
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
+
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
+<style>
+  
+  .page {
+    color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+</style>
 ---
 layout: dynamic-image 
 image: "./media/Pictures/Joie_Ephémère.webp"
@@ -888,8 +1457,40 @@ transition: slide-left
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
 <style>
-  h1 {
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
     color: #D8B192;
 }
 </style>
@@ -921,8 +1522,40 @@ transition: slide-left
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
 <style>
-  h1 {
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
     color: #D8B192;
 }
 .element{
@@ -1001,7 +1634,39 @@ transition: slide-left
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
 <style>
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+
 .text {
   position: relative;
   width: 100%;
@@ -1056,7 +1721,38 @@ transition: slide-left
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
 <style>
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
 .text {
   position: relative;
   width: 100%;
@@ -1111,7 +1807,38 @@ transition: slide-up
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
 <style>
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
 .text {
   position: relative;
   width: 100%;
@@ -1150,8 +1877,40 @@ transition: slide-left
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
 <style>
-  h1 {
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
     color: #D8B192;
 }
 </style>
@@ -1186,8 +1945,40 @@ transition: slide-left
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
 <style>
-  h1 {
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
     color: #D8B192;
 }
 .element{
@@ -1272,7 +2063,39 @@ VALUES (
 <div class="abs-br m-8 flex gap-2">
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
 
+<style>
+  
+  .page {
+    color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+</style>
 ---
 transition: slide-left
 level: 3
@@ -1402,7 +2225,38 @@ level: 3
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
 <style>
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
 .text {
   position: relative;
   width: 100%;
@@ -1475,7 +2329,38 @@ src="./media/Pictures/postmanreadall.png" width="600"/>
   <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
 <style>
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
 .image {
   position: relative;
   width: 100%;
@@ -1504,8 +2389,40 @@ transition: slide-left
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
 <style>
-  h1 {
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
     color: #D8B192;
 }
 </style>
@@ -1565,8 +2482,40 @@ module.exports = {hashPassword};
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
 <style>
-  h1 {
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
     color: #D8B192;
 }
 .client {
@@ -1688,8 +2637,40 @@ module.exports = {login, admin,};
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
 <style>
-  h1 {
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
     color: #D8B192;
 }
 .client {
@@ -1776,8 +2757,40 @@ module.exports = {verifyToken,};
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
 <style>
-  h1 {
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
     color: #D8B192;
 }
 .client {
@@ -1911,8 +2924,40 @@ CLIENT_URL=http://localhost:3000
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
 <style>
-  h1 {
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
     color: #D8B192;
 }
 .client {
@@ -2002,8 +3047,40 @@ module.exports = {verifyUserField,};
 ````
 </div>
 
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
 <style>
-  h1 {
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
     color: #D8B192;
 }
 .client {
@@ -2104,8 +3181,40 @@ VALUES (
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
 <style>
-  h1 {
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
     color: #D8B192;
 }
 .client {
@@ -2212,8 +3321,40 @@ module.exports = {uploadImg};
 ````
 </div>
 
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
 <style>
-  h1 {
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
     color: #D8B192;
 }
 .client {
@@ -2316,8 +3457,40 @@ found 0 vulnerabilities
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
 <style>
-  h1 {
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
     color: #D8B192;
 }
 .client {
@@ -2370,8 +3543,40 @@ left: false
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
 <style>
-  h1 {
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
     color: #D8B192;
 }
 </style>
@@ -2427,8 +3632,40 @@ transition: slide-up
 
 <br>
 
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
 <style>
-  h1 {
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
     color: #D8B192;
 }
 .block {
@@ -2487,8 +3724,40 @@ found 0 vulnerabilities
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
 <style>
-  h1 {
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
     color: #D8B192;
 }
 .client {
@@ -2541,8 +3810,40 @@ left: false
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
 <style>
-  h1 {
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
     color: #D8B192;
 }
 </style>
@@ -2581,13 +3882,41 @@ left: false
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
 </div>
 </div>
-<br>
-<br>
 
-### Outil de Présentation : **Slidev**
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 40) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
 
 <style>
-  h1 {
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #D8B192;
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
     color: #D8B192;
 }
 
