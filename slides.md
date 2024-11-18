@@ -55,7 +55,7 @@ left: true
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -70,18 +70,20 @@ left: true
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 
@@ -133,7 +135,7 @@ Présentation du projet: contexte (Projet 3 fil rouge FullStack)
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -147,18 +149,20 @@ Présentation du projet: contexte (Projet 3 fil rouge FullStack)
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 </style>
@@ -198,7 +202,7 @@ transition: slide-up
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -213,18 +217,20 @@ transition: slide-up
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 
@@ -310,7 +316,7 @@ level: 2
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -325,18 +331,20 @@ level: 2
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 
@@ -424,7 +432,7 @@ transition: slide-up
 <div v-click v-motion
   :initial="{ x: -80 }"
   :enter="{ x: 0 }">
-<p>- Récap et conclusion</p>
+<p>- Conclusion</p>
 </div>
 </div>
 
@@ -435,7 +443,7 @@ transition: slide-up
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -450,18 +458,20 @@ transition: slide-up
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 
@@ -509,7 +519,7 @@ transition: slide-left
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -524,18 +534,20 @@ transition: slide-left
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 
@@ -605,7 +617,7 @@ layout: two-cols
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -620,18 +632,20 @@ layout: two-cols
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 
@@ -743,7 +757,7 @@ transition: slide-left
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -758,18 +772,20 @@ transition: slide-left
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 
@@ -845,7 +861,7 @@ transition: slide-left
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -860,18 +876,20 @@ transition: slide-left
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 
@@ -924,7 +942,7 @@ transition: slide-left
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -939,18 +957,20 @@ transition: slide-left
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 
@@ -995,7 +1015,7 @@ transition: slide-left
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -1010,18 +1030,20 @@ transition: slide-left
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 
@@ -1063,7 +1085,7 @@ transition: slide-up
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -1078,18 +1100,20 @@ transition: slide-up
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 
@@ -1139,7 +1163,7 @@ transition: slide-left
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -1154,18 +1178,20 @@ transition: slide-left
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 
@@ -1219,7 +1245,7 @@ transition: slide-left
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -1234,18 +1260,20 @@ transition: slide-left
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 
@@ -1337,7 +1365,7 @@ module.exports = ArtworkRepository;
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -1352,18 +1380,20 @@ module.exports = ArtworkRepository;
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 </style>
@@ -1413,7 +1443,7 @@ module.exports = { browse, read, add, edit, destroy};
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -1428,18 +1458,20 @@ module.exports = { browse, read, add, edit, destroy};
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 </style>
@@ -1460,7 +1492,7 @@ transition: slide-left
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -1475,18 +1507,20 @@ transition: slide-left
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 
@@ -1525,7 +1559,7 @@ transition: slide-left
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -1540,18 +1574,20 @@ transition: slide-left
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 
@@ -1637,7 +1673,7 @@ transition: slide-left
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -1652,18 +1688,20 @@ transition: slide-left
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 
@@ -1724,7 +1762,7 @@ transition: slide-left
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -1739,18 +1777,20 @@ transition: slide-left
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 .text {
@@ -1810,7 +1850,7 @@ transition: slide-up
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -1825,18 +1865,20 @@ transition: slide-up
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 .text {
@@ -1880,7 +1922,7 @@ transition: slide-left
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -1895,18 +1937,20 @@ transition: slide-left
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 
@@ -1948,7 +1992,7 @@ transition: slide-left
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -1963,18 +2007,20 @@ transition: slide-left
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 
@@ -2066,7 +2112,7 @@ VALUES (
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -2081,18 +2127,20 @@ VALUES (
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 </style>
@@ -2228,7 +2276,7 @@ level: 3
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -2243,18 +2291,20 @@ level: 3
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 .text {
@@ -2332,7 +2382,7 @@ src="./media/Pictures/postmanreadall.png" width="600"/>
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -2347,18 +2397,20 @@ src="./media/Pictures/postmanreadall.png" width="600"/>
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 .image {
@@ -2392,7 +2444,7 @@ transition: slide-left
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -2407,18 +2459,20 @@ transition: slide-left
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 
@@ -2485,7 +2539,7 @@ module.exports = {hashPassword};
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -2500,18 +2554,20 @@ module.exports = {hashPassword};
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 
@@ -2640,7 +2696,7 @@ module.exports = {login, admin,};
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -2655,18 +2711,20 @@ module.exports = {login, admin,};
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 
@@ -2760,7 +2818,7 @@ module.exports = {verifyToken,};
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -2775,18 +2833,20 @@ module.exports = {verifyToken,};
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 
@@ -2927,7 +2987,7 @@ CLIENT_URL=http://localhost:3000
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -2942,18 +3002,20 @@ CLIENT_URL=http://localhost:3000
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 
@@ -3050,7 +3112,7 @@ module.exports = {verifyUserField,};
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -3065,18 +3127,20 @@ module.exports = {verifyUserField,};
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 
@@ -3184,7 +3248,7 @@ VALUES (
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -3199,18 +3263,20 @@ VALUES (
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 
@@ -3324,7 +3390,7 @@ module.exports = {uploadImg};
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -3339,18 +3405,20 @@ module.exports = {uploadImg};
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 
@@ -3460,7 +3528,7 @@ found 0 vulnerabilities
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -3475,18 +3543,20 @@ found 0 vulnerabilities
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 
@@ -3546,7 +3616,7 @@ left: false
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -3561,18 +3631,20 @@ left: false
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 
@@ -3581,7 +3653,7 @@ h1 {
 }
 </style>
 ---
-transition: slide-up
+transition: slide-left
 ---
 
 <div class="block" v-motion
@@ -3635,7 +3707,7 @@ transition: slide-up
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -3650,18 +3722,20 @@ transition: slide-up
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 
@@ -3696,14 +3770,12 @@ h1 {
   }
 </style>
 ---
-layout: two-cols
-equal: true
-transition: slide-up
+transition: slide-left
 ---
 
 <div>
 
-## Sécurisation des Dépendances
+## Requêtes
 <br>
 </div>
 
@@ -3711,10 +3783,38 @@ transition: slide-up
   :initial="{ x: 80 }"
   :enter="{ x: 0, y: 0 }">
 
+### request.js
+
 ````md magic-move {lines: true}
-```bash{*}
-$ npm audit
-found 0 vulnerabilities
+```js{*}
+import axios from "axios";
+
+const url = import.meta.env.VITE_API_URL;
+
+export function getArtworks() {
+  return axios
+    .get(`${url}/api/artworks`)
+    .then((reponse) => reponse.data)
+    .catch((error) => {
+      console.error(error);
+      return [];
+    });
+}
+```
+```js{*}
+import axios from "axios";
+
+const url = import.meta.env.VITE_API_URL;
+
+export function getArtwork(id) {
+  return axios
+    .get(`${url}/api/artworks/${id}`)
+    .then((reponse) => reponse.data)
+    .catch((error) => {
+      console.error(error);
+      return [];
+    });
+}
 ```
 ````
 
@@ -3727,7 +3827,7 @@ found 0 vulnerabilities
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -3742,18 +3842,417 @@ found 0 vulnerabilities
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
+    color: #D8B192;
+}
+.client {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;   
+}
+
+.client a {
+  width: 10rem;
+  min-height: 10rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom:10px;
+  height: 100%; 
+}
+.element{
+  border-bottom: 4px solid #E0C1A8;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 10rem;
+    height: 10rem;
+
+}
+  .element:hover { 
+    background-color: #E0C1A8;
+    color: #090A09;
+  }
+</style>
+---
+transition: fade
+---
+
+<div>
+
+## Requêtes
+<br>
+</div>
+
+<div v-motion
+  :initial="{ x: 80 }"
+  :enter="{ x: 0, y: 0 }">
+
+### main.jsx
+
+````md magic-move {lines: true}
+```jsx{*|1|9-10}
+import {[...],getArtworks, getArtwork,[...]} from "./services/request";
+const router = createBrowserRouter([
+  {
+    element: <App />,
+    children: [
+      {
+        path: "/",
+        element: <Homepage />,
+        loader: async () => ({
+          artworks: await getArtworks(),
+          exhibitions: await getExhibitions(),
+          users: await getUserList(),
+        }),
+      },
+    ],
+  },
+]);
+```
+```jsx{*|9-10}
+import {[...],getArtworks, getArtwork,[...]} from "./services/request";
+const router = createBrowserRouter([
+  {
+    element: <App />,
+    children: [
+      {
+        path: "/artwork/:id",
+        element: <ArtworkPage />,
+        loader: async ({ params }) => ({
+          artwork: await getArtwork(params.id),
+        }),
+      },
+    ],
+  },
+]);
+```
+````
+</div>
+
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
+<style>
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  border-top: 1px solid #F8E6CB;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #F5F5F5;
+  z-index: 100;
+}
+
+.progress-bar {
+  border-radius: 0px 4px 4px 0px;
+  height: 100%;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
+    color: #D8B192;
+}
+.client {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;   
+}
+
+.client a {
+  width: 10rem;
+  min-height: 10rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom:10px;
+  height: 100%; 
+}
+.element{
+  border-bottom: 4px solid #E0C1A8;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 10rem;
+    height: 10rem;
+
+}
+  .element:hover { 
+    background-color: #E0C1A8;
+    color: #090A09;
+  }
+</style>
+---
+transition: slide-left
+---
+
+<div>
+
+## Centralisation des imports CSS
+<br>
+</div>
+
+<div v-motion
+  :initial="{ x: 80 }"
+  :enter="{ x: 0, y: 0 }">
+
+### App.jsx
+
+````md magic-move {lines: true}
+```jsx{*}
+import "./App.css";
+import "./assets/styles/homepage.css";
+import "./assets/styles/navbarcomponent.css";
+import "./assets/styles/artworkpage.css";
+import "./assets/styles/artistlist.css";
+import "./assets/styles/artworkForm.css";
+import "./assets/styles/exhibition.css";
+import "./assets/styles/exhibitionForm.css";
+import "./assets/styles/exhibitioncomponent.css";
+import "./assets/styles/favorites.css";
+import "./assets/styles/artistprofile.css";
+import "./assets/styles/authentification_styles/authpage.css";
+import "./assets/styles/authentification_styles/loginpage.css";
+import "./assets/styles/authentification_styles/registerpage.css";
+import "./assets/styles/authentification_styles/backbuttoncomponent.css";
+import "./assets/styles/user_connected_styles/personalinformationspage.css";
+import "./assets/styles/footercomponent.css";
+import "./assets/styles/confirmButton.css";
+```
+````
+</div>
+
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
+<style>
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  border-top: 1px solid #F8E6CB;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #F5F5F5;
+  z-index: 100;
+}
+
+.progress-bar {
+  border-radius: 0px 4px 4px 0px;
+  height: 100%;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
+    color: #D8B192;
+}
+.client {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;   
+}
+
+.client a {
+  width: 10rem;
+  min-height: 10rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom:10px;
+  height: 100%; 
+}
+.element{
+  border-bottom: 4px solid #E0C1A8;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 10rem;
+    height: 10rem;
+
+}
+  .element:hover { 
+    background-color: #E0C1A8;
+    color: #090A09;
+  }
+</style>
+---
+transition: slide-up
+---
+
+<div>
+
+## Requêtes
+<br>
+</div>
+
+<div v-motion
+  :initial="{ x: 80 }"
+  :enter="{ x: 0, y: 0 }">
+
+### ArtworkPage.jsx
+
+````md magic-move {lines: true}
+```jsx{*|1|2,3,19|5-17|11}
+import { useLoaderData } from "react-router-dom";
+export default function ArtworkPage() {
+  const { artwork } = useLoaderData();
+ return (
+    <>
+      <div className="artworkPage">
+        <div className={showPopover ? "artworkPage_blur_wrapper" : ""}>
+          <div className="artworkPage_oneOeuvre">
+            <img
+              className="artworkPage_oneOeuvrePic"
+              src={`${import.meta.env.VITE_API_URL}${artwork.image_url}`}
+              alt={artwork.title}
+            />
+          </div>
+          </div>
+      </div>
+    </>
+  );
+}
+```
+```jsx{*|9,12,14,15}
+import { useLoaderData } from "react-router-dom";
+export default function ArtworkPage() {
+  const { artwork } = useLoaderData();
+ return (
+    <>
+      <div className="artworkPage">
+          <div className="artworkPage_nameOeuvre">
+            <Link
+              to={`/artistpage/${artwork.user_id}`}
+              className="artworkPage_goToartistpage"
+            >
+              <h1 className="artworkPage_name">{artwork.user_name}</h1>
+            </Link>
+            <p>{artwork.title}</p>
+            <p>{artwork.formatedDate}</p>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+```
+````
+</div>
+
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
+<style>
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  border-top: 1px solid #F8E6CB;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #F5F5F5;
+  z-index: 100;
+}
+
+.progress-bar {
+  border-radius: 0px 4px 4px 0px;
+  height: 100%;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 
@@ -3813,7 +4312,7 @@ left: false
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -3828,18 +4327,72 @@ left: false
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
+    color: #D8B192;
+}
+</style>
+---
+layout: dynamic-image 
+image: "./media/Pictures/Algorithme_de_Vie.webp"
+equal: false
+left: false
+---
+
+# Conclusion
+
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
+<style>
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  border-top: 1px solid #F8E6CB;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #F5F5F5;
+  z-index: 100;
+}
+
+.progress-bar {
+  border-radius: 0px 4px 4px 0px;
+  height: 100%;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 
@@ -3886,7 +4439,7 @@ left: false
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 40) * 100) + '%' }"
+    :style="{ width: ((($page) / 44) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -3901,18 +4454,20 @@ left: false
   font-size: 10px;
 }
 .progress-container {
+  border-top: 1px solid #F8E6CB;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
+  height: 8px;
+  background-color: #F5F5F5;
   z-index: 100;
 }
 
 .progress-bar {
+  border-radius: 0px 4px 4px 0px;
   height: 100%;
-  background-color: #D8B192;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
   transition: width 0.3s ease-in-out;
 }
 
