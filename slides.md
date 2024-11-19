@@ -18,44 +18,26 @@ left: true
 ---
 
 # Présentation au titre de **Développeur Web Full Stack** 
-
+<br>
+<br>
 <h2 style="margin-top: 2rem;"> Damien Goguet </h2>
 
-<h3 style="font-size: 14px; display: inline-flex; align-items: center; gap: 0.5rem;">
+<h2 style="font-size: 14px; display: inline-flex; align-items: center; gap: 0.5rem;">
   Promo 2024 - 
   <img src="./media/Icones/WCS.jpg" style="width: 2rem; vertical-align: middle;"/> 
   Wild Code School
-</h3>
-
-<div class="links" style="margin-top: 2rem;">
-  <div class="link">
-    <a href="https://github.com/dampherrr" target="_blank" alt="GitHub" title="GitHub: Dampherrr" 
-      class="text-xl slidev-icon-btn !border-none !hover:text-black">
-      <carbon-logo-github />
-    </a>
-    <p style="font-size: 12px;">GitHub</p>
-  </div>
-
-  <div class="link">
-    <a href="https://www.linkedin.com/in/damien-goguet-63a749180/" target="_blank" alt="LinkedIn" title="LinkedIn: Damien GOGUET" 
-      class="text-xl slidev-icon-btn !border-none !hover:text-black">
-      <carbon-logo-linkedin />
-    </a>
-    <p style="font-size: 12px;">LinkedIn</p>
-  </div>
-</div>
+</h2>
 
 <br>
 <br>
 <br>
-
 
 #### Présentation réalisée avec : **Slidev**
 
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -135,7 +117,7 @@ Présentation du projet: contexte (Projet 3 fil rouge FullStack)
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -202,7 +184,7 @@ transition: slide-up
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -316,7 +298,7 @@ level: 2
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -443,7 +425,7 @@ transition: slide-up
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -519,7 +501,7 @@ transition: slide-left
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -617,7 +599,7 @@ layout: two-cols
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -757,7 +739,7 @@ transition: slide-left
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -861,7 +843,7 @@ transition: slide-left
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -942,7 +924,7 @@ transition: slide-left
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -1015,7 +997,7 @@ transition: slide-left
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -1085,7 +1067,7 @@ transition: slide-up
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -1163,7 +1145,7 @@ transition: slide-left
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -1245,7 +1227,7 @@ transition: slide-left
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -1365,7 +1347,7 @@ module.exports = ArtworkRepository;
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -1443,7 +1425,7 @@ module.exports = { browse, read, add, edit, destroy};
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -1492,7 +1474,7 @@ transition: slide-left
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -1559,7 +1541,7 @@ transition: slide-left
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -1673,7 +1655,7 @@ transition: slide-left
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -1762,7 +1744,7 @@ transition: slide-left
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -1850,7 +1832,7 @@ transition: slide-up
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -1922,7 +1904,7 @@ transition: slide-left
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -1992,7 +1974,7 @@ transition: slide-left
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -2112,7 +2094,7 @@ VALUES (
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -2276,7 +2258,7 @@ level: 3
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -2382,7 +2364,7 @@ src="./media/Pictures/postmanreadall.png" width="600"/>
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -2444,7 +2426,7 @@ transition: slide-left
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -2539,7 +2521,7 @@ module.exports = {hashPassword};
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -2696,7 +2678,7 @@ module.exports = {login, admin,};
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -2818,7 +2800,7 @@ module.exports = {verifyToken,};
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -2987,7 +2969,7 @@ CLIENT_URL=http://localhost:3000
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -3112,7 +3094,7 @@ module.exports = {verifyUserField,};
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -3248,7 +3230,7 @@ VALUES (
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -3390,7 +3372,7 @@ module.exports = {uploadImg};
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -3528,7 +3510,7 @@ found 0 vulnerabilities
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -3616,7 +3598,7 @@ left: false
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -3656,9 +3638,6 @@ h1 {
 transition: slide-left
 ---
 
-<div class="block" v-motion
-  :initial="{ y: 80 }"
-  :enter="{ x: 0, y: 0 }">
 <h2>Technos</h2>
 <div class="method" v-click="1" v-motion
   :initial="{ y: 80 }"
@@ -3700,14 +3679,13 @@ transition: slide-left
 <img src="./media/Icones/phaser.png" width="60" height="60">
 </div>
 </div>
-</div>
 
 <br>
 
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -3775,7 +3753,7 @@ transition: slide-left
 
 <div>
 
-## Requêtes
+## Authentification - Gestion des Requêtes
 <br>
 </div>
 
@@ -3791,12 +3769,15 @@ import axios from "axios";
 
 const url = import.meta.env.VITE_API_URL;
 
-export function getArtworks() {
+// POST : Connexion utilisateur
+export function postloginUser(userData) {
   return axios
-    .get(`${url}/api/artworks`)
-    .then((reponse) => reponse.data)
+    .post(`${url}/api/login`, userData, {
+      withCredentials: true,
+    })
+    .then((reponse) => reponse)
     .catch((error) => {
-      console.error(error);
+      console.error("Erreur lors de la connexion :", error.response.data);
       return [];
     });
 }
@@ -3806,12 +3787,13 @@ import axios from "axios";
 
 const url = import.meta.env.VITE_API_URL;
 
-export function getArtwork(id) {
+// POST : Inscription utilisateur
+export function postRegisterUser(userData) {
   return axios
-    .get(`${url}/api/artworks/${id}`)
-    .then((reponse) => reponse.data)
+    .post(`${url}/api/users`, userData)
+    .then((reponse) => reponse)
     .catch((error) => {
-      console.error(error);
+      console.error("Erreur lors de l'inscription :", error.response.data);
       return [];
     });
 }
@@ -3827,7 +3809,7 @@ export function getArtwork(id) {
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -3900,12 +3882,12 @@ h1 {
   }
 </style>
 ---
-transition: fade
+transition: slide-left
 ---
 
 <div>
 
-## Requêtes
+## Authentification - Intégration des Routes
 <br>
 </div>
 
@@ -3916,41 +3898,35 @@ transition: fade
 ### main.jsx
 
 ````md magic-move {lines: true}
-```jsx{*|1|9-10}
-import {[...],getArtworks, getArtwork,[...]} from "./services/request";
+```jsx{*|2|8-11|12-15|16-19}
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { postloginUser, postRegisterUser } from "./services/request";
+
 const router = createBrowserRouter([
   {
     element: <App />,
     children: [
       {
-        path: "/",
-        element: <Homepage />,
-        loader: async () => ({
-          artworks: await getArtworks(),
-          exhibitions: await getExhibitions(),
-          users: await getUserList(),
-        }),
+        path: "/authentification",
+        element: <AuthPage />,
       },
-    ],
-  },
-]);
-```
-```jsx{*|9-10}
-import {[...],getArtworks, getArtwork,[...]} from "./services/request";
-const router = createBrowserRouter([
-  {
-    element: <App />,
-    children: [
       {
-        path: "/artwork/:id",
-        element: <ArtworkPage />,
-        loader: async ({ params }) => ({
-          artwork: await getArtwork(params.id),
-        }),
+        path: "/login",
+        element: <LoginPage />,
+      },
+      {
+        path: "/register",
+        element: <RegisterPage />,
       },
     ],
   },
 ]);
+// Fourniture du contexte Auth
+root.render(
+  <AuthProvider>
+    <RouterProvider router={router} />
+  </AuthProvider>
+);
 ```
 ````
 </div>
@@ -3962,7 +3938,330 @@ const router = createBrowserRouter([
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
+<style>
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  border-top: 1px solid #F8E6CB;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #F5F5F5;
+  z-index: 100;
+}
+
+.progress-bar {
+  border-radius: 0px 4px 4px 0px;
+  height: 100%;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
+    color: #D8B192;
+}
+.client {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;   
+}
+
+.client a {
+  width: 10rem;
+  min-height: 10rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom:10px;
+  height: 100%; 
+}
+.element{
+  border-bottom: 4px solid #E0C1A8;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 10rem;
+    height: 10rem;
+
+}
+  .element:hover { 
+    background-color: #E0C1A8;
+    color: #090A09;
+  }
+</style>
+---
+transition: slide-left
+---
+
+<div>
+
+## Les pages d'authentification
+<br>
+</div>
+
+<div class="codes">
+
+<div class="code" v-click.hide="1" v-motion
+  :initial="{ x: 80 }"
+  :enter="{ x: 0, y: 0 }">
+
+<h3>AuthPage.jsx</h3>
+
+````md magic-move {lines: true}
+```jsx{*}
+function AuthPage() {
+  const { auth } = useAuth();
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (auth) {navigate("/dashboard");}
+  }, [auth, navigate]);
+  return (
+    <div>
+      <h1>Bienvenue {auth ? auth.user.pseudo : ""}</h1>
+      <ul>
+        {auth == null && (
+          <>
+            <li><Link to="/login">Connexion</Link></li>
+            <li><Link to="/register">Inscription</Link></li>
+          </>
+        )}
+      </ul>
+    </div>
+  );
+}
+```
+````
+</div>
+
+<div class="code" v-click="[1,2]" v-motion
+  :initial="{ x: 80 }"
+  :enter="{ x: 0, y: 0 }">
+
+<h3>LoginPage.jsx</h3>
+
+````md magic-move {lines: true}
+```jsx{*}
+function LoginPage() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const { setAuth } = useAuth();
+  const navigate = useNavigate();
+  const handleSubmit = async (event) => { event.preventDefault();
+    const res = await postloginUser({ email, password });
+    if (res.status === 200) {
+      setAuth(res.data);
+      navigate("/dashboard");
+    }};
+  return (
+    <form onSubmit={handleSubmit}>
+      <input type="email" onChange={(e) => setEmail(e.target.value)} />
+      <input type="password" onChange={(e) => setPassword(e.target.value)} />
+      <button type="submit">Se connecter</button>
+    </form>
+  );
+}
+```
+````
+</div>
+<div class="code" v-click="2" v-motion
+  :initial="{ x: 80 }"
+  :enter="{ x: 0, y: 0 }">
+
+<h3>RegisterPage.jsx</h3>
+
+````md magic-move {lines: true}
+```jsx{*}
+function RegisterPage() {
+  const [pseudo, setPseudo] = useState("");
+  const [email, setEmail] = useState("");
+  const [hashedPassword, setHashedPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const navigate = useNavigate();
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    if (hashedPassword === confirmPassword) {
+      const res = await postRegisterUser({ pseudo, email, password: hashedPassword });
+      if (res.status === 201) { navigate("/login");}
+    }};
+  return (
+    <form onSubmit={handleSubmit}>
+      <input type="text" placeholder="Pseudo" onChange={(e) => setPseudo(e.target.value)} />
+      <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
+      <input type="password" placeholder="Mot de passe" onChange={(e) => setHashedPassword(e.target.value)} />
+      <input type="password" placeholder="Confirmer le mot de passe" onChange={(e) => setConfirmPassword(e.target.value)} />
+      <button type="submit">S'inscrire</button>
+    </form>
+  );
+}
+```
+````
+</div>
+</div>
+
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
+  ></div>
+</div>
+<div class="page abs-bl m-4 flex gap-2 text-m">
+  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
+</div>
+
+<style>
+
+.page {
+  color: #090A09;
+  opacity:0.5;
+  font-size: 10px;
+}
+.progress-container {
+  border-top: 1px solid #F8E6CB;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #F5F5F5;
+  z-index: 100;
+}
+
+.progress-bar {
+  border-radius: 0px 4px 4px 0px;
+  height: 100%;
+  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
+  transition: width 0.3s ease-in-out;
+}
+
+h1 {
+    color: #D8B192;
+}
+.client {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;   
+}
+
+.client a {
+  width: 10rem;
+  min-height: 10rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom:10px;
+  height: 100%; 
+}
+.element{
+  border-bottom: 4px solid #E0C1A8;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 10rem;
+    height: 10rem;
+
+}
+  .element:hover { 
+    background-color: #E0C1A8;
+    color: #090A09;
+  }
+  .codes {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+}
+.code {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+</style>
+---
+transition: slide-up
+---
+
+<div>
+
+## Gestion de l'authentification avec Context
+<br>
+</div>
+
+<div v-motion
+  :initial="{ x: 80 }"
+  :enter="{ x: 0, y: 0 }">
+
+### AuthContext.jsx
+
+````md magic-move {lines: true}
+```jsx{*}
+import { createContext, useState, useContext } from "react";
+const AuthContext = createContext();
+export function AuthProvider({ children }) {
+  const [auth, setAuth] = useState(null);
+  const updateUser = (userData) => {
+    setAuth((prev) => ({
+      ...prev,
+      user: { ...prev.user, ...userData },
+    }));
+  };
+  return (
+    <AuthContext.Provider value={{ auth, setAuth, updateUser }}>
+      {children}
+    </AuthContext.Provider>
+  );
+}
+export function useAuth() {
+  const context = useContext(AuthContext);
+  if (!context) {
+    throw new Error("useAuth must be used within AuthProvider");
+  }
+  return context;}
+```
+````
+</div>
+
+<div class="abs-br m-8 flex gap-2">
+<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
+</div>
+
+<div class="progress-container">
+  <div
+    class="progress-bar"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -4081,150 +4380,7 @@ import "./assets/styles/confirmButton.css";
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
-  ></div>
-</div>
-<div class="page abs-bl m-4 flex gap-2 text-m">
-  <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
-</div>
-
-<style>
-
-.page {
-  color: #090A09;
-  opacity:0.5;
-  font-size: 10px;
-}
-.progress-container {
-  border-top: 1px solid #F8E6CB;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 8px;
-  background-color: #F5F5F5;
-  z-index: 100;
-}
-
-.progress-bar {
-  border-radius: 0px 4px 4px 0px;
-  height: 100%;
-  background: linear-gradient(to right, #F8E6CB 0%, #E0C1A8 30%, #D8B192 60%);
-  transition: width 0.3s ease-in-out;
-}
-
-h1 {
-    color: #D8B192;
-}
-.client {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  justify-items: center;
-  align-items: center;   
-}
-
-.client a {
-  width: 10rem;
-  min-height: 10rem;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding-bottom: 10px;
-  margin-bottom:10px;
-  height: 100%; 
-}
-.element{
-  border-bottom: 4px solid #E0C1A8;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 10rem;
-    height: 10rem;
-
-}
-  .element:hover { 
-    background-color: #E0C1A8;
-    color: #090A09;
-  }
-</style>
----
-transition: slide-up
----
-
-<div>
-
-## Requêtes
-<br>
-</div>
-
-<div v-motion
-  :initial="{ x: 80 }"
-  :enter="{ x: 0, y: 0 }">
-
-### ArtworkPage.jsx
-
-````md magic-move {lines: true}
-```jsx{*|1|2,3,19|5-17|11}
-import { useLoaderData } from "react-router-dom";
-export default function ArtworkPage() {
-  const { artwork } = useLoaderData();
- return (
-    <>
-      <div className="artworkPage">
-        <div className={showPopover ? "artworkPage_blur_wrapper" : ""}>
-          <div className="artworkPage_oneOeuvre">
-            <img
-              className="artworkPage_oneOeuvrePic"
-              src={`${import.meta.env.VITE_API_URL}${artwork.image_url}`}
-              alt={artwork.title}
-            />
-          </div>
-          </div>
-      </div>
-    </>
-  );
-}
-```
-```jsx{*|9,12,14,15}
-import { useLoaderData } from "react-router-dom";
-export default function ArtworkPage() {
-  const { artwork } = useLoaderData();
- return (
-    <>
-      <div className="artworkPage">
-          <div className="artworkPage_nameOeuvre">
-            <Link
-              to={`/artistpage/${artwork.user_id}`}
-              className="artworkPage_goToartistpage"
-            >
-              <h1 className="artworkPage_name">{artwork.user_name}</h1>
-            </Link>
-            <p>{artwork.title}</p>
-            <p>{artwork.formatedDate}</p>
-          </div>
-        </div>
-      </div>
-    </>
-  );
-}
-```
-````
-</div>
-
-<div class="abs-br m-8 flex gap-2">
-<img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
-</div>
-
-<div class="progress-container">
-  <div
-    class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -4312,7 +4468,7 @@ left: false
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -4364,7 +4520,7 @@ left: false
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
@@ -4439,7 +4595,7 @@ left: false
 <div class="progress-container">
   <div
     class="progress-bar"
-    :style="{ width: ((($page) / 44) * 100) + '%' }"
+    :style="{ width: ((($page) / 45) * 100) + '%' }"
   ></div>
 </div>
 <div class="page abs-bl m-4 flex gap-2 text-m">
