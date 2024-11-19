@@ -368,7 +368,7 @@ left: false
 transition: slide-up
 ---
 
-# Introduction
+# Sommaire
 
 <div class="client">
 <div v-click v-motion
@@ -4211,7 +4211,7 @@ h1 {
 }
 </style>
 ---
-transition: slide-up
+transition: slide-left
 ---
 
 <div>
@@ -4334,7 +4334,7 @@ h1 {
   }
 </style>
 ---
-transition: slide-left
+transition: slide-up
 ---
 
 <div>
