@@ -10,7 +10,7 @@ transition: slide-up
 mdc: true
 overviewSnapshots: true
 
-layout: dynamic-image 
+layout: dynamic-image
 image: 'https://avatars.githubusercontent.com/dampherrr'
 upperImage: 'https://avatars.githubusercontent.com/dampherrr'
 equal: true
@@ -90,6 +90,15 @@ align-items: center;
 flex-direction: column;
 }
 </style>
+
+<!--
+Bonjour, <br>
+Je m'appelle Damien Goguet, aujourd'hui je suis développeur web full stack après une reconversion professionnelle.<br>
+Auparavant, j'ai été technicien supérieur en systèmes et réseaux. <br> 
+J'ai suivi le bootcamp intensif à la Wild Code School qui a durée 5 mois pour concrétiser ce nouveau parcours.<br>
+Je suis ravi de vous présenter aujourd'hui l'un de mes projets que j'ai réalisé durant cette formation.<br>
+-->
+
 ---
 layout: dynamic-image
 image: "./media/Pictures/Eclosion.png"
@@ -110,10 +119,6 @@ left: false
   </a>
 </div>
 
-<!-- Présentation:Nom ; <br>
-Projet professionnel: TSSR -> Développeur Web FS 
-Présentation du projet: contexte (Projet 3 fil rouge FullStack)
--->
 <div class="progress-container">
   <div
     class="progress-bar"
@@ -148,6 +153,12 @@ Présentation du projet: contexte (Projet 3 fil rouge FullStack)
   transition: width 0.3s ease-in-out;
 }
 </style>
+
+<!--
+Le projet Virtuart est notre troisième projet fil rouge, réalisé en full stack. Il s'agit d'une galerie interactive dédiée à la peinture et aux œuvres numériques.
+Le code source du projet est hébergé sur GitHub.
+-->
+
 ---
 transition: slide-up
 ---
@@ -244,6 +255,10 @@ transition: slide-up
 border-radius: 8px;
 }
 </style>
+
+<!--
+Nous étions une équipe de 5 personnes pour concevoir ce projet. Nous avons adopté une approche collaborative en nous répartissant les rôles de manière tournante, ce qui a permis à chacun de participer à toutes les étapes de la réalisation.
+-->
 
 ---
 transition: slide-up
@@ -360,8 +375,22 @@ h1 {
 }
 </style>
 
+<!--
+Dans ce projet, nous avons travaillé à partir de **points précis** définis par un client fictif, tout en ayant une grande liberté pour le reste, allant jusqu’à la création du nom et du logo.  
+
+1. L’un des points majeurs était la création d’une **galerie d’art accessible à tous**, avec une expérience adaptée aux différents types d’utilisateurs.  
+2. Pour la version desktop, il souhaitait également intégrer une **visite interactive**, permettant une immersion dans la galerie.  
+3. Le projet devait inclure la gestion de **trois niveaux d’utilisateurs** :  
+   - Les **visiteurs**, qui peuvent consulter le site sans interactions.  
+   - Les **utilisateurs connectés**, capables de publier et gérer leurs propres œuvres.  
+   - Les **administrateurs**, responsables de la gestion des événements, comme les expositions.  
+4. Une autre fonctionnalité demandée était de permettre aux utilisateurs connectés **d’ajouter des œuvres à leurs favoris** pour les retrouver facilement.  
+5. Enfin, le site devait être **entièrement responsive**, accessible aussi bien sur mobile que sur desktop.  
+6. Pour relever ce défi, nous disposions d’une **deadline d’un mois** pour concevoir et livrer l’ensemble du projet.  
+-->
+
 ---
-layout: dynamic-image 
+layout: dynamic-image
 image: './media/Pictures/Vie_Urbaine.webp'
 equal: true
 left: false
@@ -374,27 +403,27 @@ transition: slide-up
 <div v-click v-motion
   :initial="{ x: -80 }"
   :enter="{ x: 0 }">
-<p>- Organisation du projet</p>
+<p>- Organisation et outils de projet</p>
 </div>
 <div v-click v-motion
   :initial="{ x: -80 }"
   :enter="{ x: 0 }">
-<p>- Design</p>
+<p>- Identité visuelle et design</p>
 </div>
 <div v-click v-motion
   :initial="{ x: -80 }"
   :enter="{ x: 0 }">
-<p>- Architecture </p>
+<p>- Architecture technique </p>
 </div>
 <div v-click v-motion
   :initial="{ x: -80 }"
   :enter="{ x: 0 }">
-<p>- La modélisation de la base de donnée</p>
+<p>- Modélisation des données</p>
 </div>
 <div v-click v-motion
   :initial="{ x: -80 }"
   :enter="{ x: 0 }">
-<p>- Backend </p>
+<p>- Gestion serveur (Backend) </p>
 </div>
 <div v-click v-motion
   :initial="{ x: -80 }"
@@ -404,17 +433,17 @@ transition: slide-up
 <div v-click v-motion
   :initial="{ x: -80 }"
   :enter="{ x: 0 }">
-<p>- Frontend</p>
+<p>- Gestion client (Frontend)</p>
 </div>
 <div v-click v-motion
   :initial="{ x: -80 }"
   :enter="{ x: 0 }">
-<p>- Démonstration</p>
+<p>- Aperçu pratique</p>
 </div>
 <div v-click v-motion
   :initial="{ x: -80 }"
   :enter="{ x: 0 }">
-<p>- Conclusion</p>
+<p>- Conclusion et perspectives</p>
 </div>
 </div>
 
@@ -484,15 +513,29 @@ h1 {
 border-radius: 8px;
 }
 </style>
+
+<!-- 
+Dans cette présentation, je vais détailler les différentes étapes de la conception et de la réalisation de ce projet :
+
+1. Nous commencerons par explorer les **outils de communication et de collaboration** qui ont structuré notre travail en équipe et facilité le suivi de l'avancement du projet.  
+2. Ensuite, nous nous pencherons sur **l’identité visuelle et le design**, avec les choix graphiques qui reflètent l’essence du projet, ainsi que les outils utilisés pour concevoir son esthétique.  
+3. Puis, je vous présenterai **l’architecture technique**, basée sur l’approche MVC, pour structurer le code de manière claire et maintenable.  
+4. Nous poursuivrons avec **la modélisation des données**, en partant du MCD pour conceptualiser les besoins, avant de passer aux modèles logique (MLD) et physique (MPD).
+5. Du côté de **la gestion serveur**, je vous expliquerai les technologies utilisées, les exemples de tables, les opérations CRUD, et les routes implémentées.  
+6. Concernant la **sécurité**, nous verrons les mesures mises en place pour protéger les informations sensibles et garantir la fiabilité des fonctionnalités.  
+7. En ce qui concerne la **gestion client**, je détaillerai les technologies utilisées pour le frontend, la récupération des données via les requêtes API, et leur intégration dans l’interface utilisateur.  
+8. Une **démonstration pratique** vous permettra de découvrir les principales fonctionnalités du site et de voir le projet en action.  
+9. Enfin, je **conclurai** cette présentation par une synthèse des apprentissages, les défis que nous avons relevés, et les pistes pour de futures améliorations.  
+-->
 ---
-layout: dynamic-image 
+layout: dynamic-image
 image: "./media/Pictures/Chaos_Organisé.webp"
 equal: false
 left: false
 transition: slide-left
 ---
 
-# Organisation du projet
+# Organisation et <br>outils de projet
 
 <div class="abs-br m-8 flex gap-2">
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
@@ -537,6 +580,11 @@ h1 {
     color: #D8B192;
 }
 </style>
+
+<!--
+Passons maintenant à la manière dont nous avons structuré notre travail. Je vais vous présenter les outils que nous avons utilisés pour collaborer efficacement en équipe et suivre l’avancement de ce projet.
+-->
+
 ---
 transition: slide-up
 layout: two-cols
@@ -915,7 +963,7 @@ left: false
 transition: slide-left
 ---
 
-# Design
+# Identité visuelle et design
 
 <div class="abs-br m-8 flex gap-2">
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
@@ -1136,7 +1184,7 @@ left: false
 transition: slide-left
 ---
 
-# Architecture
+# Architecture technique
 
 <div class="abs-br m-8 flex gap-2">
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
@@ -1465,7 +1513,7 @@ left: false
 transition: slide-left
 ---
 
-# La modélisation de la base de données
+# Modélisation des données
 
 <div class="abs-br m-8 flex gap-2">
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
@@ -1895,7 +1943,7 @@ left: false
 transition: slide-left
 ---
 
-# Backend
+# Gestion serveur (Backend)
 
 <div class="abs-br m-8 flex gap-2">
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
@@ -3589,7 +3637,7 @@ equal: false
 left: false
 ---
 
-# Frontend
+# Gestion client (Frontend)
 
 <div class="abs-br m-8 flex gap-2">
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
@@ -4459,7 +4507,7 @@ equal: false
 left: false
 ---
 
-# Démonstration
+# Aperçu pratique
 
 <div class="abs-br m-8 flex gap-2">
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
@@ -4511,7 +4559,7 @@ equal: false
 left: false
 ---
 
-# Conclusion
+# Conclusion et perspectives
 
 <div class="abs-br m-8 flex gap-2">
 <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
