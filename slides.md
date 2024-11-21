@@ -3364,6 +3364,18 @@ h1 {
     color: #090A09;
   }
 </style>
+<!-- 
+Pour garantir la **protection de nos API**, nous avons utilisé plusieurs outils essentiels :
+
+1. Cors nous permet de sécuriser les requêtes en limitant les origines autorisées à accéder à notre backend. Nous avons configuré l’URL du client dans le fichier `.env`, et activé les credentials pour permettre l’envoi des cookies nécessaires à l’authentification.
+
+2. Ensuite Cookie-Parser nous aide à traiter les cookies envoyés avec les requêtes, comme le token JWT. Cela nous permet de gérer l’authentification en lisant et vérifiant les cookies directement côté serveur.
+
+3. DotEnv est utilisé pour stocker nos variables d’environnement sensibles, comme les identifiants de la base de données ou la clé secrète pour le JWT. Cela garantit que ces informations ne sont pas exposées dans le code source.
+
+4. Enfin pour renforcer la sécurité, nous avons inclus le fichier `.env` dans le `.gitignore`, ce qui empêche sa publication sur le dépôt GitHub. Cela évite d’exposer des données critiques en ligne.
+
+Ces outils assurent une communication sécurisée entre le frontend et le backend, tout en protégeant les informations sensibles et en respectant les bonnes pratiques. -->
 ---
 layout: two-cols
 equal: true
@@ -3393,7 +3405,7 @@ transition: slide-left
 
 ### auth.js
 ````md magic-move {lines: true}
-```js
+```js {*|*|4|5|6|7|10-11|12-13|*}
 const Joi = require("joi");
 const verifyUserField = (req, res, next) => {
   const schema = Joi.object({
@@ -3489,7 +3501,19 @@ h1 {
     color: #090A09;
   }
 </style>
+<!-- 
+Pour la **validation des données**, nous avons utilisé **Joi**, une bibliothèque très pratique pour vérifier que les données envoyées par les utilisateurs respectent les règles définies.
 
+Dans cet exemple, nous avons mis en place une validation pour les utilisateurs lors de leur inscription. Voici les points principaux :
+- Le **pseudo** doit être une chaîne de caractères et est obligatoire.
+- L'**email** doit respecter un format valide, comme `example@domain.com`.
+- Le **mot de passe** doit comporter au moins 8 caractères.
+- Enfin, nous avons ajouté une vérification pour que le champ **confirmPassword** corresponde au mot de passe.
+
+Si une donnée ne respecte pas ces critères, une erreur est renvoyée avec un message précis pour informer l’utilisateur. Sinon, la requête passe au middleware suivant.
+
+**Joi** nous permet ainsi de filtrer efficacement les données dès leur réception, évitant tout traitement inutile de requêtes incorrectes ou incomplètes.
+ -->
 ---
 layout: two-cols
 equal: true
@@ -3501,7 +3525,7 @@ transition: slide-left
 ## Contrôle d'Accès et Gestion des Rôles
 <br>
 ````md magic-move {lines: true}
-```sql
+```sql {*|3,8,12}
 CREATE TABLE user (
 [...]
     is_admin BOOLEAN DEFAULT FALSE
@@ -3521,14 +3545,14 @@ VALUES (
 
 ::right::
 
-<div v-click="1" v-motion
+<div v-click="2" v-motion
   :initial="{ x: 80 }"
   :enter="{ x: 0, y: 0 }">
 
 ## Sécurisation de la Base de Données
 <br>
 ````md magic-move {lines: true}
-```sql {*|2|3-5|6-10|*}
+```sql {*|*|3-5|6-10|*}
   async create(artwork) {
     const [result] = await this.database.query(
       `INSERT INTO artwork 
@@ -3625,6 +3649,21 @@ h1 {
     color: #090A09;
   }
 </style>
+<!-- 
+Contrôle d'Accès et Gestion des Rôles
+
+Nous avons implémenté un système de contrôle d'accès en utilisant un champ spécifique dans la table `user` : **is_admin**.  
+- Ce champ est de type **BOOLEAN** et permet de distinguer les administrateurs des utilisateurs standards.  
+- Par défaut, il est défini sur `FALSE`, mais il peut être activé (`TRUE`) pour accorder des droits spécifiques, comme la gestion des expositions.  
+
+Sécurisation des Injections SQL
+
+Dans nos requêtes SQL, comme celle permettant d’ajouter une œuvre dans la table `artwork`, nous avons utilisé des **requêtes préparées** avec des **paramètres dynamiques**.  
+- Cela empêche toute tentative d'injection SQL en isolant les données fournies par l'utilisateur des instructions SQL.  
+- Par exemple, les valeurs comme `title` ou `user_id` sont intégrées de manière sécurisée à la requête via un tableau de paramètres.  
+
+Ce système assure une gestion claire des rôles et une base de données protégée contre des attaques courantes comme les injections SQL, tout en respectant les droits et les accès des différents utilisateurs. 
+ -->
 ---
 layout: two-cols
 equal: true
@@ -3670,7 +3709,7 @@ transition: slide-left
 
 ### middleware.js
 ````md magic-move {lines: true}
-```js {*|*|*|*|1,17|2-5,12|6-11|13-16|*}
+```js {*|*|*|*|9|13-16|*}
 const multer = require("multer");
 const storage = multer.diskStorage({
   destination(req, file, cb) {
@@ -3767,6 +3806,18 @@ h1 {
     color: #090A09;
   }
 </style>
+<!-- 
+Dans cette partie, je vais vous expliquer comment nous avons géré le **téléchargement de fichiers** dans notre projet. 
+Pour cela, nous avons utilisé **Multer**, une bibliothèque qui facilite considérablement le traitement des fichiers envoyés via un formulaire. 
+Multer nous a permis de configurer un dossier spécifique pour stocker les fichiers. 
+Nous avons également pu définir une logique pour renommer et organiser ces fichiers de manière dynamique, garantissant ainsi une structure claire et ordonnée.
+
+Pour éviter les conflits liés aux noms de fichiers identiques, nous avons fait appel à **UUID**, un outil qui génère des identifiants uniques. Grâce à cela, chaque fichier reçoit un nouveau nom basé sur un identifiant, même si plusieurs utilisateurs envoient des fichiers avec le même nom d’origine. Cela garantit une gestion efficace et sans erreur des fichiers téléchargés.
+
+Enfin, dans le code, Multer a été configuré pour enregistrer les fichiers et les renommer automatiquement à l’aide d’UUID. Une fois qu’un fichier est enregistré, son chemin est immédiatement ajouté dans `req.body.image_url`, ce qui nous permet de l’utiliser dans les étapes suivantes du traitement, comme l’affichage ou le stockage en base de données.
+
+Cette méthode nous a permis de gérer les téléchargements de fichiers de manière simple, sécurisée et parfaitement adaptée aux besoins de notre projet.
+-->
 ---
 transition: slide-up
 ---
