@@ -710,6 +710,26 @@ h1 {
     color: #090A09;
   }
 </style>
+
+<!-- 
+A- Pour **structurer** notre travail, nous avons opté pour une **méthodologie Agile basée sur Scrum**.
+
+1- Grâce à des sprints hebdomadaires, nous avons fixé des objectifs clairs, ajusté les priorités, et maintenu un rythme constant tout au long du projet.
+
+B- Pour rester organisés, nous avons utilisé trois outils principaux :
+
+1- **Discord** : Nous avons **centralisé nos échanges** avec des fils thématiques dédiés, comme pour le CSS ou les pull requests. Cela nous a permis de collaborer efficacement au quotidien, notamment pour valider les PR.<br>
+2- **Google Sheets** : Pour gérer le backlog, nous avons listé toutes les user stories et tâches, en les classant par ordre de priorité.<br>
+3- **FigJam** : Nous avons utilisé FigJam pour **collaborer en temps réel**, notamment pour les brainstormings et la gestion des to-do lists hebdomadaires. Chaque sprint avait une colonne **'À faire'**, **'En cours'**, et **'Terminé'**.<br>
+
+C- Pour **illustrer** notre organisation
+
+1- Voici notre espace **Discord**, où les fils thématiques et les discussions sur les pull requests ont facilité nos interactions."
+
+2- Sur **Google Sheets**, nous avons suivi les user stories et planifié nos priorités.
+
+3- Enfin, sur **FigJam**, nos to-do lists hebdomadaires nous ont permis de visualiser l’état d’avancement des tâches en un coup d’œil. 
+-->
 ---
 layout: two-cols
 transition: slide-left
@@ -850,6 +870,24 @@ h1 {
     color: #090A09;
   }
 </style>
+
+<!-- 
+A - Pour commencer, nous avons utilisé un template appelé Harmonia, fourni par la Wild Code School.
+Ce template pédagogique a servi de point de départ pour structurer notre projet et poser les bases de notre développement.
+
+B - Pour alimenter rapidement notre base de données et créer un contenu de test réaliste, nous avons utilisé ChatGPT.
+Cet outil nous a permis de générer de la data que ce soit des noms fictifs ou des images en quelques minutes, ce qui a été un gain de temps considérable.
+
+C - Nous avons utilisé plusieurs outils techniques pour le développement et le suivi du projet :
+
+**VS Code** : L’éditeur de code principal.<br>
+**Node.js** : Pour exécuter notre code côté serveur.<br>
+**Git** : Pour le versionnement et la gestion des contributions de l’équipe.<br>
+**GitHub** : Pour l’hébergement et le partage de notre dépôt.<br>
+**Jest** : Pour les tests unitaires et assurer la fiabilité de certaines fonctionnalités.<br>
+**Postman** : Indispensable pour tester les API et vérifier les échanges avec le backend.<br>
+ -->
+
 ---
 transition: slide-left
 ---
@@ -954,7 +992,17 @@ h1 {
     color: #090A09;
   }
 </style>
+<!-- 
+A - Pour assurer la qualité de notre code et garantir qu’il soit maintenable et performant, nous avons utilisé plusieurs outils directement fournis par le template **Harmonia**.
 
+1- **ESLint** a joué un rôle clé en analysant le code de manière statique, ce qui nous a permis de détecter rapidement les erreurs et de respecter les bonnes pratiques JavaScript. <br>
+2- Ensuite, nous avons utilisé **Prettier** pour harmoniser automatiquement le style de code entre les membres de l’équipe, évitant ainsi toute divergence d’écriture.<br>
+3- Pour renforcer notre workflow avec Git, nous avons intégré **Husky**. Cet outil déclenche des hooks Git avant chaque commit, comme le linting ou les tests, ce qui nous a permis de prévenir l’introduction d’erreurs dans le dépôt. <br>
+4- De son côté, **Lint-Staged** a optimisé ce processus en limitant l’analyse et la correction aux fichiers réellement modifiés, rendant le tout plus rapide et efficace.<br>
+5- Enfin, nous avons utilisé **Vite** pour son efficacité. Cet outil nous a offert une compilation rapide pendant le développement et une optimisation des fichiers pour une mise en production performante.<br>
+
+Ces outils combinés nous ont permis de **maintenir un workflow** à la fois efficace, fiable, et aligné avec des standards professionnels élevés.<br>
+-->
 ---
 layout: dynamic-image 
 image: "./media/Pictures/Connexion.webp"
@@ -1008,6 +1056,8 @@ h1 {
     color: #D8B192;
 }
 </style>
+
+<!-- Une fois l'organisation en place, nous avons défini une identité visuelle pour le projet. Je vais vous expliquer les choix graphiques que nous avons faits et les outils que nous avons utilisés pour donner vie à cette esthétique. -->
 ---
 layout: two-cols
 transition: slide-left
@@ -1081,6 +1131,13 @@ h1 {
     color: #D8B192;
 }
 </style>
+
+<!-- 
+A- Pour concevoir notre projet, nous avons cherché des sources d'inspiration dans le domaine des galeries d'art en ligne. Le site Carré d'artistes nous a particulièrement influencés grâce à son design élégant et sa simplicité d'accès. Cela nous a aidés à définir l'expérience utilisateur souhaitée.
+
+B- Pour donner une identité visuelle cohérente et esthétique à notre site, nous avons choisi une palette de couleurs sobres et élégantes, en harmonie avec l’univers de l’art.
+
+C- Nous avons opté pour la police Montserrat, qui combine modernité et lisibilité, renforçant ainsi l’aspect professionnel et épuré du site. -->
 
 ---
 layout: two-cols
@@ -1176,6 +1233,13 @@ h1 {
     color: #090A09;
   }
 </style>
+
+<!-- 
+A - Pour la phase de **maquettage**, nous avons utilisé Figma, un outil de design collaboratif. Il nous a permis de visualiser et structurer le site avant de commencer le développement.
+Grâce à Figma, nous avons conçu une maquette interactive, ajusté le design en équipe, et validé l’ergonomie du site avant de passer au code.
+
+B - Voici une **capture d’écran** de la maquette réalisée sur Figma, qui représente la structure et le design général du site tel qu’imaginé durant cette phase de conception.
+ -->
 ---
 layout: dynamic-image 
 image: "./media/Pictures/Douce_Mélancolie.webp"
@@ -1229,6 +1293,9 @@ h1 {
     color: #D8B192;
 }
 </style>
+
+<!-- Maintenant que nous avons une idée claire du design, nous allons aborder la structure technique du projet. Je vais vous présenter l’architecture que nous avons adoptée pour garantir un code clair, maintenable et évolutif. -->
+
 ---
 layout: two-cols
 transition: slide-left
@@ -1324,6 +1391,22 @@ h1 {
   height: auto;
 }
 </style>
+<!-- 
+Pour organiser le projet de manière claire et maintenable, nous avons adopté l'architecture **MVC**, qui repose sur la séparation des responsabilités.
+
+Ce schéma illustre le fonctionnement du modèle **Model View Controller** dans notre projet. Je vais vous expliquer chaque étape représentée ici.
+
+1. **L'utilisateur** interagit avec le site, envoyant une requête HTTP.  
+2. Cette requête est gérée par le **Controller**, qui agit comme un chef d'orchestre :  
+   - Il décide des données nécessaires et effectue un appel aux **services** (ou middleware).  
+3. Les **services** transmettent la requête au **Model**, qui interagit directement avec la **base de données**.  
+4. Une fois les données récupérées, le **Model** les renvoie au **Controller** via les services.  
+5. Le **Controller** passe ensuite les données à la **Vue**, qui les formate en HTML pour les afficher à l'utilisateur.  
+6. Enfin, l'utilisateur reçoit une **réponse HTTP** contenant la page générée.
+
+L'architecture MVC offre une organisation modulaire et maintenable, essentielle pour gérer les interactions complexes entre utilisateurs, données et interface.
+
+ -->
 ---
 layout: two-cols
 transition: slide-left
@@ -1378,7 +1461,7 @@ module.exports = ArtworkRepository;
 ```
 ````
 ::right::
-<div class="element" v-click v-motion
+<div class="element" v-click="3" v-motion
   :initial="{ x: 80 }"
   :enter="{ x: 0, y: 0 }">
   
@@ -1427,6 +1510,19 @@ module.exports = ArtworkRepository;
   transition: width 0.3s ease-in-out;
 }
 </style>
+
+<!-- 
+Voici un exemple de **Model** avec le fichier `ArtworkRepository.js`. C’est dans cette classe que nous définissons la logique pour interagir avec la base de données.
+
+- Nous avons ici la méthode `readAll`, qui permet de récupérer toutes les œuvres d’art depuis la table `artwork`. Nous utilisons une jointure avec la table `user` pour inclure le nom de l’artiste. De plus, nous formatons la date pour qu’elle soit plus lisible dans le frontend.
+
+- La méthode `read` fonctionne de manière similaire, mais elle est conçue pour récupérer une œuvre spécifique grâce à son ID. Cette méthode est utile, par exemple, pour afficher les détails d’une œuvre sur une page dédiée.
+
+- Enfin, voici un exemple de **View**, avec la page coté front d’une œuvre. Cette page utilise les données récupérées par notre modèle et les affiche de manière esthétique et organisée.
+
+
+
+ -->
 ---
 transition: slide-up
 level: 3
@@ -1448,7 +1544,7 @@ const browse = async (req, res, next) => {
 };
 module.exports = { browse, read, add, edit, destroy};
 ```
-```js {*} 
+```js {*|15} 
 const tables = require("../../database/tables");
 
 const read = async (req, res, next) => {
@@ -1505,6 +1601,16 @@ module.exports = { browse, read, add, edit, destroy};
   transition: width 0.3s ease-in-out;
 }
 </style>
+<!-- 
+- Passons maintenant à l’exemple de Controller avec le fichier `artworkActions.js`. Ici, nous gérons la logique de traitement des requêtes HTTP et la communication avec le Model.<br>
+  
+  Voici la méthode `browse`. Elle utilise la fonction `readAll` du modèle pour récupérer toutes les œuvres, puis renvoie ces données au format JSON pour le frontend.
+
+- Ici, la méthode `read` permet de récupérer une œuvre précise via son ID. Si l’œuvre n’est pas trouvée, elle renvoie un statut HTTP `404`. Ce genre de validation assure la fiabilité et la robustesse de notre API.
+
+- Enfin, nous avons intégré d'autres méthodes essentielles pour la gestion des œuvres, telles que `add` pour ajouter une nouvelle œuvre, `edit` pour la modifier, et `destroy` pour la supprimer.
+ -->
+
 ---
 layout: dynamic-image 
 image: "./media/Pictures/Joie_Ephémère.webp"
@@ -1558,6 +1664,9 @@ h1 {
     color: #D8B192;
 }
 </style>
+
+<!-- Pour répondre aux besoins du projet, il a été nécessaire de structurer les données. Dans cette partie, je vais vous expliquer comment nous avons conçu les modèles conceptuels, logiques, et physiques de la base de données. -->
+
 
 ---
 transition: slide-left
@@ -1660,6 +1769,13 @@ h1 {
 }
 </style>
 
+<!-- 
+Pour la modélisation des données et la conception de notre base, nous avons utilisé deux outils clés :
+
+- Nous avons utilisé Draw.io pour concevoir les différents schémas de modélisation de notre base de données, comme le MCD, le MLD, et le MPD. Cet outil nous a permis de représenter visuellement la structure de nos données de manière claire et précise.
+
+- Nous avons également suivi la méthode Merise, qui nous a guidés étape par étape, du modèle conceptuel au modèle physique, pour structurer efficacement notre base de données.
+ -->
 ---
 layout: two-cols
 transition: slide-left
@@ -1683,7 +1799,7 @@ transition: slide-left
     <br>
     <strong> C</strong><span>onceptuelle de </span>
     <br>
-    <strong> D</strong><span>onnée</span>
+    <strong> D</strong><span>onnées</span>
   </h2>
 </div>
 
@@ -1749,6 +1865,21 @@ transition: slide-left
   height: auto;
 }
 </style>
+<!-- 
+Nous allons commencer par le **MCD (Modèle Conceptuel de Données)**. Cette première étape permet de représenter les entités principales et les relations entre elles, sans se préoccuper encore de leur implémentation technique.
+
+Dans notre projet :
+- **Utilisateur et œuvres** :  
+  Un **utilisateur** peut ajouter une ou plusieurs œuvres d’art à la galerie. Cela se traduit par une relation `1,N`, c’est-à-dire qu’un utilisateur peut créer plusieurs œuvres, mais chaque œuvre appartient à un seul utilisateur.  
+  Par ailleurs, un utilisateur peut **ajouter des œuvres à ses favoris**. Ici, la relation est de type `0,N` entre `user` et `artwork`, via l’entité associative `favorite`. Cela signifie qu’un utilisateur peut n’avoir aucun favori ou en ajouter plusieurs, et qu’une œuvre peut être ajoutée aux favoris de plusieurs utilisateurs.  
+
+- **Œuvres et expositions** :  
+  Les **œuvres d’art** peuvent être associées à une ou plusieurs **expositions**. Cette relation est de type `1,N` entre `artwork` et `exhibition`. Cela signifie qu’une œuvre peut être incluse dans plusieurs expositions, et une exposition peut regrouper plusieurs œuvres.  
+
+- **Utilisateur et expositions** :  
+  Enfin, un **utilisateur administrateur** peut gérer une ou plusieurs **expositions**. Cela correspond à une relation `1,N`, où chaque exposition est supervisée par un administrateur unique, mais un administrateur peut gérer plusieurs expositions.  
+ -->
+
 ---
 layout: two-cols
 transition: slide-left
@@ -1780,7 +1911,7 @@ transition: slide-left
     <br>
     <strong> L</strong><span>ogique de </span>
     <br>
-    <strong> D</strong><span>onnée</span>
+    <strong> D</strong><span>onnées</span>
   </h2>
 </div>
 
@@ -1838,6 +1969,22 @@ transition: slide-left
   padding-left:2rem;
 }
 </style>
+<!-- Après la validation du MCD, nous avons élaboré le **MLD (Modèle Logique de Données)**. 
+Cette étape traduit les entités conceptuelles en relations adaptées à une base de données relationnelle, en intégrant les cardinalités définies. 
+
+- Pour l'**Utilisateur et les œuvres** :  
+  La relation est de type **one-to-many** (*1:N*). Chaque utilisateur peut créer plusieurs œuvres (`N`), mais chaque œuvre est liée à un seul utilisateur (`1`). Cela reflète le lien entre un artiste et ses créations.  
+
+- Pour gérer les favoris, une table intermédiaire `favorite` permet une relation **many-to-many** (*N:M*) entre les utilisateurs et les œuvres. Par exemple, un utilisateur peut ajouter plusieurs œuvres en favoris, et chaque œuvre peut être dans les favoris de plusieurs utilisateurs.  
+
+- Pareil pour les **Œuvres et les expositions** :  
+  Une relation **many-to-many** (*N:M*) est gérée par la table `artwork_exhibition`. Cela permet qu’une œuvre soit exposée dans plusieurs expositions, et qu’une exposition regroupe plusieurs œuvres. Cette structure reflète la flexibilité nécessaire pour une galerie d’art.  
+
+- Et enfin pour l'**Utilisateur et les expositions** :  
+  Ici, nous avons une relation **one-to-many** (*1:N*). Un administrateur peut gérer plusieurs expositions (`N`), mais chaque exposition est supervisée par un seul administrateur (`1`). Cela garantit une gestion centralisée des événements.  
+
+En résumé, le **MLD** prépare la base de données en organisant clairement les relations *one-to-many* et *many-to-many*, tout en restant aligné sur les besoins identifiés dans le MCD.   -->
+
 ---
 layout: two-cols
 transition: slide-up
@@ -1861,7 +2008,7 @@ transition: slide-up
     <br>
     <strong> P</strong><span>hysique de </span>
     <br>
-    <strong> D</strong><span>onnée</span>
+    <strong> D</strong><span>onnées</span>
   </h2>
 </div>
 
@@ -1870,7 +2017,7 @@ transition: slide-up
 <div class="img" v-click v-motion
   :initial="{ x: 80 }"
   :enter="{ x: 0, y: 0 }">
-<img src="./media/Pictures/MPD.drawio.png" width="1000" >
+<img src="./media/Pictures/MPD-Modélisation BDD Virtuart.png" width="1000" >
 </div>
 
 <div class="abs-br m-8 flex gap-2">
@@ -1935,6 +2082,22 @@ transition: slide-up
  width: 70%;
 }
 </style>
+<!-- 
+Nous arrivons maintenant au **MPD (Modèle Physique de Données)**, la dernière étape de la modélisation, où les concepts se traduisent en une base de données opérationnelle avec des détails techniques comme les types de colonnes, les clés, et les contraintes.
+Voici une version reformulée pour rendre la présentation plus fluide et concise :  
+
+- Prenons l’exemple de la table `user`. Elle contient des colonnes comme `id`, définie en clé primaire, `email` typée `VARCHAR(255)` avec les contraintes `NOT NULL` et `UNIQUE`, ce qui garantit qu’un email est obligatoire et ne peut pas être dupliqué. De même, la colonne `password` est aussi typée `VARCHAR(255)` et marquée `NOT NULL`, assurant la présence d’un mot de passe pour chaque utilisateur.  
+
+- Les relations qui ont étaient définies dans le MLD se traduisent ici par des clés étrangères. <br>Par exemple, la colonne `user_id` dans la table `artwork` est une clé étrangère qui pointe vers la colonne `id` de la table `user`. Cela garantit qu’une œuvre est toujours associée à un utilisateur existant.  
+
+- Les contraintes comme `NOT NULL` empêchent les données essentielles d’être laissées vides, et `UNIQUE` garantit l’unicité des informations sensibles, comme les emails.  
+
+Le **MPD** est donc une version prête à être déployée dans un **système de gestion de base de données (SGBD)**, comme MySQL.<br> 
+C’est la traduction concrète des concepts et relations définis dans le MCD et le MLD, aboutissant à une base structurée, robuste et cohérente.  
+
+Ces trois étapes – MCD, MLD, MPD – assurent une transition fluide entre la vision conceptuelle et la mise en œuvre technique, tout en respectant les besoins fonctionnels et relationnels du projet.  
+-->
+
 ---
 layout: dynamic-image 
 image: "./media/Pictures/Lumière_dans_Obscurité.webp"
@@ -1988,6 +2151,8 @@ h1 {
     color: #D8B192;
 }
 </style>
+
+<!-- Passons maintenant à la partie serveur, où je vais vous montrer les technologies utilisées, des exemples de tables, et la logique mise en place pour traiter et fournir les données au reste du projet. -->
 
 ---
 transition: slide-left
@@ -2093,6 +2258,16 @@ h1 {
   height: 100%; 
 }
 </style>
+<!-- 
+Pour notre projet, nous avons utilisé deux technologies principales pour gérer le backend :  
+
+- Nous avons choisi MySQL comme **Système de Gestion de Base de Données relationnel**. Il nous a permis de structurer et de gérer efficacement nos données grâce à ses performances robustes et sa capacité à supporter des requêtes complexes.  
+
+- Côté serveur, nous avons utilisé Express, un framework léger et rapide pour Node.js. Il nous a permis de créer et de gérer nos API, en facilitant le routage et la gestion des requêtes HTTP.  
+
+Ces deux technologies, combinées, nous ont permis d’assurer un backend performant, fiable, et adapté aux besoins fonctionnels du projet.   
+-->
+
 ---
 transition: slide-left
 level: 3
@@ -2102,7 +2277,7 @@ level: 3
 ### Exemple de la table 'artwork':
 
 ````md magic-move {lines: true}
-```sql {*|2,10|3|5|*}
+```sql {*|3|4-5|5|9}
 // Étape 1
 create table artwork (
     id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
@@ -2114,7 +2289,7 @@ create table artwork (
     FOREIGN KEY (user_id) REFERENCES user (id) ON DELETE CASCADE
 );
 ```
-```sql {*|2-3,9|4-8|10,18|11-17|*}
+```sql {*|11-17|7-8,16-17|*}
 // Étape 2
 INSERT INTO
     artwork (
@@ -2174,6 +2349,22 @@ VALUES (
   transition: width 0.3s ease-in-out;
 }
 </style>
+
+<!-- Dans cette slide, je vais vous présenter un exemple concret issu de la base de données, avec la table `artwork`, qui représente les œuvres d’art dans notre projet.
+
+- Dans la structure SQL de la table, nous avons défini une **clé primaire** `id` de type entier non signé, qui s’incrémente automatiquement.  
+- Les colonnes comme `title` et `image_url` permettent de stocker respectivement le titre et l’image associée à une œuvre. 
+- La colonne `image_url` inclut une **valeur par défaut** au cas où aucune image ne serait fournie.  
+- Une colonne `user_id` est une **clé étrangère** qui fait référence à l’utilisateur ayant créé l’œuvre. La contrainte `ON DELETE CASCADE` garantit que si un utilisateur est supprimé, ses œuvres le seront également.  
+
+Voici un exemple d’insertion dans la table `artwork` :  
+- Nous ajoutons une œuvre intitulée "Éclosion", avec une image et une description.  
+- Les colonnes `user_id` et `collection_id` permettent d'associer l’œuvre à un utilisateur et à une collection spécifique.  
+
+Cette structure permet de gérer efficacement les œuvres tout en garantissant leur intégrité et leur association avec les utilisateurs et collections.
+-->
+
+
 ---
 transition: slide-left
 level: 3
@@ -2356,6 +2547,27 @@ level: 3
 
 }
 </style>
+
+<!-- 
+Le **CRUD** représente les quatre actions essentielles pour manipuler les données : **Create**, **Read**, **Update**, et **Delete**.
+
+- Commençon pas la méthode **Create** qui permet d'ajouter une nouvelle œuvre dans la base de données.  
+  Par exemple, ici, on insère les informations d'une œuvre (titre, image, description, etc.) via une requête SQL `INSERT INTO`.  
+  C'est la base pour créer du contenu côté utilisateur.
+
+- La méthode **Read** est utilisée pour récupérer des données.  
+  - **`readAll`** : Elle retourne toutes les œuvres, avec des détails comme l'utilisateur qui les a publiées, grâce à une jointure SQL.  
+  - **`read`** : Elle permet de lire une œuvre spécifique selon son identifiant.  
+  Ces méthodes servent à afficher les œuvres sur le site.
+
+- La méthode **Update** modifie une œuvre existante.  
+  Par exemple, on peut changer le titre ou l'image d'une œuvre en mettant à jour les colonnes concernées grâce à une requête SQL `UPDATE`.
+
+- Enfin, la méthode **Delete** permet de supprimer une œuvre de la base de données avec une requête SQL `DELETE`.  
+
+Ces quatre opérations garantissent la gestion complète des œuvres dans le projet et assurent que les données restent synchronisées entre le backend et l'interface utilisateur. 
+-->
+
 ---
 layout: two-cols
 equals: false
@@ -2457,6 +2669,27 @@ src="./media/Pictures/postmanreadall.png" width="600"/>
   height: auto;
 }
 </style>
+<!-- 
+Sur cette slide, je vais vous présenter les **routes de l'application**, définies dans le fichier `Router.js`.<br>
+*CLICK*<br>
+Nous commençons par l’importation des modules nécessaires avec :
+- `express`, qui est essentiel pour la configuration du serveur.  
+- `router`, une instance d’Express utilisée pour définir les chemins de l'application.<br>
+*CLICK*<br>
+Ensuite, nous importons les contrôleurs depuis le fichier `artworkActions`, grâce à la ligne `const artworks`. Ces contrôleurs gèrent les actions comme la récupération, l’ajout, la modification ou la suppression des œuvres.<br>
+*CLICK*<br>
+Passons maintenant aux exemples de routes :  
+- La première route, `GET /artworks`, utilise la méthode `browse` pour récupérer toutes les œuvres. Voici un exemple testé sur Postman : comme vous pouvez le voir, cette requête retourne l'ensemble des œuvres stockées dans la base de données.  <br>
+*CLICK*<br>
+- Une autre route, `GET /artworks/:id`, utilise la méthode `read`. Elle permet de récupérer une œuvre spécifique en fonction de son identifiant. Sur cette capture Postman, vous voyez qu’une seule œuvre correspondant à l’`id` demandé est renvoyée.<br>
+*CLICK*<br>
+- Enfin, nous avons également des routes pour **Ajouter** une œuvre via `POST /artworks`, avec un middleware pour gérer les images et vérifier les autorisations.  
+- Nous pouvons aussi **Modifier** une œuvre via `PUT /artworks/:id`.  
+- Et **Supprimer** une œuvre avec `DELETE /artworks/:id`.<br>
+*CLICK*<br>
+Ces routes permettent de couvrir l'ensemble des opérations CRUD pour la gestion des œuvres dans l’application.<br> Tous les chemins ont été testés et validés avec Postman pour garantir leur bon fonctionnement.
+-->
+
 ---
 layout: dynamic-image 
 image: "./media/Pictures/Harmonie.webp"
@@ -2510,6 +2743,9 @@ h1 {
     color: #D8B192;
 }
 </style>
+
+<!-- Un projet comme celui-ci nécessite une attention particulière à la sécurité. Je vais maintenant vous expliquer les mesures que nous avons prises pour protéger les informations et garantir la fiabilité des fonctionnalités. -->
+
 ---
 layout: two-cols
 transition: slide-left
@@ -2534,7 +2770,7 @@ transition: slide-left
 ### Middleware: auth.js
 
 ````md magic-move {lines: true}
-```js {*|*|1,23|2-7|8-22} 
+```js {*|*|2-7|8-22} 
 const argon2 = require("argon2");
 const hashingOptions = {
   type: argon2.argon2id,
@@ -2641,6 +2877,26 @@ h1 {
     color: #090A09;
   }
 </style>
+
+<!-- 
+La gestion sécurisée des mots de passe est une priorité dans ce projet. Pour cela, nous avons utilisé **Argon2**, un algorithme de hashage reconnu pour sa robustesse et sa résistance aux attaques par force brute.  
+
+Dans notre code, Argon2 est intégré via un middleware défini dans le fichier `auth.js`.  
+
+- Nous avons configuré Argon2 avec des paramètres spécifiques comme `memoryCost`, `timeCost` et `parallelism`, pour garantir un bon équilibre entre sécurité et performances.  
+- Elle prend le mot de passe en clair fourni par l'utilisateur, le crypte avec Argon2 et remplace ce mot de passe par sa version hashée dans `req.body`.  
+- Enfin, le mot de passe en clair est supprimé pour éviter toute fuite accidentelle.  
+
+Ce middleware est exécuté automatiquement avant toute opération impliquant des mots de passe, comme la création d’un compte ou la modification de l’identifiant d’un utilisateur. Grâce à cette mise en œuvre, les mots de passe stockés dans la base de données ne sont jamais exposés sous leur forme d'origine, renforçant ainsi la sécurité globale de l'application. 
+
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-<br>
+**P.B**:<br>
+**memoryCost** : Définit la quantité de mémoire utilisée pendant le hashage. Plus cette valeur est élevée, plus il est difficile pour un attaquant de tester plusieurs mots de passe en même temps.
+
+**timeCost** : Indique le nombre d'itérations nécessaires pour créer le hash. Une valeur plus haute ralentit le processus, rendant les attaques par force brute plus longues.
+
+**parallelism** : Détermine le nombre de threads ou de processeurs utilisés pour le hashage. Cela peut améliorer les performances sur des systèmes multicœurs.-->
+
 ---
 layout: two-cols
 transition: fade
@@ -2665,7 +2921,7 @@ transition: fade
 ### Controller: authActions.js
 
 ````md magic-move {lines: true}
-```js{*|*}
+```js{*|*|6-9|10-12|13-18|19-20}
 const argon2 = require("argon2");
 const jwt = require("jsonwebtoken");
 const tables = require("../../database/tables");
@@ -2696,24 +2952,6 @@ const admin = async (req, res, next) => {
     next(error);
   }
 };
-module.exports = {login, admin,};
-```
-```js
-const jwt = require("jsonwebtoken");
-const login = async (req, res, next) => {
-  try {
-[...]
-    if (verified) {
-      delete user.hashed_password;
-      const token = await jwt.sign(
-        { sub: user.id, isAdmin: user.is_admin },
-        process.env.APP_SECRET,
-        {expiresIn: "1h",});
-      res.cookie("auth", token).json({
-        token, user,});
-    } else {res.sendStatus(422);}
-  } catch (err) {next(err);}};
-[...]
 module.exports = {login, admin,};
 ```
 ````
@@ -2798,6 +3036,25 @@ h1 {
     color: #090A09;
   }
 </style>
+<!-- 
+Pour l’authentification, nous avons utilisé **JWT** (JSON Web Token), une technologie qui permet de sécuriser les sessions utilisateur en générant un token unique.
+
+Dans ce code extrait de **authActions.js**, on peut observer les étapes suivantes :
+
+- **Lecture des données utilisateur** :  
+  Nous commençons par récupérer l’utilisateur en base de données grâce à son email, incluant son mot de passe haché.
+
+- **Vérification du mot de passe** :  
+  Ensuite, à l’aide de la bibliothèque **argon2**, nous comparons le mot de passe saisi avec celui stocké.  
+
+- **Génération du token JWT** :  
+  Si la vérification est réussie, un token JWT est créé. Ce token contient l’ID de l’utilisateur ainsi qu’un éventuel rôle d’administrateur, et est configuré pour expirer après une heure.  
+
+- **Envoi du cookie** :  
+  Enfin, le token est renvoyé au client sous forme de **cookie sécurisé**, accompagné des informations utilisateur pour une gestion côté frontend.  
+
+Ce système garantit une authentification sécurisée et permet de personnaliser l’expérience utilisateur en fonction de son rôle.   -->
+
 ---
 layout: two-cols
 transition: slide-left
@@ -2820,7 +3077,7 @@ transition: slide-left
 ### Middleware: auth.js
 
 ````md magic-move {lines: true}
-```js
+```js {*|4|8|9|11-14}
 const jwt = require("jsonwebtoken");
 const verifyToken = (req, res, next) => {
   try {
@@ -2920,6 +3177,24 @@ h1 {
     color: #090A09;
   }
 </style>
+<!-- 
+Pour sécuriser l’accès aux ressources et vérifier que les utilisateurs sont bien authentifiés, nous avons mis en place un middleware basé sur **JWT**.
+
+1. **Lecture du cookie** :  
+   Le middleware récupère le cookie contenant le token via `req.cookies.auth`. Si aucun token n'est présent, l’accès est immédiatement refusé avec un statut `401 Unauthorized`.
+
+2. **Vérification du token** :  
+   Nous utilisons la fonction `jwt.verify` pour décoder et valider le token avec la clé secrète définie dans `process.env.APP_SECRET`. Cela garantit que le token est valide et n’a pas été altéré.
+
+3. **Ajout des données utilisateur** :  
+   Une fois validé, le middleware extrait les informations utilisateur du token, comme l’ID (`sub`), et les ajoute à la requête (`req.body.user_id`). Cela permet aux routes suivantes d’utiliser ces informations sans nouvelle vérification.
+
+4. **Gestion des erreurs** :  
+   En cas de token invalide ou manquant, une erreur est logguée et le client reçoit une réponse avec un message expliquant que l’accès est refusé.
+
+Ce middleware joue un rôle clé dans la sécurisation des routes, en s’assurant que seuls les utilisateurs authentifiés ont accès aux ressources sensibles. 
+-->
+
 ---
 layout: two-cols
 equal: true
