@@ -3956,6 +3956,24 @@ h1 {
     color: #090A09;
   }
 </style>
+
+<!-- 
+Sur cette slide, je vais vous présenter le processus d’**audit et de sécurisation des dépendances** dans notre projet.  
+
+En premier lieu, nous avons utilisé la commande **`npm audit`**, affichée ici, pour analyser toutes les dépendances du projet et détecter d’éventuelles vulnérabilités.  
+CLICK<br>
+Comme le montre cet exemple, l’audit a identifié une vulnérabilité dans la bibliothèque **body-parser**, avec une gravité élevée. 
+<br>CLICK<br>
+Une solution est également suggérée directement dans le rapport, avec la commande **`npm audit fix`**, indiquant qu’il est possible de corriger ce problème automatiquement.  
+CLICK<br>
+Un peu plus bas, nous voyons un résumé qui indique qu’il y avait **12 vulnérabilités** dans les dépendances, classées par niveaux de gravité.  
+CLICK<br>
+Nous avons ensuite exécuté la commande **`npm audit fix`**, qui met à jour ou corrige automatiquement les dépendances vulnérables lorsque cela est possible.  
+CLICK<br>
+Enfin, après correction, nous obtenons un nouveau rapport confirmant qu’il n’y a plus aucune vulnérabilité détectée dans le projet.  
+
+Ce processus est essentiel pour garantir que notre projet reste à jour et protégé contre les éventuelles failles liées aux dépendances utilisées.
+-->
 ---
 layout: dynamic-image 
 image: "./media/Pictures/Lumières_Réactives.webp"
@@ -4008,6 +4026,9 @@ h1 {
     color: #D8B192;
 }
 </style>
+
+<!-- Ensuite, je vous présenterai comment nous avons travaillé sur l’interface utilisateur et l’intégration des données pour offrir une expérience fluide et intuitive aux utilisateurs. -->
+
 ---
 transition: slide-left
 ---
@@ -4121,6 +4142,25 @@ h1 {
     color: #090A09;
   }
 </style>
+<!-- 
+Nous avons structuré notre application avec **ReactJS**, une bibliothèque JavaScript moderne qui nous a permis de construire une interface utilisateur dynamique et réactive.
+
+Pour la gestion des **routes**, nous avons utilisé **React Router Dom**, essentiel pour naviguer entre les différentes pages de notre application.
+
+Ensuite, les fondations classiques mais indispensables :  
+- **HTML**, pour la structure de nos pages.  
+- **CSS**, pour styliser et harmoniser l'apparence de notre site.  
+- **JavaScript**, qui est au cœur de notre logique interactive.
+
+Pour faciliter les requêtes vers notre backend, nous avons intégré **Axios**, une bibliothèque performante pour gérer les appels API.
+
+Nous avons également employé **React Masonry CSS** pour concevoir une disposition élégante et modulable des galeries d’œuvres, assurant une présentation visuelle optimisée.
+
+**Prop-Types** a été utilisé pour vérifier les types de données passées dans nos composants React, ce qui améliore la robustesse et la maintenabilité du code.
+
+Enfin, pour la fonctionnalité d'immertion, la visite virtuelle, nous avons intégré **Phaser**, un framework puissant dédié à la création d’expériences interactives. 
+-->
+
 ---
 transition: slide-left
 ---
@@ -4255,6 +4295,15 @@ h1 {
     color: #090A09;
   }
 </style>
+<!-- 
+
+Nous avons configuré deux fonctions principales pour gérer l’authentification des utilisateurs via des requêtes POST envoyées au backend.
+
+La fonction `postloginUser` est responsable de l’envoi des données d'identification (email et mot de passe) pour permettre à un utilisateur de se connecter. Elle utilise **Axios** pour effectuer une requête POST vers l'API avec les informations nécessaires.  
+L'option `withCredentials: true` est spécifiée pour inclure automatiquement les cookies dans la requête, assurant ainsi une session sécurisée. En cas d’erreur, elle capture et affiche les messages d’erreur pour faciliter le débogage.
+
+La fonction `postRegisterUser`, quant à elle, gère l’inscription de nouveaux utilisateurs. Elle envoie les données saisies par l’utilisateur, comme le pseudo, l’email et le mot de passe, au backend pour créer un compte. Comme pour la connexion, tout problème rencontré lors de l’inscription est logué pour pouvoir être corrigé rapidement.
+ -->
 ---
 transition: slide-left
 ---
@@ -4384,6 +4433,18 @@ h1 {
     color: #090A09;
   }
 </style>
+<!-- 
+Dans cette partie, nous configurons les routes liées à l'authentification dans notre projet ReactJS, en centralisant leur gestion dans le fichier `main.jsx`.
+
+Nous commençons par importer les fonctions `postloginUser` et `postRegisterUser` depuis le fichier `request.js`. Ces fonctions gèrent respectivement les requêtes pour la connexion et l'inscription des utilisateurs.
+
+Ensuite, nous définissons la route `/authentification`, associée à la page `AuthPage`, qui sert de point d’entrée pour l’utilisateur afin de choisir entre se connecter ou s’inscrire.
+
+La route `/login` est ensuite configurée pour afficher la page de connexion, où l’utilisateur peut saisir ses identifiants pour accéder à son compte.
+
+Enfin, la route `/register` permet aux nouveaux utilisateurs de s’inscrire via une page dédiée.
+
+ -->
 ---
 transition: slide-left
 ---
@@ -4584,6 +4645,23 @@ h1 {
   height: auto;
 }
 </style>
+
+<!-- 
+Ce composant est la page principale pour l'authentification. Il utilise le contexte `Auth` pour vérifier si un utilisateur est connecté.  
+- Si l'utilisateur est déjà authentifié, il est automatiquement redirigé vers la page de bord grâce à `navigate("/dashboard")`.  
+- Sinon, la page affiche deux liens simples : un pour la **connexion** et un autre pour l'**inscription**, permettant à l'utilisateur de choisir son action.
+<br>CLICK<br><br>
+Pour la page **Login**, elle permet aux utilisateurs existants de se connecter.  
+- Elle dispose de champs pour l'**email** et le **mot de passe**, gérés avec des `useState`.  
+- Lors de la soumission du formulaire, la fonction `handleSubmit` envoie les données via `postloginUser`.  
+- Si la réponse est positive (statut 200), le contexte d'authentification est mis à jour avec `setAuth`, et l'utilisateur est redirigé vers le tableau de bord.
+<br>CLICK<br><br>
+Et enfin pour l'inscription, pour des nouveaux utilisateurs.  
+- Cette page propose des champs pour saisir le pseudo, l'email, et deux champs pour le mot de passe don un pour la confirmation.  
+- Avant l'envoi, une validation simple vérifie si les deux mots de passe correspondent.  
+- Si tout est correct, les données sont envoyées via `postRegisterUser`, et en cas de succès (statut 201), l'utilisateur est redirigé vers la page de connexion afin de pouvoir s'authentifier. 
+-->
+
 ---
 transition: slide-left
 ---
@@ -4601,7 +4679,7 @@ transition: slide-left
 ### AuthContext.jsx
 
 ````md magic-move {lines: true}
-```jsx{*}
+```jsx{*|3|4,5|17}
 import { createContext, useState, useContext } from "react";
 const AuthContext = createContext();
 export function AuthProvider({ children }) {
@@ -4707,6 +4785,14 @@ h1 {
     color: #090A09;
   }
 </style>
+<!-- 
+Le contexte React `AuthContext` centralise les informations d'authentification. Il repose sur trois éléments clés :  
+1. **`AuthProvider`** : un composant qui encapsule l'application et partage les données d'authentification via un contexte.  
+2. **L'état de `auth`** : il stocke les informations de l'utilisateur connecté et peut être mis à jour avec `setAuth` ou partiellement modifié via `updateUser`.  
+3. **`useAuth`** : un hook personnalisé qui simplifie l'accès au contexte depuis n'importe quel composant.
+
+Ce système nous a permis de gérer efficacement l'état d'authentification dans toute l'application, en rendant les interactions plus cohérentes et le code plus maintenable.
+ -->
 ---
 transition: slide-up
 ---
@@ -4826,6 +4912,13 @@ h1 {
     color: #090A09;
   }
 </style>
+<!-- 
+L'idée principale de la **centralisation des imports CSS** dans le fichier **App.jsx** est de regrouper tous les fichiers de styles en un seul point d'entrée. 
+Chaque fichier étant dédié à une partie spécifique de l'interface, ce qui optimise l'organisation et simplifie leur gestion.
+
+Comme `homepage.css` pour la page d'accueil ainsi que les composants spécificique tels que `navbarcomponent.css` ou `footercomponent.css`.
+-->
+
 ---
 layout: dynamic-image 
 image: "./media/Pictures/Chaos_Organisé.webp"
@@ -4878,6 +4971,9 @@ h1 {
     color: #D8B192;
 }
 </style>
+
+<!-- Après avoir détaillé les différentes parties du projet, je vais maintenant vous montrer une démonstration des fonctionnalités principales pour vous donner un aperçu concret du rendu final. -->
+
 ---
 layout: dynamic-image 
 image: "./media/Pictures/Algorithme_de_Vie.webp"
@@ -4930,6 +5026,13 @@ h1 {
     color: #D8B192;
 }
 </style>
+<!-- 
+Nous sommes pleinement conscients que, réalisé en seulement un mois, ce premier projet fullstack n’est pas parfait. Cependant, il a été une expérience extrêmement enrichissante, nous permettant d'apprendre énormément, que ce soit en termes de gestion de projet, d'organisation, ou de prise en main des différentes technologies utilisées.
+
+Ce fut un mois intense, rempli de défis et de découvertes. Au fil du projet, nous avons identifié plusieurs axes d'amélioration : l'optimisation de l'expérience utilisateur, un visuel plus abouti, une meilleure ergonomie des formulaires, ou encore le perfectionnement de la fonctionnalité d’immersion interactive.
+
+Malgré ces points perfectibles, nous sommes très fiers du travail accompli. Ce projet a représenté un véritable défi, et l’avoir mené à bien en si peu de temps est une grande satisfaction pour toute l’équipe. -->
+
 ---
 layout: dynamic-image 
 image: 'https://avatars.githubusercontent.com/dampherrr'
@@ -5018,3 +5121,9 @@ align-items: center;
 flex-direction: column;
 }
 </style>
+<!-- 
+Avant de conclure, je tiens à vous remercier pour votre attention tout au long de cette présentation. 
+
+Vous pouvez me retrouver sur mes réseaux professionnels. 
+
+J’ai ajouté un QR code qui mène directement à mon profil LinkedIn, si vous souhaitez en savoir plus sur mon parcours." -->
