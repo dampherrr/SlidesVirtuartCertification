@@ -93,10 +93,10 @@ flex-direction: column;
 
 <!--
 Bonjour, <br>
-Je m'appelle Damien Goguet, aujourd'hui je suis développeur web full stack après une reconversion professionnelle.<br>
-Auparavant, j'ai été technicien supérieur en systèmes et réseaux. <br> 
-J'ai suivi le bootcamp intensif à la Wild Code School qui a durée 5 mois pour concrétiser ce nouveau parcours.<br>
-Je suis ravi de vous présenter aujourd'hui l'un de mes projets que j'ai réalisé durant cette formation.<br>
+Je m'appelle **Damien Goguet**, aujourd'hui je suis **développeur web full stack** après une **reconversion** professionnelle.<br>
+Auparavant, j'ai été **technicien supérieur en systèmes et réseaux**. <br> 
+J'ai suivi le **bootcamp** intensif à la **Wild Code School** qui a durée **5 mois** pour concrétiser ce nouveau parcours.<br>
+Je suis ravi de vous **présenter** aujourd'hui l'un de mes projets que j'ai réalisé durant cette formation.<br>
 -->
 
 ---
@@ -155,8 +155,8 @@ left: false
 </style>
 
 <!--
-Le projet Virtuart est notre troisième projet fil rouge, réalisé en full stack. Il s'agit d'une galerie interactive dédiée à la peinture et aux œuvres numériques.
-Le code source du projet est hébergé sur GitHub.
+Le projet Virtuart est notre **troisième projet fil rouge**, réalisé en **full stack**. Il s'agit d'une **galerie interactive** dédiée à la peinture et aux œuvres numériques.
+Le code source du projet est **hébergé sur GitHub**.
 -->
 
 ---
@@ -376,16 +376,21 @@ h1 {
 </style>
 
 <!--
-Dans ce projet, nous avons travaillé à partir de **points précis** définis par un client fictif, tout en ayant une grande liberté pour le reste, allant jusqu’à la création du nom et du logo.  
-
-1. L’un des points majeurs était la création d’une **galerie d’art accessible à tous**, avec une expérience adaptée aux différents types d’utilisateurs.  
-2. Pour la version desktop, il souhaitait également intégrer une **visite interactive**, permettant une immersion dans la galerie.  
+Dans ce projet, nous avons travaillé à partir de **points précis** définis par un **client fictif**, tout en ayant une grande **liberté pour le reste**.  
+CLICK<br>
+1. L’un des points majeurs était la création d’une **galerie d’art accessible à tous**.  
+CLICK<br>
+2. Pour la version desktop, il souhaitait également intégrer une **visite interactive**.  
+CLICK<br>
 3. Le projet devait inclure la gestion de **trois niveaux d’utilisateurs** :  
    - Les **visiteurs**, qui peuvent consulter le site sans interactions.  
    - Les **utilisateurs connectés**, capables de publier et gérer leurs propres œuvres.  
    - Les **administrateurs**, responsables de la gestion des événements, comme les expositions.  
+CLICK<br>
 4. Une autre fonctionnalité demandée était de permettre aux utilisateurs connectés **d’ajouter des œuvres à leurs favoris** pour les retrouver facilement.  
-5. Enfin, le site devait être **entièrement responsive**, accessible aussi bien sur mobile que sur desktop.  
+CLICK<br>
+5. Enfin, le site devait être **entièrement responsive**, sur mobile et sur desktop.  
+CLICK<br>
 6. Pour relever ce défi, nous disposions d’une **deadline d’un mois** pour concevoir et livrer l’ensemble du projet.  
 -->
 
@@ -517,15 +522,23 @@ border-radius: 8px;
 <!-- 
 Dans cette présentation, je vais détailler les différentes étapes de la conception et de la réalisation de ce projet :
 
-1. Nous commencerons par explorer les **outils de communication et de collaboration** qui ont structuré notre travail en équipe et facilité le suivi de l'avancement du projet.  
-2. Ensuite, nous nous pencherons sur **l’identité visuelle et le design**, avec les choix graphiques qui reflètent l’essence du projet, ainsi que les outils utilisés pour concevoir son esthétique.  
-3. Puis, je vous présenterai **l’architecture technique**, basée sur l’approche MVC, pour structurer le code de manière claire et maintenable.  
-4. Nous poursuivrons avec **la modélisation des données**, en partant du MCD pour conceptualiser les besoins, avant de passer aux modèles logique (MLD) et physique (MPD).
-5. Du côté de **la gestion serveur**, je vous expliquerai les technologies utilisées, les exemples de tables, les opérations CRUD, et les routes implémentées.  
-6. Concernant la **sécurité**, nous verrons les mesures mises en place pour protéger les informations sensibles et garantir la fiabilité des fonctionnalités.  
-7. En ce qui concerne la **gestion client**, je détaillerai les technologies utilisées pour le frontend, la récupération des données via les requêtes API, et leur intégration dans l’interface utilisateur.  
-8. Une **démonstration pratique** vous permettra de découvrir les principales fonctionnalités du site et de voir le projet en action.  
-9. Enfin, je **conclurai** cette présentation par une synthèse des apprentissages, les défis que nous avons relevés, et les pistes pour de futures améliorations.  
+1. Nous commencerons par explorer les **outils de communication et de collaboration** qui ont structuré notre travail en équipe.  
+CLICK<br>
+1. Ensuite, nous nous pencherons sur **l’identité visuelle et le design**, avec les choix graphiques qui reflètent l’essence du projet, ainsi que les outils utilisés.  
+CLICK<br>
+1. Puis, je vous présenterai **l’architecture technique**, pour structurer le code de manière claire et maintenable.  
+CLICK<br>
+1. Nous poursuivrons avec **la modélisation des données**, en partant de la conceptualisation des besoin.
+<br>CLICK<br>
+1. Ensuite du coté de **la gestion serveur**.
+<br>CLICK<br>
+1. Mais aussi la **sécurité**, nous verrons les mesures mises en place.
+<br>CLICK<br>  
+1. Puis la **gestion client**.  
+CLICK<br>
+1. Une **démonstration pratique** pour voir le projet en action. 
+<br>CLICK<br>
+1. Enfin, je **conclurai** cette présentation par une synthèse des défis que nous avons relevés, et les pistes pour de futures améliorations.  
 -->
 ---
 layout: dynamic-image
@@ -712,23 +725,23 @@ h1 {
 </style>
 
 <!-- 
-A- Pour **structurer** notre travail, nous avons opté pour une **méthodologie Agile basée sur Scrum**.
+Pour **structurer** notre travail, 
+<br>CLICK<br>
+nous avons opté pour une **méthodologie Agile basée sur Scrum**.
 
-1- Grâce à des sprints hebdomadaires, nous avons fixé des objectifs clairs, ajusté les priorités, et maintenu un rythme constant tout au long du projet.
+Grâce à des **sprints hebdomadaires**, nous avons fixé des **objectifs clairs** et ajusté les **priorités** tout au long du projet.
+
+CLICK<br>
 
 B- Pour rester organisés, nous avons utilisé trois outils principaux :
+<br>CLICK<br>
 
-1- **Discord** : Nous avons **centralisé nos échanges** avec des fils thématiques dédiés, comme pour le CSS ou les pull requests. Cela nous a permis de collaborer efficacement au quotidien, notamment pour valider les PR.<br>
-2- **Google Sheets** : Pour gérer le backlog, nous avons listé toutes les user stories et tâches, en les classant par ordre de priorité.<br>
-3- **FigJam** : Nous avons utilisé FigJam pour **collaborer en temps réel**, notamment pour les brainstormings et la gestion des to-do lists hebdomadaires. Chaque sprint avait une colonne **'À faire'**, **'En cours'**, et **'Terminé'**.<br>
-
-C- Pour **illustrer** notre organisation
-
-1- Voici notre espace **Discord**, où les fils thématiques et les discussions sur les pull requests ont facilité nos interactions."
-
-2- Sur **Google Sheets**, nous avons suivi les user stories et planifié nos priorités.
-
-3- Enfin, sur **FigJam**, nos to-do lists hebdomadaires nous ont permis de visualiser l’état d’avancement des tâches en un coup d’œil. 
+<br>CLICK<br>
+1- Nous avons **centralisé nos échanges** sur **Discord** avec des fils thématiques dédiés, comme pour le CSS ou les pull requests. Cela nous a permis de collaborer efficacement au quotidien, notamment pour valider les PR.<br>
+<br>CLICK<br>
+2- **Google Sheets** pour gérer le backlog, nous avons listé toutes les user stories et tâches, en les classant par ordre de priorité.<br>
+<br>CLICK<br>
+3- Puis nous avons utilisé FigJam pour **collaborer en temps réel**, notamment pour les brainstormings et la gestion des to-do lists hebdomadaires. Chaque sprint avait une colonne **'À faire'**, **'En cours'**, et **'Terminé'**.<br>
 -->
 ---
 layout: two-cols
@@ -872,24 +885,29 @@ h1 {
 </style>
 
 <!-- 
-A - Pour commencer, nous avons utilisé un template appelé Harmonia, fourni par la Wild Code School.
+Pour commencer,<br>CLICK<br> nous avons utilisé un template appelé **Harmonia**, fourni par la Wild Code School.
+
 Ce template pédagogique a servi de point de départ pour structurer notre projet et poser les bases de notre développement.
+<br>CLICK<br>
 
-B - Pour alimenter rapidement notre base de données et créer un contenu de test réaliste, nous avons utilisé ChatGPT.
+Pour alimenter rapidement notre base de données et créer un contenu de test réaliste, 
+<br>CLICK<br>nous avons utilisé ChatGPT.
+
 Cet outil nous a permis de générer de la data que ce soit des noms fictifs ou des images en quelques minutes, ce qui a été un gain de temps considérable.
+<br>CLICK<br>
 
-C - Nous avons utilisé plusieurs outils techniques pour le développement et le suivi du projet :
-
+Nous avons utilisé plusieurs outils techniques pour le développement et le suivi du projet :
+<br>CLICK<br>
 **VS Code** : L’éditeur de code principal.<br>
-**Node.js** : Pour exécuter notre code côté serveur.<br>
+**Node.js** : Pour exécuter notre code.<br>
 **Git** : Pour le versionnement et la gestion des contributions de l’équipe.<br>
 **GitHub** : Pour l’hébergement et le partage de notre dépôt.<br>
-**Jest** : Pour les tests unitaires et assurer la fiabilité de certaines fonctionnalités.<br>
-**Postman** : Indispensable pour tester les API et vérifier les échanges avec le backend.<br>
+**Jest** : Pour les tests unitaires.<br>
+**Postman** : Indispensable pour tester les API.<br>
  -->
 
 ---
-transition: slide-left
+transition: slide-up
 ---
 
 <div class="block" v-motion
@@ -993,15 +1011,15 @@ h1 {
   }
 </style>
 <!-- 
-A - Pour assurer la qualité de notre code et garantir qu’il soit maintenable et performant, nous avons utilisé plusieurs outils directement fournis par le template **Harmonia**.
+Pour assurer la qualité de notre code et garantir qu’il soit maintenable et performant, nous avons utilisé plusieurs outils directement fournis par le template **Harmonia**.
+<br>CLICK<br>
+1- **ESLint** a permis de détecter rapidement les erreurs et d’assurer le respect des bonnes pratiques JavaScript.  
+2- **Prettier** a harmonisé automatiquement le style de code, évitant toute divergence entre les membres de l’équipe.  
+3- Avec **Husky**, des hooks Git ont été déclenchés avant chaque commit pour prévenir l’introduction d’erreurs.  
+4- **Lint-Staged** a limité l’analyse et la correction aux fichiers modifiés, rendant le processus plus rapide.  
+5- **Vite** a offert une compilation rapide pendant le développement et une mise en production optimisée.  
 
-1- **ESLint** a joué un rôle clé en analysant le code de manière statique, ce qui nous a permis de détecter rapidement les erreurs et de respecter les bonnes pratiques JavaScript. <br>
-2- Ensuite, nous avons utilisé **Prettier** pour harmoniser automatiquement le style de code entre les membres de l’équipe, évitant ainsi toute divergence d’écriture.<br>
-3- Pour renforcer notre workflow avec Git, nous avons intégré **Husky**. Cet outil déclenche des hooks Git avant chaque commit, comme le linting ou les tests, ce qui nous a permis de prévenir l’introduction d’erreurs dans le dépôt. <br>
-4- De son côté, **Lint-Staged** a optimisé ce processus en limitant l’analyse et la correction aux fichiers réellement modifiés, rendant le tout plus rapide et efficace.<br>
-5- Enfin, nous avons utilisé **Vite** pour son efficacité. Cet outil nous a offert une compilation rapide pendant le développement et une optimisation des fichiers pour une mise en production performante.<br>
-
-Ces outils combinés nous ont permis de **maintenir un workflow** à la fois efficace, fiable, et aligné avec des standards professionnels élevés.<br>
+Ces outils ont assuré un workflow efficace, fiable et conforme aux standards professionnels.
 -->
 ---
 layout: dynamic-image 
@@ -1057,7 +1075,8 @@ h1 {
 }
 </style>
 
-<!-- Une fois l'organisation en place, nous avons défini une identité visuelle pour le projet. Je vais vous expliquer les choix graphiques que nous avons faits et les outils que nous avons utilisés pour donner vie à cette esthétique. -->
+<!-- Une fois l'organisation en place, nous avons défini une **identité visuelle** pour le projet. 
+Je vais vous expliquer les **choix graphiques** que nous avons faits et les outils que nous avons **utilisés pour la conception**. -->
 ---
 layout: two-cols
 transition: slide-left
@@ -1133,11 +1152,11 @@ h1 {
 </style>
 
 <!-- 
-A- Pour concevoir notre projet, nous avons cherché des sources d'inspiration dans le domaine des galeries d'art en ligne. Le site Carré d'artistes nous a particulièrement influencés grâce à son design élégant et sa simplicité d'accès. Cela nous a aidés à définir l'expérience utilisateur souhaitée.
-
-B- Pour donner une identité visuelle cohérente et esthétique à notre site, nous avons choisi une palette de couleurs sobres et élégantes, en harmonie avec l’univers de l’art.
-
-C- Nous avons opté pour la police Montserrat, qui combine modernité et lisibilité, renforçant ainsi l’aspect professionnel et épuré du site. -->
+Pour concevoir notre projet, nous avons cherché des sources d'inspiration dans le domaine des galeries d'art en ligne. **Le site Carré d'artistes** nous a particulièrement influencés grâce à son design élégant et sa simplicité d'accès. Cela nous a aidés à définir l'expérience utilisateur souhaitée.
+<br>CLICK<br>
+Pour donner une **identité visuelle** cohérente et esthétique à notre site, nous avons choisi une palette de couleurs sobres et élégantes, en harmonie avec l’univers de l’art.
+<br>CLICK<br>
+Enfin pour la typographie nous avons opté pour la police Montserrat, qui combine modernité et lisibilité, renforçant ainsi l’aspect professionnel et épuré du site. -->
 
 ---
 layout: two-cols
@@ -1159,9 +1178,7 @@ transition: slide-up
 <br>
 <br>
 <br>
-<div v-click v-motion
-  :initial="{ x: 80 }"
-  :enter="{ x: 0, y: 0 }">
+<div>
 <img src="./media/Pictures/Figma.png" width="1500" height="1000">
 </div>
 
@@ -1235,11 +1252,7 @@ h1 {
 </style>
 
 <!-- 
-A - Pour la phase de **maquettage**, nous avons utilisé Figma, un outil de design collaboratif. Il nous a permis de visualiser et structurer le site avant de commencer le développement.
-Grâce à Figma, nous avons conçu une maquette interactive, ajusté le design en équipe, et validé l’ergonomie du site avant de passer au code.
-
-B - Voici une **capture d’écran** de la maquette réalisée sur Figma, qui représente la structure et le design général du site tel qu’imaginé durant cette phase de conception.
- -->
+Pour le **maquettage**, nous avons utilisé Figma pour concevoir une maquette interactive, ajuster le design en équipe et valider l’ergonomie avant le développement. Voici une **capture d’écran** illustrant la structure et le design du site. -->
 ---
 layout: dynamic-image 
 image: "./media/Pictures/Douce_Mélancolie.webp"
@@ -1393,19 +1406,17 @@ h1 {
 </style>
 <!-- 
 Pour organiser le projet de manière claire et maintenable, nous avons adopté l'architecture **MVC**, qui repose sur la séparation des responsabilités.
-
+<br>CLICK<br>
 Ce schéma illustre le fonctionnement du modèle **Model View Controller** dans notre projet. Je vais vous expliquer chaque étape représentée ici.
 
 1. **L'utilisateur** interagit avec le site, envoyant une requête HTTP.  
-2. Cette requête est gérée par le **Controller**, qui agit comme un chef d'orchestre :  
-   - Il décide des données nécessaires et effectue un appel aux **services** (ou middleware).  
+2. Le **Controller** gère la requête en orchestrant les appels aux **services** (ou middleware) pour récupérer les données nécessaires.
 3. Les **services** transmettent la requête au **Model**, qui interagit directement avec la **base de données**.  
 4. Une fois les données récupérées, le **Model** les renvoie au **Controller** via les services.  
 5. Le **Controller** passe ensuite les données à la **Vue**, qui les formate en HTML pour les afficher à l'utilisateur.  
 6. Enfin, l'utilisateur reçoit une **réponse HTTP** contenant la page générée.
 
-L'architecture MVC offre une organisation modulaire et maintenable, essentielle pour gérer les interactions complexes entre utilisateurs, données et interface.
-
+L'architecture MVC organise et simplifie la **gestion des interactions** entre utilisateurs, données et interface.
  -->
 ---
 layout: two-cols
@@ -1512,16 +1523,23 @@ module.exports = ArtworkRepository;
 </style>
 
 <!-- 
-Voici un exemple de **Model** avec le fichier `ArtworkRepository.js`. C’est dans cette classe que nous définissons la logique pour interagir avec la base de données.
+Voici un exemple de **Model** avec le fichier `ArtworkRepository.js`. 
 
-- Nous avons ici la méthode `readAll`, qui permet de récupérer toutes les œuvres d’art depuis la table `artwork`. Nous utilisons une jointure avec la table `user` pour inclure le nom de l’artiste. De plus, nous formatons la date pour qu’elle soit plus lisible dans le frontend.
+C’est dans cette classe que nous définissons la logique pour interagir avec la base de données.
 
-- La méthode `read` fonctionne de manière similaire, mais elle est conçue pour récupérer une œuvre spécifique grâce à son ID. Cette méthode est utile, par exemple, pour afficher les détails d’une œuvre sur une page dédiée.
+CLICK<br>
 
-- Enfin, voici un exemple de **View**, avec la page coté front d’une œuvre. Cette page utilise les données récupérées par notre modèle et les affiche de manière esthétique et organisée.
+Nous avons ici la méthode `readAll`, qui permet de récupérer toutes les œuvres d’art depuis la table `artwork`. 
 
+Nous utilisons une jointure avec la table `user` pour inclure le nom de l’artiste. De plus, nous formatons la date pour qu’elle soit plus lisible dans le front.
 
+CLICK<br>
 
+La méthode `read` fonctionne de manière similaire, mais elle est conçue pour récupérer une œuvre spécifique grâce à son ID. Cette méthode est utile, par exemple, pour afficher les détails d’une œuvre sur une page dédiée.
+
+CLICK<br>
+
+Enfin, voici un exemple de **View**, avec la page coté front d’une œuvre. Cette page utilise les données récupérées par notre modèle et les affiche.
  -->
 ---
 transition: slide-up
@@ -1602,13 +1620,21 @@ module.exports = { browse, read, add, edit, destroy};
 }
 </style>
 <!-- 
-- Passons maintenant à l’exemple de Controller avec le fichier `artworkActions.js`. Ici, nous gérons la logique de traitement des requêtes HTTP et la communication avec le Model.<br>
+Passons maintenant à l’exemple de Controller avec le fichier `artworkActions.js`. 
+
+Ici, nous gérons la logique de traitement des requêtes HTTP et la communication avec le Model.<br>
   
-  Voici la méthode `browse`. Elle utilise la fonction `readAll` du modèle pour récupérer toutes les œuvres, puis renvoie ces données au format JSON pour le frontend.
+Voici la méthode `browse`. Elle utilise la fonction `readAll` du modèle pour récupérer toutes les œuvres, puis renvoie ces données au format JSON pour le frontend.
 
-- Ici, la méthode `read` permet de récupérer une œuvre précise via son ID. Si l’œuvre n’est pas trouvée, elle renvoie un statut HTTP `404`. Ce genre de validation assure la fiabilité et la robustesse de notre API.
+CLICK
 
-- Enfin, nous avons intégré d'autres méthodes essentielles pour la gestion des œuvres, telles que `add` pour ajouter une nouvelle œuvre, `edit` pour la modifier, et `destroy` pour la supprimer.
+Ici, la méthode `read` permet de récupérer une œuvre précise via son ID. 
+
+Si l’œuvre n’est pas trouvée, elle renvoie un statut HTTP `404`. Ce genre de validation assure la fiabilité et la robustesse de notre API.
+
+CLICK
+
+Enfin, nous avons intégré d'autres méthodes essentielles pour la gestion des œuvres, telles que `add` pour l'ajout, `edit` pour la modifier, et `destroy` pour la supprimer.
  -->
 
 ---
@@ -1665,7 +1691,7 @@ h1 {
 }
 </style>
 
-<!-- Pour répondre aux besoins du projet, il a été nécessaire de structurer les données. Dans cette partie, je vais vous expliquer comment nous avons conçu les modèles conceptuels, logiques, et physiques de la base de données. -->
+<!-- Pour structurer les données du projet, je vais vous présenter la conception de la base de données à travers ses différentes étapes.-->
 
 
 ---
@@ -1772,9 +1798,13 @@ h1 {
 <!-- 
 Pour la modélisation des données et la conception de notre base, nous avons utilisé deux outils clés :
 
-- Nous avons utilisé Draw.io pour concevoir les différents schémas de modélisation de notre base de données, comme le MCD, le MLD, et le MPD. Cet outil nous a permis de représenter visuellement la structure de nos données de manière claire et précise.
+CLICK
 
-- Nous avons également suivi la méthode Merise, qui nous a guidés étape par étape, du modèle conceptuel au modèle physique, pour structurer efficacement notre base de données.
+Nous avons utilisé **Draw.io** pour concevoir les différents schémas de modélisation de notre base de données.
+
+CLICK
+
+Nous avons également suivi la **méthode Merise**, qui nous a guidés étape par étape, du modèle conceptuel au modèle physique, pour structurer efficacement notre base de données.
  -->
 ---
 layout: two-cols
@@ -1826,6 +1856,15 @@ transition: slide-left
   <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
 </div>
 
+<Arrow v-click="[2,3]" x1="300" y1="250" x2="550" y2="150" />
+<Arrow v-click="[2,3]" x1="300" y1="250" x2="750" y2="150" />
+<Arrow v-click="[3,4]" x1="300" y1="250" x2="550" y2="80" />
+<Arrow v-click="[3,4]" x1="300" y1="250" x2="780" y2="80" />
+<Arrow v-click="[4,5]" x1="300" y1="250" x2="750" y2="180" />
+<Arrow v-click="[4,5]" x1="300" y1="250" x2="800" y2="380" />
+<Arrow v-click="[5,6]" x1="300" y1="250" x2="500" y2="380" />
+<Arrow v-click="[5,6]" x1="300" y1="250" x2="800" y2="380" />
+
 <style>
 
 .page {
@@ -1866,19 +1905,20 @@ transition: slide-left
 }
 </style>
 <!-- 
-Nous allons commencer par le **MCD (Modèle Conceptuel de Données)**. Cette première étape permet de représenter les entités principales et les relations entre elles, sans se préoccuper encore de leur implémentation technique.
+Nous allons commencer par le **MCD**.
 
+CLICK
+
+Le **Modèle Conceptuel de Données** est la première étape qui permet de représenter les entités principales et les relations entre elles, sans se préoccuper encore de leur implémentation technique.
 Dans notre projet :
-- **Utilisateur et œuvres** :  
-  Un **utilisateur** peut ajouter une ou plusieurs œuvres d’art à la galerie. Cela se traduit par une relation `1,N`, c’est-à-dire qu’un utilisateur peut créer plusieurs œuvres, mais chaque œuvre appartient à un seul utilisateur.  
-  Par ailleurs, un utilisateur peut **ajouter des œuvres à ses favoris**. Ici, la relation est de type `0,N` entre `user` et `artwork`, via l’entité associative `favorite`. Cela signifie qu’un utilisateur peut n’avoir aucun favori ou en ajouter plusieurs, et qu’une œuvre peut être ajoutée aux favoris de plusieurs utilisateurs.  
-
-- **Œuvres et expositions** :  
-  Les **œuvres d’art** peuvent être associées à une ou plusieurs **expositions**. Cette relation est de type `1,N` entre `artwork` et `exhibition`. Cela signifie qu’une œuvre peut être incluse dans plusieurs expositions, et une exposition peut regrouper plusieurs œuvres.  
-
-- **Utilisateur et expositions** :  
-  Enfin, un **utilisateur administrateur** peut gérer une ou plusieurs **expositions**. Cela correspond à une relation `1,N`, où chaque exposition est supervisée par un administrateur unique, mais un administrateur peut gérer plusieurs expositions.  
- -->
+CLICK
+- Un utilisateur peut ajouter plusieurs œuvres, mais chaque œuvre appartient à un seul utilisateur.  
+CLICK
+- Un utilisateur peut ajouter des œuvres en favoris, et une œuvre peut être ajoutée aux favoris de plusieurs utilisateurs.  
+CLICK
+- Une œuvre peut être présentée dans plusieurs expositions, et une exposition peut contenir plusieurs œuvres.  
+CLICK
+- Un administrateur gère une ou plusieurs expositions, mais chaque exposition est gérée par un seul administrateur.   -->
 
 ---
 layout: two-cols
@@ -1914,6 +1954,16 @@ transition: slide-left
     <strong> D</strong><span>onnées</span>
   </h2>
 </div>
+
+<Arrow v-click="[2,3]" x1="500" y1="280" x2="150" y2="190" />
+<Arrow v-click="[2,3]" x1="500" y1="280" x2="300" y2="190" />
+<Arrow v-click="[3,4]" x1="500" y1="280" x2="80" y2="190" />
+<Arrow v-click="[3,4]" x1="500" y1="280" x2="350" y2="190" />
+<Arrow v-click="[3,4]" x1="500" y1="280" x2="200" y2="80" />
+<Arrow v-click="[4,5]" x1="500" y1="280" x2="750" y2="180" />
+<Arrow v-click="[4,5]" x1="500" y1="280" x2="800" y2="380" />
+<Arrow v-click="[5,6]" x1="500" y1="280" x2="500" y2="380" />
+<Arrow v-click="[5,6]" x1="500" y1="280" x2="800" y2="380" />
 
 
 <div class="abs-br m-8 flex gap-2">
