@@ -1810,6 +1810,7 @@ Nous avons également suivi la **méthode Merise**, qui nous a guidés étape pa
 layout: two-cols
 transition: slide-left
 ---
+
 <br>
 <br>
 <br>
@@ -1856,14 +1857,14 @@ transition: slide-left
   <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
 </div>
 
-<Arrow v-click="[2,3]" x1="300" y1="250" x2="550" y2="150" />
-<Arrow v-click="[2,3]" x1="300" y1="250" x2="750" y2="150" />
-<Arrow v-click="[3,4]" x1="300" y1="250" x2="550" y2="80" />
-<Arrow v-click="[3,4]" x1="300" y1="250" x2="780" y2="80" />
-<Arrow v-click="[4,5]" x1="300" y1="250" x2="750" y2="180" />
-<Arrow v-click="[4,5]" x1="300" y1="250" x2="800" y2="380" />
-<Arrow v-click="[5,6]" x1="300" y1="250" x2="500" y2="380" />
-<Arrow v-click="[5,6]" x1="300" y1="250" x2="800" y2="380" />
+<Arrow class="arrow" v-click="[2,3]" x1="300" y1="250" x2="550" y2="150" />
+<Arrow class="arrow" v-click="[2,3]" x1="300" y1="250" x2="750" y2="150" />
+<Arrow class="arrow" v-click="[3,4]" x1="300" y1="250" x2="550" y2="80" />
+<Arrow class="arrow" v-click="[3,4]" x1="300" y1="250" x2="780" y2="80" />
+<Arrow class="arrow" v-click="[4,5]" x1="300" y1="250" x2="750" y2="180" />
+<Arrow class="arrow" v-click="[4,5]" x1="300" y1="250" x2="800" y2="380" />
+<Arrow class="arrow" v-click="5" x1="300" y1="250" x2="500" y2="380" />
+<Arrow class="arrow" v-click="5" x1="300" y1="250" x2="800" y2="380" />
 
 <style>
 
@@ -1903,7 +1904,12 @@ transition: slide-left
   width: 100%;
   height: auto;
 }
+
+.arrow {
+  color:#D8B192;
+}
 </style>
+
 <!-- 
 Nous allons commencer par le **MCD**.
 
@@ -1924,7 +1930,9 @@ CLICK
 layout: two-cols
 transition: slide-left
 ---
+
 <br>
+
 <div v-click v-motion
   :initial="{ x: -80 }"
   :enter="{ x: 0, y: 0 }">
@@ -1932,6 +1940,7 @@ transition: slide-left
 </div>
 
 ::right::
+
 <br>
 <br>
 <br>
@@ -1955,15 +1964,19 @@ transition: slide-left
   </h2>
 </div>
 
-<Arrow v-click="[2,3]" x1="500" y1="280" x2="150" y2="190" />
-<Arrow v-click="[2,3]" x1="500" y1="280" x2="300" y2="190" />
-<Arrow v-click="[3,4]" x1="500" y1="280" x2="80" y2="190" />
-<Arrow v-click="[3,4]" x1="500" y1="280" x2="350" y2="190" />
-<Arrow v-click="[3,4]" x1="500" y1="280" x2="200" y2="80" />
-<Arrow v-click="[4,5]" x1="500" y1="280" x2="750" y2="80" />
-<Arrow v-click="[4,5]" x1="500" y1="280" x2="800" y2="380" />
-<Arrow v-click="[5,6]" x1="500" y1="280" x2="500" y2="380" />
-<Arrow v-click="[5,6]" x1="500" y1="280" x2="800" y2="380" />
+<Arrow class="arrow" v-click="[2,3]" x1="500" y1="280" x2="150" y2="190" />
+<Arrow class="arrow" v-click="[2,3]" x1="500" y1="280" x2="300" y2="190" />
+
+<Arrow class="arrow" v-click="[3,4]" x1="500" y1="280" x2="80" y2="190" />
+<Arrow class="arrow" v-click="[3,4]" x1="500" y1="280" x2="350" y2="190" />
+<Arrow class="arrow" v-click="[3,4]" x1="500" y1="280" x2="200" y2="80" />
+
+<Arrow class="arrow" v-click="[4,5]" x1="500" y1="280" x2="350" y2="200" />
+<Arrow class="arrow" v-click="[4,5]" x1="500" y1="280" x2="450" y2="300" />
+<Arrow class="arrow" v-click="[4,5]" x1="500" y1="280" x2="400" y2="380" />
+
+<Arrow class="arrow" v-click="5" x1="500" y1="280" x2="120" y2="380" />
+<Arrow class="arrow" v-click="5" x1="500" y1="280" x2="400" y2="380" />
 
 
 <div class="abs-br m-8 flex gap-2">
@@ -2018,22 +2031,34 @@ transition: slide-left
   height: auto;
   padding-left:2rem;
 }
+
+.arrow {
+  color:#D8B192;
+}
 </style>
-<!-- Après la validation du MCD, nous avons élaboré le **MLD (Modèle Logique de Données)**. 
-Cette étape traduit les entités conceptuelles en relations adaptées à une base de données relationnelle, en intégrant les cardinalités définies. 
+<!-- 
+Après la validation du MCD, nous avons élaboré le **MLD** 
+**Modèle Logique de Données** cette étape traduit les entités conceptuelles en relations adaptées en intégrant les cardinalités définies. <br>
+CLICK<br>
+- Pour l'**Utilisateur et les œuvres** :<br>
+La relation est de type **one-to-many** (*1:N*). 
+Chaque utilisateur peut créer plusieurs œuvres (`N`), <br>
+mais chaque œuvre est liée à un seul utilisateur (`1`).  
+CLICK<br>
 
-- Pour l'**Utilisateur et les œuvres** :  
-  La relation est de type **one-to-many** (*1:N*). Chaque utilisateur peut créer plusieurs œuvres (`N`), mais chaque œuvre est liée à un seul utilisateur (`1`). Cela reflète le lien entre un artiste et ses créations.  
-
-- Pour gérer les favoris, une table intermédiaire `favorite` permet une relation **many-to-many** (*N:M*) entre les utilisateurs et les œuvres. Par exemple, un utilisateur peut ajouter plusieurs œuvres en favoris, et chaque œuvre peut être dans les favoris de plusieurs utilisateurs.  
+- Pour gérer les favoris, une table intermédiaire `favorite` permet une relation **many-to-many** (*N:M*) entre les utilisateurs et les œuvres. 
+Par exemple, un utilisateur peut ajouter plusieurs œuvres en favoris, et chaque œuvre peut être dans les favoris de plusieurs utilisateurs.  
+CLICK<br>
 
 - Pareil pour les **Œuvres et les expositions** :  
-  Une relation **many-to-many** (*N:M*) est gérée par la table `artwork_exhibition`. Cela permet qu’une œuvre soit exposée dans plusieurs expositions, et qu’une exposition regroupe plusieurs œuvres. Cette structure reflète la flexibilité nécessaire pour une galerie d’art.  
+Une relation **many-to-many** (*N:M*) est gérée par la table `artwork_exhibition`. 
+Cela permet qu’une œuvre soit exposée dans plusieurs expositions, et qu’une exposition regroupe plusieurs œuvres.  
+CLICK<br>
 
 - Et enfin pour l'**Utilisateur et les expositions** :  
-  Ici, nous avons une relation **one-to-many** (*1:N*). Un administrateur peut gérer plusieurs expositions (`N`), mais chaque exposition est supervisée par un seul administrateur (`1`). Cela garantit une gestion centralisée des événements.  
-
-En résumé, le **MLD** prépare la base de données en organisant clairement les relations *one-to-many* et *many-to-many*, tout en restant aligné sur les besoins identifiés dans le MCD.   -->
+  Ici, nous avons une relation **one-to-many** (*1:N*). Un administrateur peut gérer plusieurs expositions (`N`), 
+  mais chaque exposition est supervisée par un seul administrateur (`1`). 
+-->
 
 ---
 layout: two-cols
@@ -2084,6 +2109,9 @@ transition: slide-up
   <h5><SlideCurrentNo /> / <SlidesTotal /></h5>
 </div>
 
+<Arrow class="arrow" v-click="[2,3]" x1="200" y1="250" x2="280" y2="160" />
+<Arrow class="arrow" v-click="[3,4]" x1="200" y1="250" x2="530" y2="240" />
+
 <style>
 
 .page {
@@ -2131,23 +2159,26 @@ transition: slide-up
  height: 70%;
  width: 70%;
 }
+
+.arrow {
+  color:#D8B192;
+}
+
 </style>
 <!-- 
-Nous arrivons maintenant au **MPD (Modèle Physique de Données)**, la dernière étape de la modélisation, où les concepts se traduisent en une base de données opérationnelle avec des détails techniques comme les types de colonnes, les clés, et les contraintes.
-Voici une version reformulée pour rendre la présentation plus fluide et concise :  
+Nous arrivons maintenant au **MPD**.<br>
+CLICK <br>
+Le **Modèle Physique de Données**, la dernière étape de la modélisation, 
+où les concepts deviennent une base de données prête à l’emploi avec des types, clés et contraintes.  
 
-- Prenons l’exemple de la table `user`. Elle contient des colonnes comme `id`, définie en clé primaire, `email` typée `VARCHAR(255)` avec les contraintes `NOT NULL` et `UNIQUE`, ce qui garantit qu’un email est obligatoire et ne peut pas être dupliqué. De même, la colonne `password` est aussi typée `VARCHAR(255)` et marquée `NOT NULL`, assurant la présence d’un mot de passe pour chaque utilisateur.  
 
-- Les relations qui ont étaient définies dans le MLD se traduisent ici par des clés étrangères. <br>Par exemple, la colonne `user_id` dans la table `artwork` est une clé étrangère qui pointe vers la colonne `id` de la table `user`. Cela garantit qu’une œuvre est toujours associée à un utilisateur existant.  
+- Prenons la table `user` comme exemple.<br>CLICK<br> Elle contient une colonne `id` en clé primaire, et une colonne `email` typée `VARCHAR(255)` avec les contraintes `NOT NULL` et `UNIQUE`. Cela garantit qu’un email est obligatoire et unique. De même, le champ `password` est typé `VARCHAR(255)` et marqué `NOT NULL`, assurant que chaque utilisateur dispose d’un mot de passe.  
+CLICK
+- Dans la table `artwork`, la colonne `user_id` est une clé étrangère liée à la colonne `id` de `user`, assurant qu’une œuvre appartient toujours à un utilisateur valide.  
+CLICK
 
-- Les contraintes comme `NOT NULL` empêchent les données essentielles d’être laissées vides, et `UNIQUE` garantit l’unicité des informations sensibles, comme les emails.  
-
-Le **MPD** est donc une version prête à être déployée dans un **système de gestion de base de données (SGBD)**, comme MySQL.<br> 
-C’est la traduction concrète des concepts et relations définis dans le MCD et le MLD, aboutissant à une base structurée, robuste et cohérente.  
-
-Ces trois étapes – MCD, MLD, MPD – assurent une transition fluide entre la vision conceptuelle et la mise en œuvre technique, tout en respectant les besoins fonctionnels et relationnels du projet.  
+Le **MPD** est prêt pour un **SGBD** comme MySQL, transformant les idées du MCD et du MLD en une base robuste et cohérente, adaptée aux besoins du projet.  
 -->
-
 ---
 layout: dynamic-image 
 image: "./media/Pictures/Lumière_dans_Obscurité.webp"
@@ -2310,12 +2341,13 @@ h1 {
 </style>
 <!-- 
 Pour notre projet, nous avons utilisé deux technologies principales pour gérer le backend :  
-
+CLICK
 - Nous avons choisi MySQL comme **Système de Gestion de Base de Données relationnel**. Il nous a permis de structurer et de gérer efficacement nos données grâce à ses performances robustes et sa capacité à supporter des requêtes complexes.  
+CLICK
 
-- Côté serveur, nous avons utilisé Express, un framework léger et rapide pour Node.js. Il nous a permis de créer et de gérer nos API, en facilitant le routage et la gestion des requêtes HTTP.  
+- Nous avons utilisé aussi **Express**, un framework léger et rapide pour Node.js. 
+Il nous a permis de créer et de gérer nos API, en facilitant le routage et la gestion des requêtes HTTP.  
 
-Ces deux technologies, combinées, nous ont permis d’assurer un backend performant, fiable, et adapté aux besoins fonctionnels du projet.   
 -->
 
 ---
@@ -2400,18 +2432,24 @@ VALUES (
 }
 </style>
 
-<!-- Dans cette slide, je vais vous présenter un exemple concret issu de la base de données, avec la table `artwork`, qui représente les œuvres d’art dans notre projet.
-
-- Dans la structure SQL de la table, nous avons défini une **clé primaire** `id` de type entier non signé, qui s’incrémente automatiquement.  
-- Les colonnes comme `title` et `image_url` permettent de stocker respectivement le titre et l’image associée à une œuvre. 
-- La colonne `image_url` inclut une **valeur par défaut** au cas où aucune image ne serait fournie.  
-- Une colonne `user_id` est une **clé étrangère** qui fait référence à l’utilisateur ayant créé l’œuvre. La contrainte `ON DELETE CASCADE` garantit que si un utilisateur est supprimé, ses œuvres le seront également.  
-
-Voici un exemple d’insertion dans la table `artwork` :  
-- Nous ajoutons une œuvre intitulée "Éclosion", avec une image et une description.  
-- Les colonnes `user_id` et `collection_id` permettent d'associer l’œuvre à un utilisateur et à une collection spécifique.  
-
-Cette structure permet de gérer efficacement les œuvres tout en garantissant leur intégrité et leur association avec les utilisateurs et collections.
+<!-- 
+Je vais vous présenter un exemple concret avec la table `artwork`, utilisée pour gérer les œuvres d’art dans notre projet.  
+CLICK
+- La table inclut une **clé primaire** `id`, un entier auto-incrémenté, 
+<br> CLICK <br> 
+et des colonnes comme `title` et `image_url` pour le titre et l’image associée.  
+CLICK
+- La colonne `image_url` a une **valeur par défaut**, utilisée si aucune image n’est fournie.  
+CLICK
+- La colonne `user_id`, une **clé étrangère**, relie chaque œuvre à son créateur. La contrainte `ON DELETE CASCADE` supprime automatiquement les œuvres si leur utilisateur est supprimé.  
+<br> CLICK <br> 
+Un exemple d’insertion
+<br> CLICK <br> 
+montre une œuvre intitulée "Éclosion", 
+<br> CLICK <br> 
+associée à un utilisateur via `user_id` et à une collection via `collection_id`.  
+<br> CLICK <br> 
+Cette structure assure une gestion efficace des œuvres, tout en garantissant leur intégrité et leur lien avec les utilisateurs et collections.  
 -->
 
 
@@ -2599,23 +2637,27 @@ level: 3
 </style>
 
 <!-- 
-Le **CRUD** représente les quatre actions essentielles pour manipuler les données : **Create**, **Read**, **Update**, et **Delete**.
-
+Le **CRUD** représente les quatre actions essentielles pour manipuler les données
+<br> CLICK <br> 
+ : **Create**, **Read**, **Update**, et **Delete**.
+<br> CLICK <br> 
 - Commençon pas la méthode **Create** qui permet d'ajouter une nouvelle œuvre dans la base de données.  
   Par exemple, ici, on insère les informations d'une œuvre (titre, image, description, etc.) via une requête SQL `INSERT INTO`.  
   C'est la base pour créer du contenu côté utilisateur.
 
+CLICK <br> 
 - La méthode **Read** est utilisée pour récupérer des données.  
   - **`readAll`** : Elle retourne toutes les œuvres, avec des détails comme l'utilisateur qui les a publiées, grâce à une jointure SQL.  
+<br> CLICK <br> 
   - **`read`** : Elle permet de lire une œuvre spécifique selon son identifiant.  
   Ces méthodes servent à afficher les œuvres sur le site.
 
+ CLICK <br> 
 - La méthode **Update** modifie une œuvre existante.  
   Par exemple, on peut changer le titre ou l'image d'une œuvre en mettant à jour les colonnes concernées grâce à une requête SQL `UPDATE`.
-
+<br> CLICK <br> 
 - Enfin, la méthode **Delete** permet de supprimer une œuvre de la base de données avec une requête SQL `DELETE`.  
 
-Ces quatre opérations garantissent la gestion complète des œuvres dans le projet et assurent que les données restent synchronisées entre le backend et l'interface utilisateur. 
 -->
 
 ---
@@ -2720,8 +2762,9 @@ src="./media/Pictures/postmanreadall.png" width="600"/>
 }
 </style>
 <!-- 
-Sur cette slide, je vais vous présenter les **routes de l'application**, définies dans le fichier `Router.js`.<br>
-*CLICK*<br>
+Passons maintenant aux **routes de l'application**, définies dans le fichier `Router.js`.
+
+CLICK<br>
 Nous commençons par l’importation des modules nécessaires avec :
 - `express`, qui est essentiel pour la configuration du serveur.  
 - `router`, une instance d’Express utilisée pour définir les chemins de l'application.<br>
