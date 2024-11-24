@@ -93,8 +93,8 @@ flex-direction: column;
 
 <!--
 Bonjour, <br>
-Je m'appelle **Damien Goguet**, aujourd'hui je suis **développeur web full stack** après une **reconversion** professionnelle.<br>
-Auparavant, j'ai été **technicien supérieur en systèmes et réseaux**. <br> 
+Je m'appelle **Damien Goguet**, aujourd'hui je suis **développeur web full stack** après une **bifurcation** professionnelle.<br>
+Car auparavant, j'ai été **technicien supérieur en systèmes et réseaux**. <br> 
 J'ai suivi le **bootcamp** intensif à la **Wild Code School** qui a durée **5 mois** pour concrétiser ce nouveau parcours.<br>
 Je suis ravi de vous **présenter** aujourd'hui l'un de mes projets que j'ai réalisé durant cette formation.<br>
 -->
@@ -155,7 +155,7 @@ left: false
 </style>
 
 <!--
-Le projet Virtuart est notre **troisième projet fil rouge**, réalisé en **full stack**. Il s'agit d'une **galerie interactive** dédiée à la peinture et aux œuvres numériques.
+Le projet Virtuart est notre **troisième projet fil rouge**, mais le premier réalisé en **full stack**. Il s'agit d'une **galerie interactive** dédiée à la peinture et aux œuvres numériques.
 Le code source du projet est **hébergé sur GitHub**.
 -->
 
@@ -257,7 +257,8 @@ border-radius: 8px;
 </style>
 
 <!--
-Nous étions une équipe de 5 personnes pour concevoir ce projet. Nous avons adopté une approche collaborative en nous répartissant les rôles de manière tournante, ce qui a permis à chacun de participer à toutes les étapes de la réalisation.
+Nous étions une équipe de **5 personnes** pour concevoir ce projet. 
+Nous avons adopté une **approche collaborative** **en nous répartissant** les rôles de manière tournante, ce qui a permis à **chacun** de participer à toutes les étapes de la réalisation.
 -->
 
 ---
@@ -383,15 +384,15 @@ CLICK<br>
 2. Pour la version desktop, il souhaitait également intégrer une **visite interactive**.  
 CLICK<br>
 3. Le projet devait inclure la gestion de **trois niveaux d’utilisateurs** :  
-   - Les **visiteurs**, qui peuvent consulter le site sans interactions.  
+   - Les **visiteurs**, qui peuvent consulter le site.  
    - Les **utilisateurs connectés**, capables de publier et gérer leurs propres œuvres.  
    - Les **administrateurs**, responsables de la gestion des événements, comme les expositions.  
 CLICK<br>
-4. Une autre fonctionnalité demandée était de permettre aux utilisateurs connectés **d’ajouter des œuvres à leurs favoris** pour les retrouver facilement.  
+1. Une autre fonctionnalité demandée était de permettre aux utilisateurs connectés **d’ajouter des œuvres à leurs favoris** pour les retrouver facilement.  
 CLICK<br>
-5. Enfin, le site devait être **entièrement responsive**, sur mobile et sur desktop.  
+1. Enfin, le site devait être **entièrement responsive**, sur mobile et sur desktop.  
 CLICK<br>
-6. Pour relever ce défi, nous disposions d’une **deadline d’un mois** pour concevoir et livrer l’ensemble du projet.  
+1. Pour relever ce défi, nous disposions d’une **deadline d’un mois** pour concevoir et livrer l’ensemble du projet.  
 -->
 
 ---
@@ -1017,7 +1018,7 @@ Pour assurer la qualité de notre code et garantir qu’il soit maintenable et p
 2- **Prettier** a harmonisé automatiquement le style de code, évitant toute divergence entre les membres de l’équipe.  
 3- Avec **Husky**, des hooks Git ont été déclenchés avant chaque commit pour prévenir l’introduction d’erreurs.  
 4- **Lint-Staged** a limité l’analyse et la correction aux fichiers modifiés, rendant le processus plus rapide.  
-5- **Vite** a offert une compilation rapide pendant le développement et une mise en production optimisée.  
+5- **Vite** a offert une compilation rapide pendant le développement.  
 
 Ces outils ont assuré un workflow efficace, fiable et conforme aux standards professionnels.
 -->
@@ -1163,7 +1164,6 @@ layout: two-cols
 transition: slide-up
 ---
 
-
 <div class="method">
 <h2>Maquettage</h2>
 
@@ -1251,10 +1251,12 @@ h1 {
   }
 </style>
 
-<!-- 
-Pour le **maquettage**, nous avons utilisé Figma pour concevoir une maquette interactive, ajuster le design en équipe et valider l’ergonomie avant le développement. Voici une **capture d’écran** illustrant la structure et le design du site. -->
+<!--
+Pour le **maquettage**, nous avons utilisé Figma pour concevoir une maquette, ajuster le design en équipe et valider l’ergonomie avant le développement.
+-->
+
 ---
-layout: dynamic-image 
+layout: dynamic-image
 image: "./media/Pictures/Douce_Mélancolie.webp"
 equal: false
 left: false
@@ -1307,7 +1309,9 @@ h1 {
 }
 </style>
 
-<!-- Maintenant que nous avons une idée claire du design, nous allons aborder la structure technique du projet. Je vais vous présenter l’architecture que nous avons adoptée pour garantir un code clair, maintenable et évolutif. -->
+<!--
+Maintenant que nous avons une idée claire du design, nous allons aborder la structure technique du projet. Je vais vous présenter l’architecture que nous avons adoptée.
+-->
 
 ---
 layout: two-cols
@@ -1347,6 +1351,18 @@ transition: slide-left
     <strong> C</strong><span>ontroller</span>
   </h2>
 </div>
+
+<Arrow class="arrow" v-click="[2,3]" x1="400" y1="350" x2="350" y2="250" />
+<Arrow class="arrow" v-click="[3,4]" x1="350" y1="220" x2="280" y2="220" />
+<Arrow class="arrow" v-click="[4,5]" x1="250" y1="220" x2="180" y2="220" />
+<Arrow class="arrow" v-click="[5,6]" x1="180" y1="220" x2="80" y2="220" />
+
+<Arrow class="arrow" v-click="[6,7]" x1="80" y1="220" x2="180" y2="220" />
+<Arrow class="arrow" v-click="[7,8]" x1="180" y1="220" x2="250" y2="220" />
+<Arrow class="arrow" v-click="[8,9]" x1="280" y1="220" x2="350" y2="220" />
+<Arrow class="arrow" v-click="[9,10]" x1="350" y1="220" x2="450" y2="220" />
+<Arrow class="arrow" v-click="10" x1="450" y1="220" x2="400" y2="350" />
+
 
 <div class="abs-br m-8 flex gap-2">
   <img src="./media/Pictures/VirtuArtLogo2.png" width="30" height="30"/>
@@ -1403,18 +1419,31 @@ h1 {
   width: 100%;
   height: auto;
 }
+.arrow {
+  color:#D8B192;
+}
 </style>
 <!-- 
 Pour organiser le projet de manière claire et maintenable, nous avons adopté l'architecture **MVC**, qui repose sur la séparation des responsabilités.
 <br>CLICK<br>
-Ce schéma illustre le fonctionnement du modèle **Model View Controller** dans notre projet. Je vais vous expliquer chaque étape représentée ici.
+Ce schéma illustre le fonctionnement du **Model View Controller** dans notre projet. 
 
-1. **L'utilisateur** interagit avec le site, envoyant une requête HTTP.  
-2. Le **Controller** gère la requête en orchestrant les appels aux **services** (ou middleware) pour récupérer les données nécessaires.
-3. Les **services** transmettent la requête au **Model**, qui interagit directement avec la **base de données**.  
-4. Une fois les données récupérées, le **Model** les renvoie au **Controller** via les services.  
-5. Le **Controller** passe ensuite les données à la **Vue**, qui les formate en HTML pour les afficher à l'utilisateur.  
-6. Enfin, l'utilisateur reçoit une **réponse HTTP** contenant la page générée.
+Je vais vous expliquer chaque étape représentée ici.
+<br>CLICK<br>
+1. **L'utilisateur** interagit avec le site, envoyant une requête HTTP.
+<br>CLICK<br>
+2. Le **Controller** gère la requête en orchestrant les appels aux **services**.
+<br>CLICK<br>
+3. Les **services** transmettent la requête au **Model**, <br>CLICK<br>
+qui interagit directement avec la **base de données**.
+<br>CLICK<br>
+CLICK<br>
+4. Une fois les données récupérées, le **Model** les renvoie au **Service** <br>CLICK<br>
+ et ensuite **Controller**.
+<br>CLICK<br>
+1. Le **Controller** passe ensuite les données à la **Vue**, qui les formate en HTML pour les afficher à l'utilisateur.
+<br>CLICK<br>
+1. Enfin, l'utilisateur reçoit une **réponse HTTP** contenant la page générée.
 
 L'architecture MVC organise et simplifie la **gestion des interactions** entre utilisateurs, données et interface.
  -->
@@ -1524,23 +1553,14 @@ module.exports = ArtworkRepository;
 
 <!-- 
 Voici un exemple de **Model** avec le fichier `ArtworkRepository.js`. 
-
-C’est dans cette classe que nous définissons la logique pour interagir avec la base de données.
-
-CLICK<br>
-
-Nous avons ici la méthode `readAll`, qui permet de récupérer toutes les œuvres d’art depuis la table `artwork`. 
-
-Nous utilisons une jointure avec la table `user` pour inclure le nom de l’artiste. De plus, nous formatons la date pour qu’elle soit plus lisible dans le front.
-
-CLICK<br>
-
-La méthode `read` fonctionne de manière similaire, mais elle est conçue pour récupérer une œuvre spécifique grâce à son ID. Cette méthode est utile, par exemple, pour afficher les détails d’une œuvre sur une page dédiée.
-
-CLICK<br>
-
-Enfin, voici un exemple de **View**, avec la page coté front d’une œuvre. Cette page utilise les données récupérées par notre modèle et les affiche.
- -->
+Ce fichier contient la logique pour interagir avec la bdd.
+<br>CLICK<br>
+Nous avons la méthode `readAll`, qui récupère toutes les œuvres de la table `artwork`, en joignant la table `user` pour inclure le nom de l’artiste, et en formatant la date pour une meilleure lisibilité.
+<br>CLICK<br>
+La méthode `read`, elle, sert à récupérer une œuvre spécifique à partir de son ID, utile pour afficher ses détails sur une page dédiée.
+<br>CLICK<br>
+Enfin, côté front, voici un exemple de **View**, où les données récupérées par notre modèle sont affichées directement dans l’interface utilisateur.
+-->
 ---
 transition: slide-up
 level: 3
@@ -1620,22 +1640,16 @@ module.exports = { browse, read, add, edit, destroy};
 }
 </style>
 <!-- 
-Passons maintenant à l’exemple de Controller avec le fichier `artworkActions.js`. 
+Voyons maintenant un exemple de **Controller** avec le fichier `artworkActions.js`.  
 
-Ici, nous gérons la logique de traitement des requêtes HTTP et la communication avec le Model.<br>
-  
-Voici la méthode `browse`. Elle utilise la fonction `readAll` du modèle pour récupérer toutes les œuvres, puis renvoie ces données au format JSON pour le frontend.
+Ce fichier gère les requêtes HTTP et communique avec le modèle.  
 
-CLICK
-
-Ici, la méthode `read` permet de récupérer une œuvre précise via son ID. 
-
-Si l’œuvre n’est pas trouvée, elle renvoie un statut HTTP `404`. Ce genre de validation assure la fiabilité et la robustesse de notre API.
-
-CLICK
-
-Enfin, nous avons intégré d'autres méthodes essentielles pour la gestion des œuvres, telles que `add` pour l'ajout, `edit` pour la modifier, et `destroy` pour la supprimer.
- -->
+La méthode `browse` utilise `readAll` pour récupérer toutes les œuvres, puis renvoie les données en JSON au frontend.  
+CLICK<br>
+La méthode `read` récupère une œuvre via son ID. Si elle n’existe pas, un statut HTTP `404` est renvoyé, ce qui renforce la fiabilité de l’API.  
+CLICK<br>
+Enfin, d’autres méthodes comme `add` (ajout), `edit` (modification), et `destroy` (suppression) complètent la gestion des œuvres.
+-->
 
 ---
 layout: dynamic-image 
@@ -1691,8 +1705,7 @@ h1 {
 }
 </style>
 
-<!-- Pour structurer les données du projet, je vais vous présenter la conception de la base de données à travers ses différentes étapes.-->
-
+<!-- Pour **structurer** les données du projet, je vais vous présenter la **conception de la bdd** à travers différentes étapes.-->
 
 ---
 transition: slide-left
@@ -1796,15 +1809,16 @@ h1 {
 </style>
 
 <!-- 
-Pour la modélisation des données et la conception de notre base, nous avons utilisé deux outils clés :
+Pour la modélisation, nous avons utilisé deux outils clés :
 
 CLICK
 
-Nous avons utilisé **Draw.io** pour concevoir les différents schémas de modélisation de notre base de données.
+Comme **Draw.io** pour concevoir les différents schémas.
 
 CLICK
 
-Nous avons également suivi la **méthode Merise**, qui nous a guidés étape par étape, du modèle conceptuel au modèle physique, pour structurer efficacement notre base de données.
+Nous avons également suivi la **méthode Merise**, qui nous a guidés étape par étape.
+En partant du modèle conceptuel au modèle physique, pour structurer efficacement notre bdd.
  -->
 ---
 layout: two-cols
@@ -1911,20 +1925,24 @@ transition: slide-left
 </style>
 
 <!-- 
-Nous allons commencer par le **MCD**.
+Nous allons commencer par le **MCD**.  
 
-CLICK
+CLICK  
 
-Le **Modèle Conceptuel de Données** est la première étape qui permet de représenter les entités principales et les relations entre elles, sans se préoccuper encore de leur implémentation technique.
-Dans notre projet :
-CLICK
+Le **Modèle Conceptuel de Données** représente les entités principales et leurs relations, sans entrer dans les détails techniques.  
+
+CLICK  
 - Un utilisateur peut ajouter plusieurs œuvres, mais chaque œuvre appartient à un seul utilisateur.  
-CLICK
-- Un utilisateur peut ajouter des œuvres en favoris, et une œuvre peut être ajoutée aux favoris de plusieurs utilisateurs.  
-CLICK
-- Une œuvre peut être présentée dans plusieurs expositions, et une exposition peut contenir plusieurs œuvres.  
-CLICK
-- Un administrateur gère une ou plusieurs expositions, mais chaque exposition est gérée par un seul administrateur.   -->
+
+CLICK  
+- Un utilisateur peut ajouter des œuvres en favoris, et une œuvre peut être dans les favoris de plusieurs utilisateurs.  
+
+CLICK  
+- Une œuvre peut être présentée dans plusieurs expositions, et une exposition peut inclure plusieurs œuvres.  
+
+CLICK  
+- Un administrateur gère une ou plusieurs expositions, mais chaque exposition est gérée par un seul administrateur.    
+-->
 
 ---
 layout: two-cols
@@ -2037,27 +2055,28 @@ transition: slide-left
 }
 </style>
 <!-- 
-Après la validation du MCD, nous avons élaboré le **MLD** 
-**Modèle Logique de Données** cette étape traduit les entités conceptuelles en relations adaptées en intégrant les cardinalités définies. <br>
+Après la validation du MCD, nous avons élaboré le **MLD** <br>
 CLICK<br>
-- Pour l'**Utilisateur et les œuvres** :<br>
-La relation est de type **one-to-many** (*1:N*). 
-Chaque utilisateur peut créer plusieurs œuvres (`N`), <br>
-mais chaque œuvre est liée à un seul utilisateur (`1`).  
-CLICK<br>
+(**Modèle Logique de Données**), où les relations et cardinalités sont traduites en tables et clés adaptées au modèle relationnel.
 
-- Pour gérer les favoris, une table intermédiaire `favorite` permet une relation **many-to-many** (*N:M*) entre les utilisateurs et les œuvres. 
-Par exemple, un utilisateur peut ajouter plusieurs œuvres en favoris, et chaque œuvre peut être dans les favoris de plusieurs utilisateurs.  
-CLICK<br>
+CLICK  
 
-- Pareil pour les **Œuvres et les expositions** :  
-Une relation **many-to-many** (*N:M*) est gérée par la table `artwork_exhibition`. 
-Cela permet qu’une œuvre soit exposée dans plusieurs expositions, et qu’une exposition regroupe plusieurs œuvres.  
-CLICK<br>
+- Pour l'**Utilisateur et les œuvres** :  
+La relation évolue en **one-to-many** (*1:N*), reflétant qu'un utilisateur peut créer plusieurs œuvres.  
 
-- Et enfin pour l'**Utilisateur et les expositions** :  
-  Ici, nous avons une relation **one-to-many** (*1:N*). Un administrateur peut gérer plusieurs expositions (`N`), 
-  mais chaque exposition est supervisée par un seul administrateur (`1`). 
+CLICK  
+
+- Les favoris nécessitent une table intermédiaire `favorite` pour gérer une relation **many-to-many** (*N:M*), 
+permettant des liens multiples entre les  utilisateurs et les œuvres.  
+
+CLICK  
+
+- De même, les **Œuvres et les expositions** utilisent une table intermédiaire `artwork_exhibition` pour passer à une relation **many-to-many** (*N:M*).  
+
+CLICK  
+
+- Enfin, pour l'**Utilisateur et les expositions** :  
+La relation reste en **one-to-many** (*1:N*), alignée avec le fait qu’un administrateur peut superviser plusieurs expositions.
 -->
 
 ---
@@ -2169,15 +2188,17 @@ transition: slide-up
 Nous arrivons maintenant au **MPD**.<br>
 CLICK <br>
 Le **Modèle Physique de Données**, la dernière étape de la modélisation, 
-où les concepts deviennent une base de données prête à l’emploi avec des types, clés et contraintes.  
+où les concepts deviennent une base de données prête à l’emploi avec des types, clés et contraintes. <br>
+CLICK  
 
+- Par exemple, la table `user` :  
+Elle contient une colonne `id` en clé primaire, et des colonnes comme `email` avec les contraintes `NOT NULL` et `UNIQUE`, pour garantir qu’un email est obligatoire et unique. Le champ `password` est aussi obligatoire grâce à `NOT NULL`.  
+CLICK  
 
-- Prenons la table `user` comme exemple.<br>CLICK<br> Elle contient une colonne `id` en clé primaire, et une colonne `email` typée `VARCHAR(255)` avec les contraintes `NOT NULL` et `UNIQUE`. Cela garantit qu’un email est obligatoire et unique. De même, le champ `password` est typé `VARCHAR(255)` et marqué `NOT NULL`, assurant que chaque utilisateur dispose d’un mot de passe.  
-CLICK
-- Dans la table `artwork`, la colonne `user_id` est une clé étrangère liée à la colonne `id` de `user`, assurant qu’une œuvre appartient toujours à un utilisateur valide.  
-CLICK
+- Dans la table `artwork`, la colonne `user_id` est une clé étrangère liée à `id` de `user`, assurant qu’une œuvre est toujours associée à un utilisateur valide.  
+CLICK  
 
-Le **MPD** est prêt pour un **SGBD** comme MySQL, transformant les idées du MCD et du MLD en une base robuste et cohérente, adaptée aux besoins du projet.  
+Le **MPD** est maintenant prêt à être déployé dans un **SGBD** comme MySQL, traduisant les concepts du MCD et du MLD en une base robuste et opérationnelle.  
 -->
 ---
 layout: dynamic-image 
@@ -2233,7 +2254,7 @@ h1 {
 }
 </style>
 
-<!-- Passons maintenant à la partie serveur, où je vais vous montrer les technologies utilisées, des exemples de tables, et la logique mise en place pour traiter et fournir les données au reste du projet. -->
+<!-- Passons maintenant à la partie serveur, où je vais vous montrer les technologies utilisées, avec des exemples. -->
 
 ---
 transition: slide-left
@@ -2637,27 +2658,23 @@ level: 3
 </style>
 
 <!-- 
-Le **CRUD** représente les quatre actions essentielles pour manipuler les données
-<br> CLICK <br> 
- : **Create**, **Read**, **Update**, et **Delete**.
-<br> CLICK <br> 
-- Commençon pas la méthode **Create** qui permet d'ajouter une nouvelle œuvre dans la base de données.  
-  Par exemple, ici, on insère les informations d'une œuvre (titre, image, description, etc.) via une requête SQL `INSERT INTO`.  
-  C'est la base pour créer du contenu côté utilisateur.
+Le **CRUD** regroupe les actions principales pour gérer les données : <br>
+CLICK<br>
+**Create**, **Read**, **Update**, et **Delete**.  <br>
+CLICK  
 
-CLICK <br> 
-- La méthode **Read** est utilisée pour récupérer des données.  
-  - **`readAll`** : Elle retourne toutes les œuvres, avec des détails comme l'utilisateur qui les a publiées, grâce à une jointure SQL.  
-<br> CLICK <br> 
-  - **`read`** : Elle permet de lire une œuvre spécifique selon son identifiant.  
-  Ces méthodes servent à afficher les œuvres sur le site.
+- La méthode **Create** ajoute une nouvelle œuvre à la base via une requête `INSERT INTO`. Par exemple, on insère un titre, une image, et une description pour créer du contenu utilisateur.  
+CLICK  
 
- CLICK <br> 
-- La méthode **Update** modifie une œuvre existante.  
-  Par exemple, on peut changer le titre ou l'image d'une œuvre en mettant à jour les colonnes concernées grâce à une requête SQL `UPDATE`.
-<br> CLICK <br> 
-- Enfin, la méthode **Delete** permet de supprimer une œuvre de la base de données avec une requête SQL `DELETE`.  
+- Pour **Read** :  
+  - Nous avons **`readAll`** qui récupère toutes les œuvres avec leurs détails, comme l'utilisateur qui les a publiées, grâce à une jointure SQL.  
+  - **`read`** lit une œuvre précise via son ID. Ces données sont utilisées pour afficher les œuvres sur le site.  
+CLICK  
 
+- **Update** modifie une œuvre existante, par exemple en mettant à jour son titre ou son image.  
+CLICK  
+
+- Enfin **Delete** est utilisé pour supprimer une œuvre de la bdd.  
 -->
 
 ---
@@ -2762,25 +2779,32 @@ src="./media/Pictures/postmanreadall.png" width="600"/>
 }
 </style>
 <!-- 
-Passons maintenant aux **routes de l'application**, définies dans le fichier `Router.js`.
+Les **routes de l'application** sont définies dans le fichier `Router.js`.  
+CLICK  
 
-CLICK<br>
-Nous commençons par l’importation des modules nécessaires avec :
-- `express`, qui est essentiel pour la configuration du serveur.  
-- `router`, une instance d’Express utilisée pour définir les chemins de l'application.<br>
-*CLICK*<br>
-Ensuite, nous importons les contrôleurs depuis le fichier `artworkActions`, grâce à la ligne `const artworks`. Ces contrôleurs gèrent les actions comme la récupération, l’ajout, la modification ou la suppression des œuvres.<br>
-*CLICK*<br>
-Passons maintenant aux exemples de routes :  
-- La première route, `GET /artworks`, utilise la méthode `browse` pour récupérer toutes les œuvres. Voici un exemple testé sur Postman : comme vous pouvez le voir, cette requête retourne l'ensemble des œuvres stockées dans la base de données.  <br>
-*CLICK*<br>
-- Une autre route, `GET /artworks/:id`, utilise la méthode `read`. Elle permet de récupérer une œuvre spécifique en fonction de son identifiant. Sur cette capture Postman, vous voyez qu’une seule œuvre correspondant à l’`id` demandé est renvoyée.<br>
-*CLICK*<br>
-- Enfin, nous avons également des routes pour **Ajouter** une œuvre via `POST /artworks`, avec un middleware pour gérer les images et vérifier les autorisations.  
-- Nous pouvons aussi **Modifier** une œuvre via `PUT /artworks/:id`.  
-- Et **Supprimer** une œuvre avec `DELETE /artworks/:id`.<br>
-*CLICK*<br>
-Ces routes permettent de couvrir l'ensemble des opérations CRUD pour la gestion des œuvres dans l’application.<br> Tous les chemins ont été testés et validés avec Postman pour garantir leur bon fonctionnement.
+Nous importons d’abord :  
+- `express`, pour configurer le serveur.  
+- `router`, pour définir les chemins.  
+CLICK  
+
+Ensuite, les contrôleurs, comme `artworkActions`, qui gèrent les actions CRUD pour les œuvres.  
+
+Testons quelques routes :<br>
+
+CLICK
+
+- **`GET /artworks`** utilise `browse` pour récupérer toutes les œuvres. Voici le résultat dans Postman : toutes les œuvres de la base sont renvoyées.  
+CLICK  
+- **`GET /artworks/:id`** utilise `read` pour récupérer une œuvre précise via son ID. Dans Postman, vous voyez qu’une œuvre spécifique est affichée.  
+CLICK  
+
+Nous avons aussi :  
+- **`POST /artworks`** pour ajouter une œuvre, avec un middleware pour les images et les autorisations.  
+- **`PUT /artworks/:id`** pour modifier une œuvre.  
+- **`DELETE /artworks/:id`** pour la supprimer.  
+CLICK  
+
+Toutes les routes ont été testées et validées avec Postman, garantissant leur bon fonctionnement et couvrant l'ensemble des actions CRUD.  
 -->
 
 ---
@@ -2863,7 +2887,7 @@ transition: slide-left
 ### Middleware: auth.js
 
 ````md magic-move {lines: true}
-```js {*|*|2-7|8-22} 
+```js {*|*|2-7|8-14|16|*} 
 const argon2 = require("argon2");
 const hashingOptions = {
   type: argon2.argon2id,
@@ -2972,23 +2996,27 @@ h1 {
 </style>
 
 <!-- 
-La gestion sécurisée des mots de passe est une priorité dans ce projet. Pour cela, nous avons utilisé **Argon2**, un algorithme de hashage reconnu pour sa robustesse et sa résistance aux attaques par force brute.  
-
-Dans notre code, Argon2 est intégré via un middleware défini dans le fichier `auth.js`.  
-
-- Nous avons configuré Argon2 avec des paramètres spécifiques comme `memoryCost`, `timeCost` et `parallelism`, pour garantir un bon équilibre entre sécurité et performances.  
-- Elle prend le mot de passe en clair fourni par l'utilisateur, le crypte avec Argon2 et remplace ce mot de passe par sa version hashée dans `req.body`.  
-- Enfin, le mot de passe en clair est supprimé pour éviter toute fuite accidentelle.  
-
-Ce middleware est exécuté automatiquement avant toute opération impliquant des mots de passe, comme la création d’un compte ou la modification de l’identifiant d’un utilisateur. Grâce à cette mise en œuvre, les mots de passe stockés dans la base de données ne sont jamais exposés sous leur forme d'origine, renforçant ainsi la sécurité globale de l'application. 
+On va commencer par la gestion sécurisée des mots de passe. Nous avons utilisé **Argon2**.<br>
+CLICK<br>
+ **Argon2** est un algorithme de hashage de mot de passe connu pour sa robustesse.<br>
+CLICK<br>
+Nous l'avons utilisé dans un middleware `auth.js`.<br>
+CLICK<br>
+- Avec des paramètres comme `memoryCost`, `timeCost` et `parallelism`, pour augmenter la compléxité du hashage.<br>
+CLICK<br>
+- Le middleware prend le mot de passe **en clair**, **le chiffre** avec Argon2, puis remplace sa version **hashée** dans `req.body`.  <br>
+CLICK<br>
+- Ensuite, le mot de passe en clair est supprimé pour éviter tout risque de fuite. <br>
+Et on passe à la suite avec next.<br>
+On execute le middleware lors de la création d'un utilisateur, les mots de passe ne sont jamais stockés en clair dans la bdd.<br>
 
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-<br>
 **P.B**:<br>
-**memoryCost** : Définit la quantité de mémoire utilisée pendant le hashage. Plus cette valeur est élevée, plus il est difficile pour un attaquant de tester plusieurs mots de passe en même temps.
+**memoryCost** : Définit la **quantité de mémoire utilisée** pendant le hashage. Plus cette valeur est élevée, plus il est difficile pour un attaquant de tester plusieurs mots de passe en même temps.
 
-**timeCost** : Indique le nombre d'itérations nécessaires pour créer le hash. Une valeur plus haute ralentit le processus, rendant les attaques par force brute plus longues.
+**timeCost** : Indique le **nombre d'itérations** nécessaires pour créer le hash. Une valeur plus haute ralentit le processus, rendant les attaques par force brute plus longues.
 
-**parallelism** : Détermine le nombre de threads ou de processeurs utilisés pour le hashage. Cela peut améliorer les performances sur des systèmes multicœurs.-->
+**parallelism** : Détermine le **nombre de threads** ou de processeurs utilisés pour le hashage. Cela peut améliorer les performances sur des systèmes multicœurs.-->
 
 ---
 layout: two-cols
@@ -3014,7 +3042,7 @@ transition: fade
 ### Controller: authActions.js
 
 ````md magic-move {lines: true}
-```js{*|*|6-9|10-12|13-18|19-20}
+```js{*|*|6-9|10-12|13-18|19-20|*}
 const argon2 = require("argon2");
 const jwt = require("jsonwebtoken");
 const tables = require("../../database/tables");
@@ -3130,23 +3158,23 @@ h1 {
   }
 </style>
 <!-- 
-Pour l’authentification, nous avons utilisé **JWT** (JSON Web Token), une technologie qui permet de sécuriser les sessions utilisateur en générant un token unique.
+Pour l’authentification, nous avons utilisé **JWT** <br>
+CLICK <br>
+pour sécuriser les sessions utilisateur avec un token unique.<br>
 
-Dans ce code extrait de **authActions.js**, on peut observer les étapes suivantes :
+Dans ce controller nous  
+CLICK <br>
+- récupérons l’utilisateur via son email et son mot de passe haché. <br>
+CLICK <br> 
+- Il y a une comparaison du mot de passe saisi avec celui dans la bdd grâce à **argon2**.<br>
+CLICK <br>  
+- Le token JWT est générer et contient l’ID utilisateur et son rôle, avec une expiration d’une heure.  <br>
+CLICK <br>
+- Enfin le token est renvoyé sous forme de **cookie sécurisé** avec les informations utilisateur.  <br>
+CLICK <br>
 
-- **Lecture des données utilisateur** :  
-  Nous commençons par récupérer l’utilisateur en base de données grâce à son email, incluant son mot de passe haché.
-
-- **Vérification du mot de passe** :  
-  Ensuite, à l’aide de la bibliothèque **argon2**, nous comparons le mot de passe saisi avec celui stocké.  
-
-- **Génération du token JWT** :  
-  Si la vérification est réussie, un token JWT est créé. Ce token contient l’ID de l’utilisateur ainsi qu’un éventuel rôle d’administrateur, et est configuré pour expirer après une heure.  
-
-- **Envoi du cookie** :  
-  Enfin, le token est renvoyé au client sous forme de **cookie sécurisé**, accompagné des informations utilisateur pour une gestion côté frontend.  
-
-Ce système garantit une authentification sécurisée et permet de personnaliser l’expérience utilisateur en fonction de son rôle.   -->
+Ce système assure une authentification fiable et adapte l’expérience utilisateur à son rôle.
+-->
 
 ---
 layout: two-cols
@@ -3170,7 +3198,7 @@ transition: slide-left
 ### Middleware: auth.js
 
 ````md magic-move {lines: true}
-```js {*|4|8|9|11-14}
+```js {*|4-7|8|9-10|11-14|*}
 const jwt = require("jsonwebtoken");
 const verifyToken = (req, res, next) => {
   try {
@@ -3271,21 +3299,18 @@ h1 {
   }
 </style>
 <!-- 
-Pour sécuriser l’accès aux ressources et vérifier que les utilisateurs sont bien authentifiés, nous avons mis en place un middleware basé sur **JWT**.
-
-1. **Lecture du cookie** :  
-   Le middleware récupère le cookie contenant le token via `req.cookies.auth`. Si aucun token n'est présent, l’accès est immédiatement refusé avec un statut `401 Unauthorized`.
-
-2. **Vérification du token** :  
-   Nous utilisons la fonction `jwt.verify` pour décoder et valider le token avec la clé secrète définie dans `process.env.APP_SECRET`. Cela garantit que le token est valide et n’a pas été altéré.
-
-3. **Ajout des données utilisateur** :  
-   Une fois validé, le middleware extrait les informations utilisateur du token, comme l’ID (`sub`), et les ajoute à la requête (`req.body.user_id`). Cela permet aux routes suivantes d’utiliser ces informations sans nouvelle vérification.
-
-4. **Gestion des erreurs** :  
-   En cas de token invalide ou manquant, une erreur est logguée et le client reçoit une réponse avec un message expliquant que l’accès est refusé.
-
-Ce middleware joue un rôle clé dans la sécurisation des routes, en s’assurant que seuls les utilisateurs authentifiés ont accès aux ressources sensibles. 
+Pour sécuriser l’accès aux ressources, on a utilisé un middleware basé sur **JWT**. 
+CLICK<br>
+- Le middleware récupère le token JWT dans `req.cookies`. 
+Si le token n’est pas présent, l’accès est refusé avec un statut `401 Unauthorized`.  
+CLICK<br>
+- On utilise `jwt.verify` pour vérifier que le token est valide et n’a pas été modifié, grâce à la clé secrète.  
+CLICK<br>
+- Une fois validé, les infos du token, comme l’ID utilisateur, sont ajoutées à la requête (`req.body.user_id`) pour être utilisées par les routes suivantes.  
+CLICK<br>
+- Si le token est invalide ou absent, on renvoie un message expliquant que l’accès est refusé.  
+CLICK<br>
+Ce middleware est essentiel pour protéger les routes sensibles et s’assurer que seuls les utilisateurs authentifiés y ont accès.
 -->
 
 ---
@@ -3300,20 +3325,20 @@ transition: slide-left
 <div class="element" v-click="1" v-motion
   :initial="{ y: 80 }"
   :enter="{ x: 0, y: 0 }">
-<p>- Cors</p>
-<img src="./media/Icones/cors.jpg" width="50" height="50">
+  <p>- DotEnv</p>
+<img src="./media/Icones/dotenv.png" width="50" height="50">
 </div>
 <div class="element" v-click="2" v-motion
   :initial="{ y: 80 }"
   :enter="{ x: 0, y: 0 }">
-  <p>- Cookie-Parser</p>
-<img src="./media/Icones/cookie.png" width="50" height="50" >
+<p>- Cors</p>
+<img src="./media/Icones/cors.jpg" width="50" height="50">
 </div>
 <div class="element" v-click="3" v-motion
   :initial="{ y: 80 }"
   :enter="{ x: 0, y: 0 }">
-  <p>- DotEnv</p>
-<img src="./media/Icones/dotenv.png" width="50" height="50">
+  <p>- Cookie-Parser</p>
+<img src="./media/Icones/cookie.png" width="50" height="50" >
 </div>
 <div class="element" v-click="4" v-motion
   :initial="{ y: 80 }"
@@ -3328,38 +3353,8 @@ transition: slide-left
   :initial="{ x: 80 }"
   :enter="{ x: 0, y: 0 }">
 
-### Cors: config.js
-
-````md magic-move {lines: true}
-```js
-const cors = require("cors");
-app.use(cors({
-  origin: [process.env.CLIENT_URL],  
-credentials: true,
-})
-);
-```
-````
-</div>
-
-<div v-click="2" v-motion
-  :initial="{ x: 80 }"
-  :enter="{ x: 0, y: 0 }">
-
-### cookieParser: config.js
-````md magic-move {lines: true}
-```js
-const cookieParser = require("cookie-parser");
-app.use(cookieParser());
-```
-````
-</div>
-
-<div v-click="3" v-motion
-  :initial="{ x: 80 }"
-  :enter="{ x: 0, y: 0 }">
-
 ### Dotenv: .env (back)
+
 ````md magic-move {lines: true}
 ```js
 # .env.sample - Sample Environment Variables
@@ -3374,6 +3369,40 @@ DB_PASSWORD=ItsASecret
 DB_NAME=virtuart
 # Client URL (for CORS configuration)
 CLIENT_URL=http://localhost:3000
+
+
+```
+````
+</div>
+
+<div v-click="2" v-motion
+  :initial="{ x: 80 }"
+  :enter="{ x: 0, y: 0 }">
+
+### Cors: config.js
+````md magic-move {lines: true}
+```js
+const cors = require("cors");
+app.use(cors({
+  origin: [process.env.CLIENT_URL],  
+credentials: true,
+})
+);
+
+
+```
+````
+</div>
+
+<div v-click="3" v-motion
+  :initial="{ x: 80 }"
+  :enter="{ x: 0, y: 0 }">
+
+### cookieParser: config.js
+````md magic-move {lines: true}
+```js
+const cookieParser = require("cookie-parser");
+app.use(cookieParser());
 ```
 ````
 </div>
@@ -3458,17 +3487,18 @@ h1 {
   }
 </style>
 <!-- 
-Pour garantir la **protection de nos API**, nous avons utilisé plusieurs outils essentiels :
-
-1. Cors nous permet de sécuriser les requêtes en limitant les origines autorisées à accéder à notre backend. Nous avons configuré l’URL du client dans le fichier `.env`, et activé les credentials pour permettre l’envoi des cookies nécessaires à l’authentification.
-
-2. Ensuite Cookie-Parser nous aide à traiter les cookies envoyés avec les requêtes, comme le token JWT. Cela nous permet de gérer l’authentification en lisant et vérifiant les cookies directement côté serveur.
-
-3. DotEnv est utilisé pour stocker nos variables d’environnement sensibles, comme les identifiants de la base de données ou la clé secrète pour le JWT. Cela garantit que ces informations ne sont pas exposées dans le code source.
-
-4. Enfin pour renforcer la sécurité, nous avons inclus le fichier `.env` dans le `.gitignore`, ce qui empêche sa publication sur le dépôt GitHub. Cela évite d’exposer des données critiques en ligne.
-
-Ces outils assurent une communication sécurisée entre le frontend et le backend, tout en protégeant les informations sensibles et en respectant les bonnes pratiques. -->
+Pour protéger nos API, nous avons utilisés :  
+CLICK<br>
+- **DotEnv** : On s’en sert pour stocker les variables sensibles, comme les identifiants de la base de données ou la clé du JWT.  
+CLICK<br>
+- **Cors** permet de sécuriser les requêtes en autorisant uniquement certaines origines à accéder au backend.   
+  On a configuré l’URL du client dans le fichier `.env` et activé les credentials pour gérer les cookies d’authentification.  
+CLICK<br>
+- **Cookie-Parser** lit et traite les cookies, comme le token JWT, pour gérer facilement l’authentification côté serveur.  
+CLICK<br>
+- Nous avons ajouté le fichier `.env` dans le **.gitignore** pour qu'il soit ignoré par Git. 
+Cela évite qu’il soit exposé sur GitHub et protège les données sensibles.
+-->
 ---
 layout: two-cols
 equal: true
@@ -3498,7 +3528,7 @@ transition: slide-left
 
 ### auth.js
 ````md magic-move {lines: true}
-```js {*|*|4|5|6|7|10-11|12-13|*}
+```js {*|*|4|5|6|7|10-13|*}
 const Joi = require("joi");
 const verifyUserField = (req, res, next) => {
   const schema = Joi.object({
@@ -3595,18 +3625,22 @@ h1 {
   }
 </style>
 <!-- 
-Pour la **validation des données**, nous avons utilisé **Joi**, une bibliothèque très pratique pour vérifier que les données envoyées par les utilisateurs respectent les règles définies.
+Pour valider les données utilisateur, nous avons utilisé **Joi**.  
+CLICK<br>
 
-Dans cet exemple, nous avons mis en place une validation pour les utilisateurs lors de leur inscription. Voici les points principaux :
-- Le **pseudo** doit être une chaîne de caractères et est obligatoire.
-- L'**email** doit respecter un format valide, comme `example@domain.com`.
-- Le **mot de passe** doit comporter au moins 8 caractères.
-- Enfin, nous avons ajouté une vérification pour que le champ **confirmPassword** corresponde au mot de passe.
-
-Si une donnée ne respecte pas ces critères, une erreur est renvoyée avec un message précis pour informer l’utilisateur. Sinon, la requête passe au middleware suivant.
-
-**Joi** nous permet ainsi de filtrer efficacement les données dès leur réception, évitant tout traitement inutile de requêtes incorrectes ou incomplètes.
- -->
+Dans cet exemple :  
+CLICK<br>
+- Le **pseudo** est obligatoire.  
+CLICK<br>
+- L'**email** doit être valide.  
+CLICK<br>
+- Le **mot de passe** doit faire au moins 8 caractères.  
+CLICK<br>
+- **confirmPassword** doit correspondre au mot de passe.  
+CLICK<br>
+Si les données sont incorrectes, une erreur est renvoyée. Sinon, la requête continue.  
+**Joi** nous aide à filtrer les données dès leur réception, ce qui évite de traiter des requêtes invalides. 
+-->
 ---
 layout: two-cols
 equal: true
@@ -3743,20 +3777,18 @@ h1 {
   }
 </style>
 <!-- 
-Contrôle d'Accès et Gestion des Rôles
-
-Nous avons implémenté un système de contrôle d'accès en utilisant un champ spécifique dans la table `user` : **is_admin**.  
-- Ce champ est de type **BOOLEAN** et permet de distinguer les administrateurs des utilisateurs standards.  
-- Par défaut, il est défini sur `FALSE`, mais il peut être activé (`TRUE`) pour accorder des droits spécifiques, comme la gestion des expositions.  
-
-Sécurisation des Injections SQL
-
-Dans nos requêtes SQL, comme celle permettant d’ajouter une œuvre dans la table `artwork`, nous avons utilisé des **requêtes préparées** avec des **paramètres dynamiques**.  
-- Cela empêche toute tentative d'injection SQL en isolant les données fournies par l'utilisateur des instructions SQL.  
-- Par exemple, les valeurs comme `title` ou `user_id` sont intégrées de manière sécurisée à la requête via un tableau de paramètres.  
-
-Ce système assure une gestion claire des rôles et une base de données protégée contre des attaques courantes comme les injections SQL, tout en respectant les droits et les accès des différents utilisateurs. 
- -->
+Pour le **contrôle d'accès et gestion des rôles**,
+nous avons ajouté un champ **is_admin** dans la table `user` pour différencier les administrateurs des utilisateurs standards.
+CLICK<br>
+- Ce champ **BOOLEAN** est par défaut à `FALSE` et passe à `TRUE` pour donner des droits comme la gestion des expositions.  
+CLICK<br>
+Pour éviter les injections SQL, nous avons utilisé des **requêtes préparées**.  
+CLICK<br>
+- Les données, comme `title` ou `user_id`,<br> CLICK<br>
+sont passées via un tableau de paramètres, ce qui sécurise leur traitement.  
+CLICK<br>
+Ce système protège la base de données tout en gérant efficacement les rôles et les droits des utilisateurs.
+-->
 ---
 layout: two-cols
 equal: true
@@ -3802,7 +3834,7 @@ transition: slide-left
 
 ### middleware.js
 ````md magic-move {lines: true}
-```js {*|*|*|*|9|13-16|*}
+```js {*|*|*|*|9|*}
 const multer = require("multer");
 const storage = multer.diskStorage({
   destination(req, file, cb) {
@@ -3900,16 +3932,18 @@ h1 {
   }
 </style>
 <!-- 
-Dans cette partie, je vais vous expliquer comment nous avons géré le **téléchargement de fichiers** dans notre projet. 
-Pour cela, nous avons utilisé **Multer**, une bibliothèque qui facilite considérablement le traitement des fichiers envoyés via un formulaire. 
-Multer nous a permis de configurer un dossier spécifique pour stocker les fichiers. 
-Nous avons également pu définir une logique pour renommer et organiser ces fichiers de manière dynamique, garantissant ainsi une structure claire et ordonnée.
+Ensuite pour l'importation d'image nous avons utilisé 
+<br>CLICK<br>
+**Multer** pour gérer le téléchargement de fichiers.
+- Il nous permet de définir un dossier de stockage.   <br><br>
+Et pour éviter les conflits de noms, nous avons utilisé<br>CLICK<br> **UUID**, qui génère des identifiants uniques. 
+<br>CLICK<br>
+Chaque fichier reçoit un nom unique, même s’ils ont le même nom d’origine.
+<br>CLICK<br>
+Une fois enregistré, le chemin du fichier est ajouté dans `req.body.image_url`, <br>CLICK<br>
+prêt à être utilisé pour l’affichage ou le stockage en bdd.
 
-Pour éviter les conflits liés aux noms de fichiers identiques, nous avons fait appel à **UUID**, un outil qui génère des identifiants uniques. Grâce à cela, chaque fichier reçoit un nouveau nom basé sur un identifiant, même si plusieurs utilisateurs envoient des fichiers avec le même nom d’origine. Cela garantit une gestion efficace et sans erreur des fichiers téléchargés.
-
-Enfin, dans le code, Multer a été configuré pour enregistrer les fichiers et les renommer automatiquement à l’aide d’UUID. Une fois qu’un fichier est enregistré, son chemin est immédiatement ajouté dans `req.body.image_url`, ce qui nous permet de l’utiliser dans les étapes suivantes du traitement, comme l’affichage ou le stockage en base de données.
-
-Cette méthode nous a permis de gérer les téléchargements de fichiers de manière simple, sécurisée et parfaitement adaptée aux besoins de notre projet.
+Cette approche simplifie la gestion des fichiers tout en garantissant sécurité et efficacité.
 -->
 ---
 transition: slide-up
@@ -4051,19 +4085,19 @@ h1 {
 </style>
 
 <!-- 
-Sur cette slide, je vais vous présenter le processus d’**audit et de sécurisation des dépendances** dans notre projet.  
+Sur cette slide, je vais vous présenter le processus d’**audit et de sécurisation des dépendances**.  
 
 En premier lieu, nous avons utilisé la commande **`npm audit`**, affichée ici, pour analyser toutes les dépendances du projet et détecter d’éventuelles vulnérabilités.  
 CLICK<br>
-Comme le montre cet exemple, l’audit a identifié une vulnérabilité dans la bibliothèque **body-parser**, avec une gravité élevée. 
+Comme le montre cet exemple, l’audit a identifié une vulnérabilité dans la bibliothèque **body-parser**. 
 <br>CLICK<br>
 Une solution est également suggérée directement dans le rapport, avec la commande **`npm audit fix`**, indiquant qu’il est possible de corriger ce problème automatiquement.  
 CLICK<br>
-Un peu plus bas, nous voyons un résumé qui indique qu’il y avait **12 vulnérabilités** dans les dépendances, classées par niveaux de gravité.  
+Nous voyons un résumé qu’il y avait **12 vulnérabilités** dans les dépendances, classées par niveaux de gravité.  
 CLICK<br>
-Nous avons ensuite exécuté la commande **`npm audit fix`**, qui met à jour ou corrige automatiquement les dépendances vulnérables lorsque cela est possible.  
+Nous avons ensuite exécuté la commande **`npm audit fix`**.  
 CLICK<br>
-Enfin, après correction, nous obtenons un nouveau rapport confirmant qu’il n’y a plus aucune vulnérabilité détectée dans le projet.  
+Enfin, après correction, un nouveau rapport confirme qu’il n’y a plus aucune vulnérabilité détectée dans le projet.  
 
 Ce processus est essentiel pour garantir que notre projet reste à jour et protégé contre les éventuelles failles liées aux dépendances utilisées.
 -->
@@ -4120,14 +4154,14 @@ h1 {
 }
 </style>
 
-<!-- Ensuite, je vous présenterai comment nous avons travaillé sur l’interface utilisateur et l’intégration des données pour offrir une expérience fluide et intuitive aux utilisateurs. -->
+<!-- Ensuite, je vous présenterai comment nous avons travaillé sur l’interface utilisateur et l’intégration des données coté front. -->
 
 ---
 transition: slide-left
 ---
 
 <h2>Technos</h2>
-<div class="method" v-click="1" v-motion
+<div class="method" v-motion
   :initial="{ y: 80 }"
   :enter="{ x: 0, y: 0 }">
 
@@ -4236,22 +4270,15 @@ h1 {
   }
 </style>
 <!-- 
-Nous avons structuré notre application avec **ReactJS**, une bibliothèque JavaScript moderne qui nous a permis de construire une interface utilisateur dynamique et réactive.
+Nous avons structuré l’application avec **ReactJS** pour créer une interface dynamique et réactive.  
 
-Pour la gestion des **routes**, nous avons utilisé **React Router Dom**, essentiel pour naviguer entre les différentes pages de notre application.
+- **React Router Dom** gère la navigation entre les pages.  
+- **HTML**, **CSS** et **JavaScript** forment la base pour structurer, styliser et rendre le site interactif.  
+- **Axios** facilite les appels API vers le backend.  
 
-Ensuite, les fondations classiques mais indispensables :  
-- **HTML**, pour la structure de nos pages.  
-- **CSS**, pour styliser et harmoniser l'apparence de notre site.  
-- **JavaScript**, qui est au cœur de notre logique interactive.
-
-Pour faciliter les requêtes vers notre backend, nous avons intégré **Axios**, une bibliothèque performante pour gérer les appels API.
-
-Nous avons également employé **React Masonry CSS** pour concevoir une disposition élégante et modulable des galeries d’œuvres, assurant une présentation visuelle optimisée.
-
-**Prop-Types** a été utilisé pour vérifier les types de données passées dans nos composants React, ce qui améliore la robustesse et la maintenabilité du code.
-
-Enfin, pour la fonctionnalité d'immertion, la visite virtuelle, nous avons intégré **Phaser**, un framework puissant dédié à la création d’expériences interactives. 
+Pour la présentation des galeries, **React Masonry CSS** offre une mise en page élégante et modulable.  
+**Prop-Types** nous aide à valider les données dans les composants React, rendant le code plus fiable.  
+Enfin, la visite virtuelle a été réalisée avec **Phaser**, un framework conçu pour les expériences interactives.
 -->
 
 ---
@@ -4389,14 +4416,15 @@ h1 {
   }
 </style>
 <!-- 
+Nous avons configuré deux fonctions pour gérer l’authentification via des requêtes POST :  
 
-Nous avons configuré deux fonctions principales pour gérer l’authentification des utilisateurs via des requêtes POST envoyées au backend.
-
-La fonction `postloginUser` est responsable de l’envoi des données d'identification (email et mot de passe) pour permettre à un utilisateur de se connecter. Elle utilise **Axios** pour effectuer une requête POST vers l'API avec les informations nécessaires.  
-L'option `withCredentials: true` est spécifiée pour inclure automatiquement les cookies dans la requête, assurant ainsi une session sécurisée. En cas d’erreur, elle capture et affiche les messages d’erreur pour faciliter le débogage.
-
-La fonction `postRegisterUser`, quant à elle, gère l’inscription de nouveaux utilisateurs. Elle envoie les données saisies par l’utilisateur, comme le pseudo, l’email et le mot de passe, au backend pour créer un compte. Comme pour la connexion, tout problème rencontré lors de l’inscription est logué pour pouvoir être corrigé rapidement.
- -->
+- Pour l'authentification il faut intégrer l’email et le mot de passe pour ce connecter. 
+Avec **Axios**, elle inclut les cookies (`withCredentials: true`) pour sécuriser la session. 
+Les erreurs sont capturées et affichées pour simplifier le débogage.  
+CLICK<br>
+- Et pour l'inscription il suffit de remplir le formulaire avec le pseudo, l'email, le mot de passe ainsi que la confirmarion de mot de passe sont nécessaire pour créer un compte. 
+Comme pour la connexion, les erreurs sont loguées pour être corrigées.  
+-->
 ---
 transition: slide-left
 ---
@@ -4527,16 +4555,15 @@ h1 {
   }
 </style>
 <!-- 
-Dans cette partie, nous configurons les routes liées à l'authentification dans notre projet ReactJS, en centralisant leur gestion dans le fichier `main.jsx`.
-
-Nous commençons par importer les fonctions `postloginUser` et `postRegisterUser` depuis le fichier `request.js`. Ces fonctions gèrent respectivement les requêtes pour la connexion et l'inscription des utilisateurs.
-
-Ensuite, nous définissons la route `/authentification`, associée à la page `AuthPage`, qui sert de point d’entrée pour l’utilisateur afin de choisir entre se connecter ou s’inscrire.
-
-La route `/login` est ensuite configurée pour afficher la page de connexion, où l’utilisateur peut saisir ses identifiants pour accéder à son compte.
-
-Enfin, la route `/register` permet aux nouveaux utilisateurs de s’inscrire via une page dédiée.
-
+Dans le fichier `main.jsx`, nous avons configuré les routes pour gérer l'authentification dans notre application ReactJS.  
+CLICK<br>
+Nous importons d’abord les fonctions `postloginUser` et `postRegisterUser` du fichier `request.js`, qui gèrent les requêtes pour la connexion et l’inscription.<br>
+CLICK<br>
+- La route `/authentification` mène à la page `AuthPage`, où l’utilisateur peut choisir entre se connecter ou s’inscrire.<br>
+CLICK<br>
+- La route `/login` affiche la page de connexion pour entrer ses identifiants.<br>
+CLICK<br>
+- Enfin, la route `/register` permet aux nouveaux utilisateurs de créer un compte.  
  -->
 ---
 transition: slide-left
@@ -4740,19 +4767,19 @@ h1 {
 </style>
 
 <!-- 
-Ce composant est la page principale pour l'authentification. Il utilise le contexte `Auth` pour vérifier si un utilisateur est connecté.  
-- Si l'utilisateur est déjà authentifié, il est automatiquement redirigé vers la page de bord grâce à `navigate("/dashboard")`.  
-- Sinon, la page affiche deux liens simples : un pour la **connexion** et un autre pour l'**inscription**, permettant à l'utilisateur de choisir son action.
-<br>CLICK<br><br>
-Pour la page **Login**, elle permet aux utilisateurs existants de se connecter.  
-- Elle dispose de champs pour l'**email** et le **mot de passe**, gérés avec des `useState`.  
-- Lors de la soumission du formulaire, la fonction `handleSubmit` envoie les données via `postloginUser`.  
-- Si la réponse est positive (statut 200), le contexte d'authentification est mis à jour avec `setAuth`, et l'utilisateur est redirigé vers le tableau de bord.
-<br>CLICK<br><br>
-Et enfin pour l'inscription, pour des nouveaux utilisateurs.  
-- Cette page propose des champs pour saisir le pseudo, l'email, et deux champs pour le mot de passe don un pour la confirmation.  
-- Avant l'envoi, une validation simple vérifie si les deux mots de passe correspondent.  
-- Si tout est correct, les données sont envoyées via `postRegisterUser`, et en cas de succès (statut 201), l'utilisateur est redirigé vers la page de connexion afin de pouvoir s'authentifier. 
+Ce composant sert de page principale pour l'authentification et utilise le contexte `Auth` pour vérifier si l'utilisateur est connecté :  
+- Si l'utilisateur est authentifié, il est redirigé vers le tableau de bord avec `navigate("/dashboard")`.  
+- Sinon, deux liens sont affichés : un pour la **connexion** et un autre pour l'**inscription**.  
+CLICK<br>
+**Page Login** :  
+- Les champs pour l'**email** et le **mot de passe** sont gérés avec des `useState`.  
+- Lors de la soumission, `handleSubmit` envoie les données via `postloginUser`.  
+- Si la connexion réussit (statut 200), le contexte d'authentification est mis à jour avec `setAuth`, et l'utilisateur est redirigé vers le tableau de bord.  
+CLICK<br>
+**Page Inscription** :  
+- Elle propose des champs pour le pseudo, l'email, et deux champs pour le mot de passe.  
+- Une vérification s’assure que les deux mots de passe correspondent avant l'envoi.  
+- Si les données sont validées avec succès (statut 201), l'utilisateur est redirigé vers la page de connexion pour s'authentifier.  
 -->
 
 ---
@@ -4772,7 +4799,7 @@ transition: slide-left
 ### AuthContext.jsx
 
 ````md magic-move {lines: true}
-```jsx{*|3|4,5|17}
+```jsx{*|3|4,5|17|*}
 import { createContext, useState, useContext } from "react";
 const AuthContext = createContext();
 export function AuthProvider({ children }) {
@@ -4879,12 +4906,12 @@ h1 {
   }
 </style>
 <!-- 
-Le contexte React `AuthContext` centralise les informations d'authentification. Il repose sur trois éléments clés :  
-1. **`AuthProvider`** : un composant qui encapsule l'application et partage les données d'authentification via un contexte.  
-2. **L'état de `auth`** : il stocke les informations de l'utilisateur connecté et peut être mis à jour avec `setAuth` ou partiellement modifié via `updateUser`.  
-3. **`useAuth`** : un hook personnalisé qui simplifie l'accès au contexte depuis n'importe quel composant.
-
-Ce système nous a permis de gérer efficacement l'état d'authentification dans toute l'application, en rendant les interactions plus cohérentes et le code plus maintenable.
+Précédemment j'ai fait référence au contexte React. `AuthContext` gère l'authentification de manière centralisée. Il repose sur :
+<br>CLICK<br> 
+1. **`AuthProvider`** : un composant qui enveloppe l'application et partage les données d'authentification.<br>CLICK<br> 
+2. **L'état de `auth`** qui contient les infos de l'utilisateur connecté et peut être modifié avec `setAuth` ou partiellement via `updateUser`.<br>CLICK<br> 
+3. **`useAuth`** est un hook qui facilite l'accès au contexte dans les composants.<br>CLICK<br> 
+Ce système simplifie la gestion de l'authentification et rend le code plus clair et maintenable.  
  -->
 ---
 transition: slide-up
@@ -5006,11 +5033,8 @@ h1 {
   }
 </style>
 <!-- 
-L'idée principale de la **centralisation des imports CSS** dans le fichier **App.jsx** est de regrouper tous les fichiers de styles en un seul point d'entrée. 
-Chaque fichier étant dédié à une partie spécifique de l'interface, ce qui optimise l'organisation et simplifie leur gestion.
-
-Comme `homepage.css` pour la page d'accueil ainsi que les composants spécificique tels que `navbarcomponent.css` ou `footercomponent.css`.
--->
+Pour les imports CSS, nous les avons centralisé dans dans **App.jsx**, ce qui permet de regrouper tous les fichiers de styles en un seul endroit.  
+Chaque fichier correspond à une partie de l’interface, comme `homepage.css` pour la page d’accueil ou `navbarcomponent.css` pour la barre de navigation. Cela simplifie l’organisation et facilite la gestion des styles.-->
 
 ---
 layout: dynamic-image 
@@ -5065,7 +5089,7 @@ h1 {
 }
 </style>
 
-<!-- Après avoir détaillé les différentes parties du projet, je vais maintenant vous montrer une démonstration des fonctionnalités principales pour vous donner un aperçu concret du rendu final. -->
+<!-- Après avoir détaillé les différentes parties du projet, je vais maintenant vous montrer une démonstration du projet. -->
 
 ---
 layout: dynamic-image 
@@ -5120,12 +5144,12 @@ h1 {
 }
 </style>
 <!-- 
-Nous sommes pleinement conscients que, réalisé en seulement un mois, ce premier projet fullstack n’est pas parfait. Cependant, il a été une expérience extrêmement enrichissante, nous permettant d'apprendre énormément, que ce soit en termes de gestion de projet, d'organisation, ou de prise en main des différentes technologies utilisées.
+Enfin pour conclure. Ce projet, réalisé en un mois, n'est pas parfait, mais il a été une expérience très enrichissante. Nous avons beaucoup appris sur la gestion de projet, l'organisation, et l'utilisation des technologies.
 
-Ce fut un mois intense, rempli de défis et de découvertes. Au fil du projet, nous avons identifié plusieurs axes d'amélioration : l'optimisation de l'expérience utilisateur, un visuel plus abouti, une meilleure ergonomie des formulaires, ou encore le perfectionnement de la fonctionnalité d’immersion interactive.
+Nous avons relevé plusieurs axes d'amélioration, comme l'optimisation de l'expérience utilisateur, le design, et la fonctionnalité d'immersion interactive.
 
-Malgré ces points perfectibles, nous sommes très fiers du travail accompli. Ce projet a représenté un véritable défi, et l’avoir mené à bien en si peu de temps est une grande satisfaction pour toute l’équipe. -->
-
+Malgré ces points à perfectionner, nous sommes fiers du travail accompli. Mener ce premier projet fullstack à bien dans un délai aussi court a été un vrai défi, mais aussi une grande satisfaction.
+-->
 ---
 layout: dynamic-image 
 image: 'https://avatars.githubusercontent.com/dampherrr'
@@ -5215,8 +5239,8 @@ flex-direction: column;
 }
 </style>
 <!-- 
-Avant de conclure, je tiens à vous remercier pour votre attention tout au long de cette présentation. 
+Je tiens à vous **remercier pour votre attention** tout au long de cette présentation. 
 
 Vous pouvez me retrouver sur mes réseaux professionnels. 
 
-J’ai ajouté un QR code qui mène directement à mon profil LinkedIn, si vous souhaitez en savoir plus sur mon parcours." -->
+J’ai ajouté un **QR code** qui mène directement à mon profil **LinkedIn**, si vous souhaitez **en savoir plus** sur mon parcours. -->
