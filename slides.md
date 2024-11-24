@@ -521,25 +521,25 @@ border-radius: 8px;
 </style>
 
 <!-- 
-Dans cette présentation, je vais détailler les différentes étapes de la conception et de la réalisation de ce projet :
-
-1. Nous commencerons par explorer les **outils de communication et de collaboration** qui ont structuré notre travail en équipe.  
-CLICK<br>
-1. Ensuite, nous nous pencherons sur **l’identité visuelle et le design**, avec les choix graphiques qui reflètent l’essence du projet, ainsi que les outils utilisés.  
-CLICK<br>
-1. Puis, je vous présenterai **l’architecture technique**, pour structurer le code de manière claire et maintenable.  
-CLICK<br>
-1. Nous poursuivrons avec **la modélisation des données**, en partant de la conceptualisation des besoin.
-<br>CLICK<br>
-1. Ensuite du coté de **la gestion serveur**.
-<br>CLICK<br>
-1. Mais aussi la **sécurité**, nous verrons les mesures mises en place.
-<br>CLICK<br>  
-1. Puis la **gestion client**.  
-CLICK<br>
-1. Une **démonstration pratique** pour voir le projet en action. 
-<br>CLICK<br>
-1. Enfin, je **conclurai** cette présentation par une synthèse des défis que nous avons relevés, et les pistes pour de futures améliorations.  
+Dans cette présentation, je vais vous détailler les étapes clés de la conception et de la réalisation de ce projet :  
+CLICK  
+- D’abord, les **outils de communication et collaboration** qui ont structuré notre travail d’équipe.  
+CLICK  
+- Ensuite, **l’identité visuelle et le design**, avec les choix graphiques et outils utilisés.  
+CLICK  
+- Puis, **l’architecture technique**, pour organiser le code de façon claire et maintenable.  
+CLICK  
+- Nous aborderons ensuite **la modélisation des données**, en partant des besoins conceptuels.  
+CLICK  
+- Du côté serveur, nous verrons la **gestion backend**.  
+CLICK  
+- Suivi des mesures prises pour assurer la **sécurité**.  
+CLICK  
+- Enfin, la **gestion frontend** et son intégration.  
+CLICK  
+- Une **démonstration** pour voir le projet en action.  
+CLICK  
+- Et pour terminer, une **conclusion** sur les défis relevés et les pistes d’amélioration.  
 -->
 ---
 layout: dynamic-image
@@ -1808,8 +1808,8 @@ h1 {
 }
 </style>
 
-<!-- 
-Pour la modélisation, nous avons utilisé deux outils clés :
+<!--
+Pour la modélisation, nous avons utilisé un outil et une méthode clés :
 
 CLICK
 
@@ -1819,7 +1819,8 @@ CLICK
 
 Nous avons également suivi la **méthode Merise**, qui nous a guidés étape par étape.
 En partant du modèle conceptuel au modèle physique, pour structurer efficacement notre bdd.
- -->
+-->
+
 ---
 layout: two-cols
 transition: slide-left
@@ -2995,7 +2996,7 @@ h1 {
   }
 </style>
 
-<!-- 
+<!--
 On va commencer par la gestion sécurisée des mots de passe. Nous avons utilisé **Argon2**.<br>
 CLICK<br>
  **Argon2** est un algorithme de hashage de mot de passe connu pour sa robustesse.<br>
@@ -3008,6 +3009,7 @@ CLICK<br>
 CLICK<br>
 - Ensuite, le mot de passe en clair est supprimé pour éviter tout risque de fuite. <br>
 Et on passe à la suite avec next.<br>
+CLICK<br>
 On execute le middleware lors de la création d'un utilisateur, les mots de passe ne sont jamais stockés en clair dans la bdd.<br>
 
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-<br>
@@ -3016,7 +3018,8 @@ On execute le middleware lors de la création d'un utilisateur, les mots de pass
 
 **timeCost** : Indique le **nombre d'itérations** nécessaires pour créer le hash. Une valeur plus haute ralentit le processus, rendant les attaques par force brute plus longues.
 
-**parallelism** : Détermine le **nombre de threads** ou de processeurs utilisés pour le hashage. Cela peut améliorer les performances sur des systèmes multicœurs.-->
+**parallelism** : Détermine le **nombre de threads** ou de processeurs utilisés pour le hashage. Cela peut améliorer les performances sur des systèmes multicœurs.
+-->
 
 ---
 layout: two-cols
@@ -3624,7 +3627,8 @@ h1 {
     color: #090A09;
   }
 </style>
-<!-- 
+
+<!--
 Pour valider les données utilisateur, nous avons utilisé **Joi**.  
 CLICK<br>
 
@@ -3639,8 +3643,10 @@ CLICK<br>
 - **confirmPassword** doit correspondre au mot de passe.  
 CLICK<br>
 Si les données sont incorrectes, une erreur est renvoyée. Sinon, la requête continue.  
-**Joi** nous aide à filtrer les données dès leur réception, ce qui évite de traiter des requêtes invalides. 
+CLICK<br>
+**Joi** nous aide à filtrer les données dès leur réception, ce qui évite de traiter des requêtes invalides.
 -->
+
 ---
 layout: two-cols
 equal: true
