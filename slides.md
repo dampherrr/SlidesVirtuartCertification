@@ -2658,7 +2658,7 @@ level: 3
 }
 </style>
 
-<!-- 
+<!--
 Le **CRUD** regroupe les actions principales pour gérer les données : <br>
 CLICK<br>
 **Create**, **Read**, **Update**, et **Delete**.  <br>
@@ -2669,13 +2669,14 @@ CLICK
 
 - Pour **Read** :  
   - Nous avons **`readAll`** qui récupère toutes les œuvres avec leurs détails, comme l'utilisateur qui les a publiées, grâce à une jointure SQL.  
+CLICK  
   - **`read`** lit une œuvre précise via son ID. Ces données sont utilisées pour afficher les œuvres sur le site.  
 CLICK  
 
 - **Update** modifie une œuvre existante, par exemple en mettant à jour son titre ou son image.  
 CLICK  
 
-- Enfin **Delete** est utilisé pour supprimer une œuvre de la bdd.  
+- Enfin **Delete** est utilisé pour supprimer une œuvre de la bdd.
 -->
 
 ---
@@ -5157,13 +5158,14 @@ Nous avons relevé plusieurs axes d'amélioration, comme l'optimisation de l'exp
 Malgré ces points à perfectionner, nous sommes fiers du travail accompli. Mener ce premier projet fullstack à bien dans un délai aussi court a été un vrai défi, mais aussi une grande satisfaction.
 -->
 ---
-layout: dynamic-image 
+layout: dynamic-image
 image: 'https://avatars.githubusercontent.com/dampherrr'
 upperImage: 'https://avatars.githubusercontent.com/dampherrr'
 equal: true
 left: false
 ---
-    <!-- <img src="https://avatars.githubusercontent.com/dampherrr" target="_blank" alt="Dampherrr" width="100" height="100"> -->
+
+<!-- <img src="https://avatars.githubusercontent.com/dampherrr" target="_blank" alt="Dampherrr" width="100" height="100"> -->
 
 # Merci pour votre attention ! 🙌
 
@@ -5244,9 +5246,13 @@ align-items: center;
 flex-direction: column;
 }
 </style>
-<!-- 
+
+<!--
 Je tiens à vous **remercier pour votre attention** tout au long de cette présentation. 
 
 Vous pouvez me retrouver sur mes réseaux professionnels. 
 
-J’ai ajouté un **QR code** qui mène directement à mon profil **LinkedIn**, si vous souhaitez **en savoir plus** sur mon parcours. -->
+J’ai ajouté un **QR code** qui mène directement à mon profil **LinkedIn**, si vous souhaitez **en savoir plus** sur mon parcours. 
+
+**SLI DEV**
+-->
